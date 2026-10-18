@@ -15,7 +15,9 @@ Once AI was able to decompile entire games I saw my opportunity. Using Claude Co
 
 ## Our goals
 
-- **Faithful at heart.** 
+- **Faithful ReMAKE.** I want to make it absolutely clear that this ISN'T a Remaster. It is a REMAKE. Which means I took a lot of LIBERTY (get it?) in redesigning systems, ships, stations with modern looks, while keeping the flair of the OG Game.
+- **Multiplayer first.** While everyone loved the story (and the amazing music), the MP is what made this game great. And so I will make it great (again) in this one. I'm talking MMO world bosses and other fun modes.
+- **Community driven.** - While I have an overall vision for what it should be, I definitely need help from the community when it comes to gameplay or general ideas. I want this to be a project for all of us.
 
 ## Legal
 

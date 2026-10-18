@@ -1,18 +1,22 @@
 #!/usr/bin/env python3
 """Build the free-floating layers: character cutouts, title, and the nebula.
 
-The characters and the title are painted onto the mockup's own background,
-so they're cut out with segmentation models (rembg). The page background is
+The characters (Trent and Juni, from the renders in tools/trent.png and
+tools/juni.jpg) and the title (from the mockup) are cut out of their
+backgrounds with segmentation models (rembg); the characters are then
+colour graded to sit on the nebula. The page background is
 NASA/ESA/CSA/STScI's Webb "Cosmic Cliffs" image (public domain), rotated a
-quarter turn so its blue side sits behind the man and the orange side
-behind the woman, as in the mockup.
+quarter turn so its blue side sits behind Trent and the orange side behind
+Juni, as in the mockup.
 
     pip install numpy pillow opencv-python-headless "rembg[cpu]"
-    python3 tools/build_layers.py
+    python3 tools/build_layers.py                # everything
+    python3 tools/build_layers.py characters     # or any of: characters title nebula
 
 The first run downloads the models (~180 MB and ~900 MB) and the nebula.
 """
 import io
+import sys
 import urllib.request
 from pathlib import Path
 
@@ -66,28 +70,73 @@ def save(im, name, **kw):
     print(f"  {path.relative_to(ROOT)}  {im.width}x{im.height}  {path.stat().st_size // 1024} KB")
 
 
-print("Cutting layers from", SRC.relative_to(ROOT))
+def grade(rgb, alpha, gamma, gain, shadow_tint, rim_color, rim_side, rim_strength):
+    """Match a render's lighting to the nebula behind it.
 
-# The man: head and shoulders only (the nav buttons cover the rest of him in
-# the mockup). The Freelancer logo in the corner of the crop is dropped.
-def man_post(a):
-    a = a.copy()
-    a[:140, :150] = 0
-    a = largest_component(a)
-    return fade_bottom(a, a.shape[0] - 90, a.shape[0])
+    gamma/gain set brightness, shadow_tint pushes the darks toward the
+    nebula's colour, and a rim light is added along the silhouette edges
+    facing rim_side (-1 = left, +1 = right).
+    """
+    x = rgb.astype(np.float32) / 255
+    x = np.clip(gain * x ** gamma, 0, 1)
+    lum = x @ np.float32([0.299, 0.587, 0.114])
+    x += (1 - lum)[..., None] ** 2 * np.float32(shadow_tint)
 
-save(cutout((25, 85, 400, 402), "isnet-general-use", man_post), "char-man.webp", quality=90, method=6)
+    a = alpha.astype(np.float32) / 255
+    w = alpha.shape[1]
+    r = max(3, round(w * 0.008))
+    inner = cv2.GaussianBlur(a, (0, 0), r)
+    edge = np.clip(a - inner, 0, 1) * a
+    edge = cv2.GaussianBlur(edge, (0, 0), r / 2)
+    side = np.clip(0.5 + rim_side * (np.arange(w) / w - 0.5) * 2.4, 0, 1)[None, :]
+    x += (edge * side * rim_strength)[..., None] * np.float32(rim_color)
+    return (np.clip(x, 0, 1) * 255).astype(np.uint8)
 
-# The woman: down to the hips, then fade, as she dissolves into fire in the mockup.
-def lady_post(a):
-    a = largest_component(a)
-    return fade_bottom(a, 400, 545)
 
-save(cutout((1440, 150, 1712, 945), "birefnet-portrait", lady_post), "char-lady.webp", quality=90, method=6)
+def character(src, box, model, post, **look):
+    """Cut a character render out of its own background, crop and grade it."""
+    im = Image.open(src).convert("RGB")
+    out = np.asarray(remove(im, session=new_session(model), post_process_mask=True)).copy()
+    out = out[box[1]:box[3], box[0]:box[2]].copy()
+    a = post(largest_component(out[..., 3]))
+    out[..., :3] = grade(out[..., :3], a, **look)
+    out[..., 3] = a
+    ys, xs = np.nonzero(a > 4)
+    return Image.fromarray(out[ys.min():ys.max() + 1, xs.min():xs.max() + 1])
 
-save(cutout((585, 80, 1140, 258), "isnet-general-use"), "title.webp", quality=92, method=6)
+
+def fit_height(im, h):
+    return im.resize((round(im.width * h / im.height), h), Image.LANCZOS)
+
+
+only = set(sys.argv[1:]) or {"characters", "title", "nebula"}
+
+if "characters" in only:
+    print("Cutting characters from tools/trent.png and tools/juni.jpg")
+
+    # Trent, left (blue side): head to waist, fading out behind the nav. His
+    # render is a dark night shot, so the shadows are lifted and cooled.
+    trent = character(ROOT / "tools" / "trent.png", (600, 0, 1240, 860), "birefnet-portrait",
+                      lambda a: fade_bottom(a, a.shape[0] - 300, a.shape[0] - 20),
+                      gamma=0.72, gain=1.12, shadow_tint=(0.0, 0.018, 0.06),
+                      rim_color=(0.45, 0.7, 1.0), rim_side=-1, rim_strength=1.6)
+    save(fit_height(trent, 880), "char-man.webp", quality=90, method=6)
+
+    # Juni, right (orange side): down to the hips, then fade. Her render is lit
+    # by flat daylight, so she's darkened, warmed and given an orange rim.
+    juni = character(ROOT / "tools" / "juni.jpg", (0, 0, 1264, 1290), "birefnet-portrait",
+                     lambda a: fade_bottom(a, 1010, 1270),
+                     gamma=1.12, gain=0.88, shadow_tint=(0.02, 0.006, -0.008),
+                     rim_color=(1.0, 0.55, 0.2), rim_side=1, rim_strength=0.8)
+    save(juni, "char-lady.webp", quality=90, method=6)
+
+if "title" in only:
+    print("Cutting the title from", SRC.relative_to(ROOT))
+    save(cutout((585, 80, 1140, 258), "isnet-general-use"), "title.webp", quality=92, method=6)
 
 # --------------------------------------------------------------- nebula
+if "nebula" not in only:
+    sys.exit()
 print("Downloading nebula")
 req = urllib.request.Request(NEBULA_URL, headers={"User-Agent": "sirius-reborn-site-build/1.0"})
 neb = Image.open(io.BytesIO(urllib.request.urlopen(req).read())).convert("RGB")

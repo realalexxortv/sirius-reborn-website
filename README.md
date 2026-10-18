@@ -18,12 +18,12 @@ It's a static site (plain HTML/CSS/JS, no build step) that runs on GitHub Pages 
 | `content/settings.json` | Tagline, build badge, project status ring, Community Hub links, footer text. |
 | `assets/ui/` | Every button, frame and panel, cropped straight from the mockup, plus the character cutouts and the nebula. |
 | `tools/extract_assets.py` | Crops the buttons, frames and panels from `tools/mockup.png`. |
-| `tools/build_layers.py` | Cuts the characters and the title out of the mockup (rembg) and builds the nebula backdrop. |
+| `tools/build_layers.py` | Cuts the characters (Trent from `tools/trent.png`, Juni from `tools/juni.jpg`) and the title (from the mockup) out of their backgrounds with rembg, grades the characters to match the nebula, and builds the nebula backdrop. |
 | `admin/` | The CMS. |
 
 ### Layout
 
-The page is a centred column, at most 1200px wide, that scrolls over a fixed nebula backdrop. The man and the woman stand fixed just outside the column, partly behind it, so they stay at the sides as the window gets wider. The nav buttons stick to the top while you scroll. The footer panels are pinned to the bottom of the window and scaled to the column width. Below 900px wide the page switches to a stacked phone layout.
+The page is a centred column, at most 1200px wide, that scrolls over a fixed nebula backdrop. Trent (left) and Juni (right) stand fixed just outside the column, partly behind it, so they stay at the sides as the window gets wider. The nav buttons stick to the top while you scroll. The footer panels are pinned to the bottom of the window and scaled to the column width. Below 900px wide the page switches to a stacked phone layout.
 
 ## The CMS
 
@@ -62,6 +62,8 @@ pip install numpy pillow opencv-python-headless "rembg[cpu]"
 python3 tools/extract_assets.py
 python3 tools/build_layers.py   # first run downloads ~1 GB of segmentation models
 ```
+
+To swap a character, replace `tools/trent.png` or `tools/juni.jpg` and run `python3 tools/build_layers.py characters`. If the new render's proportions differ, update the crop box in the script and `--ar` (width / height of the cutout) in `css/site.css`.
 
 Crop coordinates are at the top of each script.
 

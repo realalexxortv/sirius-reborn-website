@@ -12,15 +12,6 @@
       "draft": false
     },
     {
-      "slug": "entering-the-next-frontier-unreal-engine-5",
-      "title": "Entering the Next Frontier: Unreal Engine 5",
-      "date": "2024-05-24",
-      "tag": "Engine Upgrade",
-      "image": "images/news/mockup-1.jpg",
-      "excerpt": "We're proud to announce that Sirius Reborn is now being developed on Unreal Engine 5. Next-gen visuals, dynamic lighting, and vast open-world possibilities await.",
-      "body": "We're proud to announce that **Sirius Reborn is now being developed on Unreal Engine 5**.\n\nWhen we started this project, the goal was simple: bring the Sirius sector back with the look and feel players remember, but with the technology it always deserved. Moving to Unreal Engine 5 is the biggest step toward that goal so far.\n\n## What the switch gives us\n\n- **Lumen dynamic lighting.** Stars, nebulae and docking bays now light ships in real time. Flying out of a station's shadow into open sunlight finally feels like it should.\n- **Nanite geometry.** Capital ships, stations and asteroid fields can carry far more detail without us hand-building a dozen LODs for every model.\n- **World Partition.** Each system streams in as you fly, which keeps load screens to jump gates and docking only.\n- **Niagara.** Engine trails, cruise effects and weapon fire are being rebuilt from scratch on the new particle system.\n\n## What stays the same\n\nThe flight model, the economy and the story beats of the original are our reference. If something felt right in 2003, we want it to feel right here too: just sharper, brighter and bigger.\n\nMore technical deep dives are coming. Thanks for flying with us.\n"
-    },
-    {
       "slug": "capital-ships-and-scale",
       "title": "Capital Ships & Scale in Sirius Reborn",
       "date": "2024-04-18",

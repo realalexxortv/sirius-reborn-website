@@ -58,9 +58,9 @@ img { display: block; }
   user-select: none;
 }
 .char-man {
-  --h: clamp(340px, 58vh, 600px);
-  --ar: .593;
-  top: 18px;
+  --h: clamp(420px, 76vh, 740px);
+  --ar: .576;
+  top: 80px;
   right: min(50% + var(--col) / 2 - 110px, 100% - var(--h) * var(--ar));
 }
 .char-lady {

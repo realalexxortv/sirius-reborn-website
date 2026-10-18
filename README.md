@@ -16,13 +16,14 @@ It's a static site (plain HTML/CSS/JS, no build step) that runs on GitHub Pages 
 | `content/news.json` | All news posts: title, date, tag, timeline image, excerpt and the full Markdown body. |
 | `content/pages/*.md` | Support, Gallery, About and Download pages (Markdown with a `title` / `subtitle` header). |
 | `content/settings.json` | Tagline, build badge, project status ring, Community Hub links, footer text. |
-| `assets/ui/` | Every button, frame and panel, cropped straight from the mockup. |
-| `tools/extract_assets.py` | The script that crops `assets/ui/` from `tools/mockup.png`. |
+| `assets/ui/` | Every button, frame and panel, cropped straight from the mockup, plus the character cutouts and the nebula. |
+| `tools/extract_assets.py` | Crops the buttons, frames and panels from `tools/mockup.png`. |
+| `tools/build_layers.py` | Cuts the characters and the title out of the mockup (rembg) and builds the nebula backdrop. |
 | `admin/` | The CMS. |
 
 ### Layout
 
-On desktop the page *is* the mockup: a 1712px-wide stage in mockup pixel coordinates, scaled to the window with CSS `zoom`. The hero art, the nav buttons and the footer are fixed; the news panel scrolls over the hero and under the always-visible footer. Below 900px wide the page switches to a stacked phone layout.
+The page is a centred column, at most 1200px wide, that scrolls over a fixed nebula backdrop. The man and the woman stand fixed just outside the column, partly behind it, so they stay at the sides as the window gets wider. The nav buttons stick to the top while you scroll. The footer panels are pinned to the bottom of the window and scaled to the column width. Below 900px wide the page switches to a stacked phone layout.
 
 ## The CMS
 
@@ -57,11 +58,16 @@ The CMS also works locally at `http://localhost:8000/admin/`. It still saves to 
 If the mockup changes, replace `tools/mockup.png` and run:
 
 ```sh
-pip install numpy pillow opencv-python-headless
+pip install numpy pillow opencv-python-headless "rembg[cpu]"
 python3 tools/extract_assets.py
+python3 tools/build_layers.py   # first run downloads ~1 GB of segmentation models
 ```
 
-Crop coordinates are at the top of the script. The CSS positions in `css/site.css` use the same coordinates, minus the 78px browser chrome at the top of the mockup.
+Crop coordinates are at the top of each script.
+
+## Credits
+
+Background: [“Cosmic Cliffs” in the Carina Nebula](https://webbtelescope.org/contents/media/images/2022/031/01G77PKB8NKR7S8Z6HBXMYATGJ) by NASA, ESA, CSA and STScI (public domain), rotated and cropped.
 
 ---
 

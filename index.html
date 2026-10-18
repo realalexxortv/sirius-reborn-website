@@ -7,91 +7,93 @@
   <meta name="description" content="Sirius Reborn: the 2003 classic, fully remade in Unreal Engine. Development news, gallery and downloads.">
   <meta property="og:title" content="Sirius Reborn">
   <meta property="og:description" content="The 2003 Classic, Fully Remade in Unreal Engine">
-  <meta property="og:image" content="og-image.jpg">
-  <meta name="theme-color" content="#04070e">
+    <meta name="theme-color" content="#04070e">
   <link rel="icon" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
   <script>
-    // Size the mockup-sized stage before first paint (see js/site.js fit()).
-    (function () {
-      var w = innerWidth, h = innerHeight, d = document.documentElement;
-      if (w < 900) { d.classList.add('compact'); return; }
-      d.style.setProperty('--z', Math.min(w / 1712, h / 995, 1.5));
-    })();
+    // Pick the layout before first paint (see js/site.js fit()).
+    if (innerWidth < 900) document.documentElement.classList.add('compact');
   </script>
 </head>
 <body>
-  <!-- Fixed hero: background art, logo, build badge, tagline. The news panel scrolls over it. -->
-  <div class="layer layer-hero">
-    <div class="stage">
-      <img class="hero-bg" src="assets/ui/bg.jpg" alt="" width="1712" height="859">
-      <img class="hero-title" src="assets/ui/title.jpg" alt="Sirius Reborn">
-      <a class="logo-link" href="#/" aria-label="Sirius Reborn home"></a>
+  <!-- Fixed backdrop: Webb's "Cosmic Cliffs" (NASA/ESA/CSA/STScI) and the two characters. -->
+  <div class="backdrop" aria-hidden="true"></div>
+  <img class="char char-man" src="assets/ui/char-man.webp" alt="" aria-hidden="true">
+  <img class="char char-lady" src="assets/ui/char-lady.webp" alt="" aria-hidden="true">
+
+  <div class="site">
+    <header class="masthead">
+      <a class="title-link" href="#/"><img class="title" src="assets/ui/title.webp" alt="Sirius Reborn" width="536" height="171"></a>
+      <p class="tagline" data-setting="tagline">The 2003 Classic, Fully Remade in Unreal Engine</p>
+      <img class="ornament" src="assets/ui/tagline-ornament.png" alt="" width="555" height="22">
       <div class="badge" aria-label="Build information">
         <span data-setting="build">Development Build</span>
         <span data-setting="engine">Unreal Engine 5</span>
       </div>
-      <p class="tagline" data-setting="tagline">The 2003 Classic, Fully Remade in Unreal Engine</p>
+    </header>
+
+    <div class="columns">
+      <nav class="side-nav" aria-label="Main">
+        <a class="nav-btn nav-home" href="#/" data-route="home"><img src="assets/ui/nav-home.png" alt="Home"></a>
+        <a class="nav-btn nav-support" href="#/support" data-route="support"><img src="assets/ui/nav-support.png" alt="Support"></a>
+        <a class="nav-btn nav-gallery" href="#/gallery" data-route="gallery"><img src="assets/ui/nav-gallery.png" alt="Gallery"></a>
+        <a class="nav-btn nav-about" href="#/about" data-route="about"><img src="assets/ui/nav-about.png" alt="About"></a>
+        <a class="nav-btn nav-download" href="#/download" data-route="download"><img src="assets/ui/nav-download.png" alt="Download"></a>
+      </nav>
+
+      <main>
+        <section class="panel" aria-live="polite">
+          <header class="panel-head">
+            <img class="panel-star" src="assets/ui/star.png" alt="">
+            <h1 id="panel-title">Development News Timeline</h1>
+            <p class="panel-sub"><span id="panel-sub">The Journey to Rebirth</span></p>
+          </header>
+          <div id="view"></div>
+        </section>
+      </main>
     </div>
   </div>
 
-  <nav class="layer layer-nav" aria-label="Main">
-    <div class="stage">
-      <a class="nav-btn nav-home" href="#/" data-route="home"><img src="assets/ui/nav-home.png" alt="Home"></a>
-      <a class="nav-btn nav-support" href="#/support" data-route="support"><img src="assets/ui/nav-support.png" alt="Support"></a>
-      <a class="nav-btn nav-gallery" href="#/gallery" data-route="gallery"><img src="assets/ui/nav-gallery.png" alt="Gallery"></a>
-      <a class="nav-btn nav-about" href="#/about" data-route="about"><img src="assets/ui/nav-about.png" alt="About"></a>
-      <a class="nav-btn nav-download" href="#/download" data-route="download"><img src="assets/ui/nav-download.png" alt="Download"></a>
-    </div>
-  </nav>
-
-  <main class="flow">
-    <div class="stage">
-      <section class="panel" aria-live="polite">
-        <header class="panel-head">
-          <img class="panel-star" src="assets/ui/star.png" alt="">
-          <h1 id="panel-title">Development News Timeline</h1>
-          <p class="panel-sub"><span id="panel-sub">The Journey to Rebirth</span></p>
-        </header>
-        <div id="view"></div>
-      </section>
-    </div>
-  </main>
-
-  <footer class="layer layer-footer">
-    <div class="stage">
-      <img class="footer-bg" src="assets/ui/footer.jpg" alt="" width="1712" height="215">
-      <div class="status">
-        <svg class="status-ring" viewBox="0 0 140 140" aria-hidden="true">
-          <defs>
-            <filter id="ring-glow" x="-30%" y="-30%" width="160%" height="160%">
-              <feGaussianBlur stdDeviation="3" result="b"/>
-              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-            </filter>
-          </defs>
-          <circle class="ring-track" cx="70" cy="70" r="57"/>
-          <circle class="ring-fill" cx="70" cy="70" r="57" pathLength="100" filter="url(#ring-glow)"/>
-        </svg>
-        <div class="status-pct"><b id="status-pct">0</b><small>%</small><span>Complete</span></div>
-        <h2 class="status-title">Project Status</h2>
-        <p class="status-phase" data-setting="status.phase"></p>
-        <p class="status-target" data-setting="status.target"></p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <!-- The mockup's footer panels, at mockup size, scaled to the column with zoom (--fz). -->
+      <div class="footer-stage">
+        <img class="footer-bg" src="assets/ui/footer-panels.jpg" alt="" width="1712" height="158">
+        <div class="status">
+          <svg class="status-ring" viewBox="0 0 140 140" aria-hidden="true">
+            <defs>
+              <filter id="ring-glow" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="3" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <circle class="ring-track" cx="70" cy="70" r="57"/>
+            <circle class="ring-fill" cx="70" cy="70" r="57" pathLength="100" filter="url(#ring-glow)"/>
+          </svg>
+          <div class="status-pct"><b id="status-pct">0</b><small>%</small><span>Complete</span></div>
+          <h2 class="status-title">Project Status</h2>
+          <p class="status-phase" data-setting="status.phase"></p>
+          <p class="status-target" data-setting="status.target"></p>
+        </div>
+        <div class="hubs">
+          <a class="hub hub-discord" data-link="discord" target="_blank" rel="noopener"><img src="assets/ui/hub-discord.png" alt="Discord"><span>Discord</span></a>
+          <a class="hub hub-forums" data-link="forums" target="_blank" rel="noopener"><img src="assets/ui/hub-forums.png" alt="Forums"><span>Forums</span></a>
+          <a class="hub hub-wiki" data-link="wiki" target="_blank" rel="noopener"><img src="assets/ui/hub-wiki.png" alt="Wiki"><span>Wiki</span></a>
+          <a class="hub hub-socials" data-link="socials" target="_blank" rel="noopener"><img src="assets/ui/hub-socials.png" alt="Socials"><span>Socials</span></a>
+        </div>
+        <blockquote class="memory">
+          <p>“In memory of Digital<br><span>Anvil &amp; the Sirius Legacy”</span></p>
+          <cite>The journey continues.</cite>
+        </blockquote>
       </div>
-      <div class="hubs">
-        <a class="hub hub-discord" data-link="discord" target="_blank" rel="noopener"><img src="assets/ui/hub-discord.png" alt="Discord"><span>Discord</span></a>
-        <a class="hub hub-forums" data-link="forums" target="_blank" rel="noopener"><img src="assets/ui/hub-forums.png" alt="Forums"><span>Forums</span></a>
-        <a class="hub hub-wiki" data-link="wiki" target="_blank" rel="noopener"><img src="assets/ui/hub-wiki.png" alt="Wiki"><span>Wiki</span></a>
-        <a class="hub hub-socials" data-link="socials" target="_blank" rel="noopener"><img src="assets/ui/hub-socials.png" alt="Socials"><span>Socials</span></a>
+      <div class="legal">
+        <p class="copyright" data-setting="copyright"></p>
+        <img class="legal-star" src="assets/ui/footer-star.png" alt="" width="62" height="58">
+        <p class="trademark">Freelancer is a registered trademark of Microsoft Corporation.</p>
       </div>
-      <blockquote class="memory">
-        <p>“In memory of Digital<br><span>Anvil &amp; the Sirius Legacy”</span></p>
-        <cite>The journey continues.</cite>
-      </blockquote>
-      <p class="copyright" data-setting="copyright"></p>
-      <p class="trademark">Freelancer is a registered trademark of Microsoft Corporation.</p>
     </div>
   </footer>
 

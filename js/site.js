@@ -10,14 +10,16 @@
 
   var state = { settings: null, posts: null };
 
-  // ------------------------------------------------------------- stage fit
-  // The desktop layout is the 1712px mockup scaled to fit; it needs ~995px of
-  // (mockup) height so the nav column clears the fixed footer.
+  // ---------------------------------------------------------------- layout
+  // The footer panels are the mockup's 1712px strip scaled to the column
+  // width; the page reserves the footer's height at the bottom.
+  var footerInner = document.querySelector('.footer-inner');
+  var footer = document.querySelector('.site-footer');
   function fit() {
-    var w = root.clientWidth, h = innerHeight;
-    var compact = w < 900;
+    var compact = root.clientWidth < 900;
     root.classList.toggle('compact', compact);
-    if (!compact) root.style.setProperty('--z', Math.min(w / 1712, h / 995, 1.5));
+    if (!compact) root.style.setProperty('--fz', footerInner.clientWidth / 1712);
+    root.style.setProperty('--footer-h', (compact ? 0 : footer.offsetHeight) + 'px');
     sizeSubtitle();
   }
   addEventListener('resize', fit);

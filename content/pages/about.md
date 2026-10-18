@@ -16,3 +16,5 @@ In 2003, Digital Anvil's *Freelancer* gave a generation of players the Sirius se
 ## Legal
 
 Sirius Reborn is not affiliated with, endorsed by, or connected to Microsoft or Digital Anvil. Freelancer is a registered trademark of Microsoft Corporation.
+
+Background image: “Cosmic Cliffs” in the Carina Nebula, NASA, ESA, CSA, STScI.

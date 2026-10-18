@@ -1,15 +1,18 @@
 /* Sirius Reborn
  *
- * Desktop layout is the mockup itself: a 1712px-wide "stage" in mockup pixel
- * coordinates (mockup y minus the 78px browser chrome), scaled to the viewport
- * with CSS zoom (--z, set in index.html / js/site.js). All UI chrome is cropped
- * from tools/mockup.png by tools/extract_assets.py.
+ * A centred column (max 1200px) that scrolls over a fixed nebula backdrop,
+ * with the two characters fixed just outside it and the footer pinned to the
+ * bottom. All UI chrome is cropped from tools/mockup.png (tools/extract_assets.py,
+ * tools/build_layers.py), and pieces keep their mockup pixel sizes.
  *
  * Below 900px wide the page switches to html.compact, a stacked phone layout.
  */
 
 :root {
-  --z: 1;
+  --col: 1200px;
+  --nav-w: 285px;
+  --fz: .7;               /* footer panels scale, set by js/site.js */
+  --footer-h: 150px;      /* measured by js/site.js */
   --ink: #e6ebf3;
   --ink-2: #c3cbd8;
   --ink-3: #9ea8b8;
@@ -17,7 +20,6 @@
   --panel: #00050b;
   --sans: "Barlow", "Segoe UI", system-ui, sans-serif;
   --serif: "Cinzel", "Trajan Pro", Georgia, serif;
-  --footer-h: 215px;
 }
 
 * { box-sizing: border-box; }
@@ -29,78 +31,104 @@ body {
   min-height: 100vh;
   color: var(--ink);
   font-family: var(--sans);
-  background:
-    radial-gradient(1px 1px at 23px 41px, #ffffff90, transparent),
-    radial-gradient(1px 1px at 141px 97px, #9cc8ff80, transparent),
-    radial-gradient(1.5px 1.5px at 87px 163px, #ffffffa0, transparent),
-    radial-gradient(1px 1px at 191px 13px, #ffffff70, transparent),
-    radial-gradient(ellipse at 15% 20%, #0d1b3a 0%, transparent 55%),
-    radial-gradient(ellipse at 85% 70%, #2a1306 0%, transparent 50%),
-    #03060c;
-  background-size: 211px 197px, 211px 197px, 211px 197px, 211px 197px, 100% 100%, 100% 100%, auto;
-  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
 }
 
 a { color: inherit; }
 img { display: block; }
 
-.stage {
-  position: relative;
-  width: 1712px;
+/* --------------------------------------------------------------- backdrop */
+
+.backdrop {
+  position: fixed; inset: 0; z-index: -2;
+  background:
+    radial-gradient(ellipse 60% 75% at 50% 45%, #02050bd0 0%, #02050b90 55%, #02050b40 100%),
+    url(../assets/ui/nebula.jpg) center / cover no-repeat,
+    #03060c;
+}
+
+/* The characters stand just outside the column, partly behind it. */
+.char {
+  position: fixed; z-index: -1;
+  width: auto;
+  pointer-events: none;
+  user-select: none;
+}
+.char-man {
+  top: 18px;
+  right: calc(50% + var(--col) / 2 - 150px);
+  height: clamp(260px, 44vh, 440px);
+}
+.char-lady {
+  top: 96px;
+  left: calc(50% + var(--col) / 2 - 80px);
+  height: clamp(420px, 80vh, 780px);
+}
+
+/* ------------------------------------------------------------------- page */
+
+.site {
+  width: min(var(--col), 100% - 32px);
   margin: 0 auto;
-  zoom: var(--z);
+  padding-bottom: calc(var(--footer-h) + 24px);
 }
 
-/* ---------------------------------------------------------------- layers */
-
-.layer { position: fixed; left: 0; right: 0; pointer-events: none; }
-.layer a { pointer-events: auto; }
-.layer-hero { top: 0; z-index: 0; }
-.layer-nav { top: 0; z-index: 2; }
-.layer-footer { bottom: 0; z-index: 3; }
-.flow { position: relative; z-index: 1; pointer-events: none; }
-
-/* ------------------------------------------------------------------ hero */
-
-.layer-hero .stage { height: 859px; }
-.hero-bg { position: absolute; inset: 0; }
-.hero-title, .memory, .trademark, .hub span { display: none; }
-
-.logo-link {
-  position: absolute;
-  left: 30px; top: 12px; width: 142px; height: 130px;
-  border-radius: 12px;
+.masthead {
+  position: relative;
+  display: flex; flex-direction: column; align-items: center;
+  padding: 10px 0 6px;
 }
+.title-link { display: block; border-radius: 12px; }
+.title { width: 536px; height: auto; filter: drop-shadow(0 4px 14px #000c); }
+.title-link:hover .title { filter: drop-shadow(0 4px 14px #000c) drop-shadow(0 0 18px #4fa9ff55); }
 
 .badge {
   position: absolute;
-  left: 1362px; top: 17px; width: 296px; height: 63px;
+  right: -6px; top: 4px; width: 282px; height: 57px;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  font-size: 16.5px; font-weight: 500; line-height: 22px;
+  background: url(../assets/ui/badge.png) center / 100% 100% no-repeat;
+  font-size: 15px; font-weight: 500; line-height: 20px;
   letter-spacing: .1em; text-transform: uppercase; color: #e4e9f1;
   text-shadow: 0 0 6px #2a6fd166;
 }
+/* Below ~1300px the badge would touch the title; tuck it under the ornament. */
+@media (max-width: 1300px) {
+  .badge { position: relative; right: auto; top: auto; margin-top: 4px; }
+}
 
 .tagline {
-  position: absolute;
-  left: 0; width: 1712px; top: 183px; margin: 0;
+  margin: 6px 0 2px;
   text-align: center;
   font-size: 20.5px; font-weight: 500; line-height: 26px;
   letter-spacing: .135em; text-transform: uppercase;
   color: #dce2eb;
   text-shadow: 0 1px 2px #000, 0 0 10px #0a1a3a;
 }
+.ornament { max-width: 100%; height: auto; }
+
+.columns {
+  display: grid;
+  grid-template-columns: var(--nav-w) minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  margin-top: 12px;
+}
 
 /* ------------------------------------------------------------ nav buttons */
 
+.side-nav {
+  position: sticky; top: 16px;
+  display: flex; flex-direction: column; gap: 6px;
+  padding-top: 6px;
+}
 .nav-btn {
-  position: absolute;
+  display: block;
   border-radius: 40px;
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
 .nav-btn img {
+  width: 100%; height: auto;
   transition: filter .18s ease, transform .18s ease;
 }
 .nav-btn:hover img,
@@ -111,17 +139,13 @@ img { display: block; }
 .nav-btn.active img { filter: drop-shadow(0 0 7px color-mix(in srgb, var(--glow) 60%, transparent)); }
 .nav-btn.active:hover img { filter: brightness(1.14) drop-shadow(0 0 5px var(--glow)) drop-shadow(0 0 16px var(--glow)); }
 
-.nav-home     { left: 44px; top: 325px; --glow: #4fa9ff; }
-.nav-support  { left: 45px; top: 418px; --glow: #a76cff; }
-.nav-gallery  { left: 44px; top: 507px; --glow: #4fa9ff; }
-.nav-about    { left: 45px; top: 596px; --glow: #3fd6e6; }
-.nav-download { left: 45px; top: 684px; --glow: #ff9b3d; }
+.nav-home     { --glow: #4fa9ff; }
+.nav-support  { --glow: #a76cff; }
+.nav-gallery  { --glow: #4fa9ff; }
+.nav-about    { --glow: #3fd6e6; }
+.nav-download { --glow: #ff9b3d; }
 
 /* ------------------------------------------------------------- the panel */
-
-.flow .stage {
-  padding: 238px 0 calc(var(--footer-h) + 14px);
-}
 
 /* 9-slice frame as backgrounds: corners, stretched edges, flat centre.
  * --fs scales the frame (0.5 in the compact layout). */
@@ -130,10 +154,7 @@ img { display: block; }
   --ft: calc(88px * var(--fs)); --fr: calc(60px * var(--fs));
   --fb: calc(60px * var(--fs)); --fl: calc(94px * var(--fs));
   position: relative;
-  pointer-events: auto;
-  margin-left: 397px;
-  width: 1095px;
-  min-height: 520px;
+  min-height: 560px;
   padding: var(--ft) var(--fr) var(--fb) var(--fl);
   background:
     url(../assets/ui/panel/tl.png) left top / var(--fl) var(--ft) no-repeat,
@@ -240,7 +261,6 @@ img { display: block; }
 .entry h2 a:hover { color: #fff; text-shadow: 0 0 12px #4fa9ff99; }
 
 .entry .excerpt {
-  max-width: 548px;
   margin: 0;
   font-size: 17.5px; line-height: 22.5px;
   color: #c4ccd8;
@@ -369,8 +389,15 @@ img { display: block; }
 
 /* ----------------------------------------------------------------- footer */
 
-.layer-footer .stage { height: var(--footer-h); pointer-events: auto; }
+.site-footer {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 3;
+  padding-top: 26px;
+  background: linear-gradient(to top, #02040a 0, #02040af0 calc(100% - 26px), #02040a00 100%);
+}
+.footer-inner { width: min(var(--col), 100% - 32px); margin: 0 auto; }
+.footer-stage { position: relative; width: 1712px; height: 158px; zoom: var(--fz); }
 .footer-bg { position: absolute; inset: 0; }
+.memory, .hub span { display: none; }
 
 .status-ring {
   position: absolute; left: 57px; top: 9px; width: 140px; height: 140px;
@@ -427,50 +454,47 @@ img { display: block; }
 .hub-wiki    { left: 1444px; --glow: #f2c27c; }
 .hub-socials { left: 1548px; --glow: #49b3f4; }
 
-.copyright {
-  position: absolute; left: 218px; top: 177px; margin: 0;
-  font-size: 13.5px; font-weight: 400; letter-spacing: .065em; text-transform: uppercase;
-  color: #a7b1c0;
-  white-space: nowrap;
+.legal {
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  height: 42px;
 }
+.copyright, .trademark {
+  flex: 1 1 0; min-width: 0; margin: 0;
+  font-size: 12px; font-weight: 400; letter-spacing: .07em; text-transform: uppercase;
+  color: #a7b1c0;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.copyright { text-align: right; }
+.legal-star { flex: none; width: auto; height: 38px; }
 
 /* =================================================================
  * Compact (phones / narrow windows)
  * ================================================================= */
 
-.compact .stage { width: auto; zoom: 1; }
-.compact .layer { position: static; pointer-events: auto; }
-.compact .flow { pointer-events: auto; }
+.compact .char, .compact .footer-bg, .compact .panel-star, .compact .entry .dot,
+.compact .legal-star { display: none; }
+.compact .site { width: auto; padding: 0 8px 20px; }
 
-.compact .layer-hero .stage { height: auto; padding: 18px 16px 6px; text-align: center; }
-.compact .hero-bg, .compact .logo-link, .compact .footer-bg, .compact .panel-star,
-.compact .entry .dot { display: none; }
-.compact .hero-title {
-  display: block; width: 100%; max-width: 520px; margin: 0 auto; height: auto;
-  -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, #000 55%, transparent 100%);
-  mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, #000 55%, transparent 100%);
-}
-.compact .tagline {
-  position: static; width: auto; margin: 6px 0 0;
-  font-size: 12.5px; line-height: 18px; letter-spacing: .12em;
-}
+.compact .masthead { padding: 16px 8px 4px; }
+.compact .title { width: min(100%, 420px); }
+.compact .tagline { margin: 6px 0 0; font-size: 12.5px; line-height: 18px; letter-spacing: .12em; }
 .compact .badge {
   position: static; width: auto; height: auto; margin-top: 8px;
   flex-direction: row; justify-content: center; gap: 10px;
+  background: none;
   font-size: 11px; line-height: 16px; color: var(--ink-3); text-shadow: none;
 }
 .compact .badge span + span::before { content: "\2022"; margin-right: 10px; }
 
-.compact .layer-nav .stage {
+.compact .columns { display: block; margin-top: 4px; }
+.compact .side-nav {
+  position: static;
   display: grid; grid-template-columns: 1fr 1fr; gap: 4px 6px;
-  padding: 10px 12px;
+  padding: 6px 4px 10px;
   max-width: 560px; margin: 0 auto;
 }
-.compact .nav-btn { position: static; }
-.compact .nav-btn img { width: 100%; height: auto; }
 .compact .nav-download { grid-column: 1 / -1; justify-self: center; width: 50%; }
 
-.compact .flow .stage { padding: 6px 8px 20px; }
 .compact .panel { --fs: .5; margin: 0; width: auto; min-height: 0; }
 .compact .panel-head {
   position: relative; left: auto; top: auto; right: auto; height: auto;
@@ -499,13 +523,15 @@ img { display: block; }
 .compact .post-title { font-size: 25px; }
 .compact .md { font-size: 16px; }
 
-.compact .layer-footer .stage {
-  height: auto;
+.compact .site-footer { position: static; padding: 0; background: none; }
+.compact .footer-inner { width: auto; }
+.compact .footer-stage {
+  width: auto; height: auto; zoom: 1;
   display: flex; flex-direction: column; align-items: center; gap: 16px;
   padding: 18px 16px 26px;
   text-align: center;
 }
-.compact .layer-footer .stage > * { position: static; }
+.compact .footer-stage > * { position: static; }
 .compact .status {
   display: grid; grid-template-columns: 112px 1fr; align-items: center; gap: 0 14px;
   width: 100%; max-width: 420px; padding: 14px;
@@ -530,8 +556,9 @@ img { display: block; }
 .compact .memory p { margin: 0; font-size: 15px; line-height: 1.35; }
 .compact .memory p span { font-size: 18px; }
 .compact .memory cite { display: block; margin-top: 6px; font-family: var(--sans); font-style: normal; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3); }
+.compact .legal { flex-direction: column; height: auto; gap: 8px; padding: 0 16px 26px; }
 .compact .copyright, .compact .trademark {
-  display: block; margin: 0; white-space: normal;
+  display: block; flex: none; margin: 0; white-space: normal; text-align: center;
   font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3);
 }
 

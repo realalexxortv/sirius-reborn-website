@@ -10,6 +10,9 @@ re-cut if the mockup changes.
 
 Coordinates below are mockup pixels. The browser chrome ends at y=78, so
 "design" coordinates used by the CSS are (x, y - 78).
+
+The characters, the title and the nebula backdrop are made by
+tools/build_layers.py.
 """
 from pathlib import Path
 
@@ -23,7 +26,8 @@ UI = ROOT / "assets" / "ui"
 NEWS = ROOT / "images" / "news"
 
 PAGE_Y = 78          # first page row below the browser chrome
-FOOTER_Y = 937       # footer strip starts here (mockup px)
+FOOTER_Y = 937       # footer panels strip (mockup px)
+FOOTER_END = 1095
 PANEL = (397, 316, 1492, 935)            # news panel outer frame box
 SLICE = dict(top=88, right=60, bottom=60, left=94)
 
@@ -218,19 +222,32 @@ for i, (cx, cy) in enumerate(centres, 1):
     Image.fromarray(th).save(NEWS / f"mockup-{i}.jpg", quality=92)
     print(f"  images/news/mockup-{i}.jpg")
 
-# ------------------------------------------------------------------ background
-# Fixed hero layer: everything above the footer, with the parts the site draws
-# live (tagline, build badge text, the news panel) painted out.
-bg = img.copy()
-bg = inpaint(bg, text_mask((515, 260, 1200, 287), 40, 2), 5)          # tagline
-bg = inpaint(bg, text_mask((1385, 105, 1640, 150), 45, 2), 5)        # badge text
-bg = inpaint_big(bg, (px0 - 2, py0 - 2, px1 + 2, py1 + 2))            # news panel
-bg = bg[PAGE_Y:FOOTER_Y]
-Image.fromarray(bg).save(UI / "bg.jpg", quality=90)
-print(f"  assets/ui/bg.jpg  {bg.shape[1]}x{bg.shape[0]}")
+# ------------------------------------------------------------ header pieces
+# Build badge (text painted out, drawn live) and the star ornament under the
+# tagline. Both sit on the nebula, so they're cut out of their backdrop.
+def glow_alpha(rgb, floor=14):
+    """Light-on-dark art -> RGBA that looks the same over any dark backdrop."""
+    f = rgb.astype(np.float32)
+    a = np.clip((f.max(2) - floor) / (255 - floor), 0, 1)
+    col = np.clip(f / np.maximum(a, 1e-3)[..., None], 0, 255)
+    return rgba(col.astype(np.uint8), a * 255)
+
+
+hd = img.copy()
+hd = inpaint(hd, text_mask((515, 260, 1200, 287), 40, 2), 5)          # tagline
+hd = inpaint(hd, text_mask((1385, 105, 1640, 150), 45, 2), 5)        # badge text
+bx0, by0, bx1, by1, ch = 1360, 95, 1673, 158, 9
+badge = hd[by0:by1, bx0:bx1]
+bm = np.zeros(badge.shape[:2], np.uint8)
+W_, H_ = bx1 - bx0 - 1, by1 - by0 - 1
+cv2.fillPoly(bm, [np.array([(ch, 0), (W_ - ch, 0), (W_, ch), (W_, H_ - ch), (W_ - ch, H_),
+                            (ch, H_), (0, H_ - ch), (0, ch)])], 1)
+save(rgba(badge, feather(bm, 0.7)), "badge.png")
+save(glow_alpha(hd[287:309, 580:1135]), "tagline-ornament.png")
 
 # ----------------------------------------------------------------------- footer
-# Opaque fixed strip. Status ring/text and the copyright line are live HTML.
+# The three footer panels as one strip; status ring/text are live HTML. The
+# copyright line under them is HTML too, with only its centre star cut out.
 ft = img.copy()
 # The ring and its glow fill the panel's height, so any 2D inpaint drags the
 # glow in from above/below. Interpolate each row between the clean columns on
@@ -242,10 +259,9 @@ left = ft[rows, RX0 - 3:RX0].mean(1, keepdims=True)
 right = ft[rows, RX1:RX1 + 3].mean(1, keepdims=True)
 ft[rows, RX0:RX1] = ((1 - t) * left + t * right).round().astype(np.uint8)
 ft = inpaint(ft, text_mask((205, 958, 470, 1052), 70, 2), 5)        # status text
-ft = inpaint(ft, text_mask((210, 1110, 815, 1140), 45, 2), 5)       # © line (left half)
-ft = ft[FOOTER_Y:]
-Image.fromarray(ft).save(UI / "footer.jpg", quality=92)
-print(f"  assets/ui/footer.jpg  {ft.shape[1]}x{ft.shape[0]}")
+Image.fromarray(ft[FOOTER_Y:FOOTER_END]).save(UI / "footer-panels.jpg", quality=92)
+print(f"  assets/ui/footer-panels.jpg  1712x{FOOTER_END - FOOTER_Y}")
+save(glow_alpha(ft[1094:1152, 826:888]), "footer-star.png")
 
 # Community hub icons (circle crops so the hover glow follows the badge).
 HUB = [("discord", 1285), ("forums", 1389), ("wiki", 1492), ("socials", 1597)]
@@ -259,15 +275,9 @@ for name, hx in HUB:
     save(rgba(c, np.clip((r - d) / 1.5, 0, 1) * 255), f"hub-{name}.png")
     hub_boxes[name] = (hx - r, hy - r - FOOTER_Y)
 
-# ------------------------------------------------------------- misc / branding
-logo = img[92:198, 48:158]
-Image.fromarray(logo).resize((64, 62), Image.LANCZOS).save(ROOT / "favicon.png")
+# ----------------------------------------------------------------- favicon
+Image.open(UI / "star.png").resize((64, 64), Image.LANCZOS).save(ROOT / "favicon.png")
 print("  favicon.png")
-title = img[80:258, 585:1140]
-Image.fromarray(title).save(UI / "title.jpg", quality=90)
-print("  assets/ui/title.jpg")
-Image.fromarray(img[PAGE_Y:]).resize((1200, 753), Image.LANCZOS).save(ROOT / "og-image.jpg", quality=85)
-print("  og-image.jpg")
 
 print("\nDesign coordinates (x, y, w, h):")
 for k, v in nav_boxes.items():

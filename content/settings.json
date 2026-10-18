@@ -1,14 +1,14 @@
 {
   "tagline": "The 2003 Classic, Fully Remade in Unreal Engine",
-  "build": "Development Build 0.9.4.7",
-  "engine": "Unreal Engine 5",
+  "build": "Development Build 0.2.1",
+  "engine": "Unreal Engine 5.8.3",
   "status": {
-    "percent": 42,
+    "percent": 10,
     "phase": "Alpha Development Phase",
-    "target": "Target Release: 2026"
+    "target": "Target Release: Early 2027"
   },
   "links": {
-    "discord": "",
+    "discord": "https://discord.com/invite/7H4ndQNEJW",
     "forums": "",
     "wiki": "",
     "socials": ""

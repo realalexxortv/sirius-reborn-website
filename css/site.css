@@ -455,7 +455,7 @@ img { display: block; }
 }
 .hub:not([href]) { cursor: default; }
 .hub-discord { left: 1236px; --glow: #8d97ff; }
-.hub-forums  { left: 1339px; --glow: #6cb5ff; }
+.hub-youtube { left: 1339px; --glow: #6cb5ff; }
 .hub-wiki    { left: 1444px; --glow: #f2c27c; }
 .hub-socials { left: 1548px; --glow: #49b3f4; }
 

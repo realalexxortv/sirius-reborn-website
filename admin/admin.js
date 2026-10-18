@@ -317,6 +317,13 @@
       e.preventDefault();
       var btn = f.querySelector('button[type=submit]');
       cfg = { owner: f.owner.value.trim(), repo: f.repo.value.trim(), branch: f.branch.value.trim(), token: f.token.value.trim() };
+      if (!/^(github_pat_|gh[pousr]_)/.test(cfg.token)) {
+        var bad = document.getElementById('login-error');
+        bad.textContent = 'That isn’t a GitHub token. Tokens start with github_pat_ (or ghp_ for classic ones). ' +
+          'The name you gave the token on GitHub is only a label: paste the long value GitHub showed you once, right after generating it.';
+        bad.hidden = false;
+        return;
+      }
       busy(btn, true, 'Checking…');
       verify().then(function () {
         saveCfg(cfg, f.remember.checked);
@@ -337,7 +344,7 @@
       document.getElementById('tabs').hidden = false;
       document.getElementById('who').hidden = false;
     }).catch(function (e) {
-      if (e.status === 401) throw new Error('GitHub rejected that token.');
+      if (e.status === 401) throw new Error('GitHub rejected that token. It may be mistyped, expired or revoked: generate a new one and paste its full value.');
       if (e.status === 404) throw new Error('Repository not found, or the token has no access to it.');
       throw e;
     });

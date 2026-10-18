@@ -47,22 +47,27 @@ img { display: block; }
     #03060c;
 }
 
-/* The characters stand just outside the column, partly behind it. */
+/* The characters stand just outside the column, partly behind it. When the
+ * gutter is too narrow for them they slide further behind the column instead
+ * of being cut off by the window edge. --ar is each cutout's width / height. */
 .char {
   position: fixed; z-index: -1;
-  width: auto;
+  height: var(--h);
+  width: calc(var(--h) * var(--ar));
   pointer-events: none;
   user-select: none;
 }
 .char-man {
+  --h: clamp(340px, 58vh, 600px);
+  --ar: .593;
   top: 18px;
-  right: calc(50% + var(--col) / 2 - 150px);
-  height: clamp(260px, 44vh, 440px);
+  right: min(50% + var(--col) / 2 - 110px, 100% - var(--h) * var(--ar));
 }
 .char-lady {
-  top: 96px;
-  left: calc(50% + var(--col) / 2 - 80px);
-  height: clamp(420px, 80vh, 780px);
+  --h: clamp(420px, 76vh, 740px);
+  --ar: .615;
+  top: 80px;
+  left: min(50% + var(--col) / 2 - 110px, 100% - var(--h) * var(--ar));
 }
 
 /* ------------------------------------------------------------------- page */

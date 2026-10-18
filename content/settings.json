@@ -1,0 +1,18 @@
+{
+  "tagline": "The 2003 Classic, Fully Remade in Unreal Engine",
+  "build": "Development Build 0.9.4.7",
+  "engine": "Unreal Engine 5",
+  "status": {
+    "percent": 42,
+    "phase": "Alpha Development Phase",
+    "target": "Target Release: 2026"
+  },
+  "links": {
+    "discord": "",
+    "forums": "",
+    "wiki": "",
+    "socials": ""
+  },
+  "timelineFooter": "More updates coming soon. Stay tuned.  •  Live long. Fly free.",
+  "copyright": "© {year} Sirius Reborn Project. Not affiliated with Microsoft or Digital Anvil."
+}

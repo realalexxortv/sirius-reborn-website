@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Sirius Reborn CMS</title>
+  <link rel="icon" href="../favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/"><img src="../favicon.png" alt=""> Sirius Reborn <span>CMS</span></a>
+    <nav class="tabs" id="tabs" hidden>
+      <a href="#/news" data-tab="news">News</a>
+      <a href="#/pages" data-tab="pages">Pages</a>
+      <a href="#/settings" data-tab="settings">Settings</a>
+    </nav>
+    <div class="who" id="who" hidden>
+      <span id="repo-label"></span>
+      <a id="site-link" target="_blank" rel="noopener">View site ↗</a>
+      <button class="link" id="signout">Sign out</button>
+    </div>
+  </header>
+
+  <main id="app"><p class="muted center">Loading…</p></main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- ============================================================ templates -->
+
+  <template id="tpl-login">
+    <section class="card login">
+      <h1>Sign in</h1>
+      <p class="muted">The CMS saves straight to the site's GitHub repository. GitHub Pages republishes the site about a minute after each save.</p>
+      <form id="login-form">
+        <div class="row3">
+          <label>Owner <input name="owner" required autocomplete="off"></label>
+          <label>Repository <input name="repo" required autocomplete="off"></label>
+          <label>Branch <input name="branch" required autocomplete="off"></label>
+        </div>
+        <label>GitHub access token
+          <input name="token" type="password" required autocomplete="off" placeholder="github_pat_…">
+        </label>
+        <label class="check"><input type="checkbox" name="remember" checked> Remember on this device</label>
+        <p class="error" id="login-error" hidden></p>
+        <button class="btn primary" type="submit">Sign in</button>
+      </form>
+      <details class="help">
+        <summary>How do I get a token?</summary>
+        <ol>
+          <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub → Settings → Developer settings → Fine-grained tokens → Generate new token</a>.</li>
+          <li>Under <b>Repository access</b> choose <i>Only select repositories</i> and pick this site's repository.</li>
+          <li>Under <b>Permissions → Repository permissions</b> set <b>Contents</b> to <i>Read and write</i>.</li>
+          <li>Generate it, copy it and paste it above. It is stored only in this browser.</li>
+        </ol>
+      </details>
+    </section>
+  </template>
+
+  <template id="tpl-news">
+    <section class="card">
+      <div class="card-head">
+        <h1>News</h1>
+        <a class="btn primary" href="#/news/new">+ New post</a>
+      </div>
+      <ul class="post-list" id="post-list"></ul>
+    </section>
+  </template>
+
+  <template id="tpl-post">
+    <form class="card editor" id="post-form">
+      <div class="card-head">
+        <h1 id="editor-title">New post</h1>
+        <div class="actions">
+          <a class="btn" href="#/news">Cancel</a>
+          <button class="btn danger" type="button" id="delete-post" hidden>Delete</button>
+          <button class="btn primary" type="submit" id="save-post">Publish</button>
+        </div>
+      </div>
+      <div class="grid-meta">
+        <label class="span2">Title <input name="title" required maxlength="140"></label>
+        <label>Date <input name="date" type="date" required></label>
+        <label>Tag <input name="tag" list="tag-list" maxlength="40" placeholder="e.g. Gameplay"></label>
+        <label class="span2">Slug (URL) <input name="slug" required pattern="[a-z0-9]+(-[a-z0-9]+)*" title="lowercase letters, numbers and dashes"></label>
+        <label class="check draft"><input type="checkbox" name="draft"> Draft (hidden from the site)</label>
+      </div>
+      <datalist id="tag-list"></datalist>
+
+      <div class="grid-image">
+        <div class="thumb-preview" id="thumb-preview">
+          <img class="pic" id="thumb-pic" alt="">
+          <img class="ring" src="../assets/ui/thumb-ring.png" alt="">
+        </div>
+        <div class="image-fields">
+          <label>Timeline image
+            <span class="inline">
+              <input name="image" placeholder="images/uploads/…">
+              <button class="btn" type="button" data-upload="image">Upload…</button>
+            </span>
+          </label>
+          <label class="check"><input type="checkbox" name="showImage" checked> Also show it at the top of the post (if it's at least 480px wide)</label>
+          <label>Excerpt <small class="muted" id="excerpt-count"></small>
+            <textarea name="excerpt" rows="3" maxlength="400" required placeholder="Two or three sentences shown on the timeline."></textarea>
+          </label>
+        </div>
+      </div>
+
+      <div class="md-editor">
+        <div class="md-pane">
+          <div class="toolbar" data-for="body">
+            <button type="button" data-md="bold" title="Bold (Ctrl+B)"><b>B</b></button>
+            <button type="button" data-md="italic" title="Italic (Ctrl+I)"><i>I</i></button>
+            <button type="button" data-md="h2" title="Heading">H2</button>
+            <button type="button" data-md="h3" title="Subheading">H3</button>
+            <button type="button" data-md="link" title="Link (Ctrl+K)">Link</button>
+            <button type="button" data-md="ul" title="Bulleted list">• List</button>
+            <button type="button" data-md="quote" title="Quote">❝</button>
+            <button type="button" data-md="image" title="Upload image">Image…</button>
+            <button type="button" data-md="video" title="Embed YouTube video">Video</button>
+            <span class="muted hint">Markdown</span>
+          </div>
+          <textarea name="body" id="body" spellcheck="true" placeholder="Write the full post here…"></textarea>
+        </div>
+        <div class="preview-pane">
+          <div class="preview-label">Preview</div>
+          <article class="md" id="preview"></article>
+        </div>
+      </div>
+    </form>
+  </template>
+
+  <template id="tpl-pages">
+    <section class="card">
+      <div class="card-head"><h1>Pages</h1></div>
+      <ul class="page-list" id="page-list"></ul>
+    </section>
+  </template>
+
+  <template id="tpl-page">
+    <form class="card editor" id="page-form">
+      <div class="card-head">
+        <h1 id="page-heading">Page</h1>
+        <div class="actions">
+          <a class="btn" href="#/pages">Cancel</a>
+          <button class="btn primary" type="submit">Publish</button>
+        </div>
+      </div>
+      <div class="grid-meta">
+        <label class="span2">Heading <input name="title" required></label>
+        <label class="span2">Subtitle <input name="subtitle"></label>
+      </div>
+      <div class="md-editor">
+        <div class="md-pane">
+          <div class="toolbar" data-for="body">
+            <button type="button" data-md="bold"><b>B</b></button>
+            <button type="button" data-md="italic"><i>I</i></button>
+            <button type="button" data-md="h2">H2</button>
+            <button type="button" data-md="h3">H3</button>
+            <button type="button" data-md="link">Link</button>
+            <button type="button" data-md="ul">• List</button>
+            <button type="button" data-md="quote">❝</button>
+            <button type="button" data-md="image">Image…</button>
+            <button type="button" data-md="video">Video</button>
+            <span class="muted hint">Tip: put several images on one line for a gallery grid</span>
+          </div>
+          <textarea name="body" id="body"></textarea>
+        </div>
+        <div class="preview-pane">
+          <div class="preview-label">Preview</div>
+          <article class="md" id="preview"></article>
+        </div>
+      </div>
+    </form>
+  </template>
+
+  <template id="tpl-settings">
+    <form class="card editor" id="settings-form">
+      <div class="card-head">
+        <h1>Settings</h1>
+        <div class="actions"><button class="btn primary" type="submit">Publish</button></div>
+      </div>
+      <fieldset>
+        <legend>Header</legend>
+        <label>Tagline <input name="tagline"></label>
+        <div class="row2">
+          <label>Build badge, line 1 <input name="build"></label>
+          <label>Build badge, line 2 <input name="engine"></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Project status</legend>
+        <label>Percent complete <span class="inline"><input name="status.percent" type="range" min="0" max="100" step="1"><output id="pct-out"></output></span></label>
+        <div class="row2">
+          <label>Phase <input name="status.phase"></label>
+          <label>Target <input name="status.target"></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Community hub links (leave empty to disable a button)</legend>
+        <div class="row2">
+          <label>Discord <input name="links.discord" type="url" placeholder="https://discord.gg/…"></label>
+          <label>Forums <input name="links.forums" type="url"></label>
+          <label>Wiki <input name="links.wiki" type="url"></label>
+          <label>Socials <input name="links.socials" type="url"></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Text</legend>
+        <label>End of timeline <input name="timelineFooter"></label>
+        <label>Copyright line <small class="muted">({year} becomes the current year)</small> <input name="copyright"></label>
+      </fieldset>
+    </form>
+  </template>
+
+  <input type="file" id="file-input" accept="image/*" hidden>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+  <script src="../js/content.js"></script>
+  <script src="config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

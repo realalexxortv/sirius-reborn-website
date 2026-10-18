@@ -26,15 +26,6 @@
       "image": "images/news/mockup-3.jpg",
       "excerpt": "Exploring the visual and technical overhaul of iconic locations. From Planet Manhattan to the far edges of Sirius.",
       "body": "Exploring the visual and technical overhaul of the sector's most iconic locations.\n\n## Planets that feel like places\n\nPlanets in Sirius Reborn get layered atmospheres, cloud cover with real-time shadowing and city lights on the night side. Manhattan's sprawl is visible from orbit, and the approach to a landing zone now reads as descending into a living world.\n\n## Bases and stations\n\nEvery base is being rebuilt from the original layouts as a reference. We keep the silhouettes you know and replace the low-poly interiors with fully lit hangars, bars and equipment dealers.\n\n## The edges of Sirius\n\nBeyond the house worlds, the frontier systems get the same treatment: ice fields with volumetric fog, radiation clouds that actually obscure your view and debris fields you'll want to fly slowly through.\n\nNext up: a closer look at how we light nebulae.\n"
-    },
-    {
-      "slug": "combat-reimagined-weapons-and-effects",
-      "title": "Combat Reimagined: Weapons & Effects",
-      "date": "2024-02-22",
-      "tag": "Gameplay",
-      "image": "images/news/mockup-4.jpg",
-      "excerpt": "Next-gen weapon effects, particle systems, and space combat feedback powered by Niagara and Chaos Physics.",
-      "body": "Next-generation weapon effects, particle systems and combat feedback, powered by Niagara and Chaos Physics.\n\n## Every gun has a voice\n\nLasers, particle cannons, plasma and tachyon weapons each get distinct projectiles, muzzle flashes, impact effects and audio. You should be able to tell what's shooting at you without looking at the target panel.\n\n## Impacts with weight\n\nShield hits ripple across the bubble around a ship; hull hits throw sparks and debris. Chaos Physics drives wreckage, so destroyed ships break apart in pieces that drift, tumble and collide.\n\n## Readable combat\n\nEffects are bright, but readability comes first. Hit markers, shield and hull feedback and missile warnings are tuned so the screen never turns into noise during a dogfight.\n\nExpect gameplay footage once the first combat build is stable.\n"
     }
   ]
 }

@@ -5,13 +5,17 @@ subtitle: The Sirius Reborn Project
 
 ## A love letter to a classic
 
-In 2003, Digital Anvil's *Freelancer* gave a generation of players the Sirius sector: a living universe of trade lanes, jump gates, factions and freedom. **Sirius Reborn** is a fan-made remake that rebuilds that universe in Unreal Engine.
+I grew up with Freelancer and spent ungodly amounts of time either just idling on Omicron Theta chatting with folks or dogfighting all night until my mom told to go to fucking sleep :D
+
+To this day I think no other space sim ever came close to what Freelancer had achieved.
+
+It's hard to pinpoint what it was exactly, but I would guess a mixture of easy and intuitive gameplay that didn't punish you (except the damn cruise disruptors), amazing music and SFX, a very alive universe, JUNI!, and handcrafted systems.
+
+Once AI was able to decompile entire games I saw my opportunity. Using Claude Code (AI) and the ability for it to directly communicate with Unreal Editor, I saw it#s FINALLY possible to build the Freelancer we always wanted. 23 years later.
 
 ## Our goals
 
-- **Faithful at heart.** The systems, the flight feel and the story stay true to the original.
-- **Modern in form.** Dynamic lighting, true-scale ships, rebuilt planets and bases, and new effects throughout.
-- **Made by fans.** This is a non-commercial community project.
+- **Faithful at heart.** 
 
 ## Legal
 

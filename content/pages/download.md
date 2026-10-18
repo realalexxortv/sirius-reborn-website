@@ -6,11 +6,12 @@ subtitle: Join the Flight
 ## Not quite ready for launch
 
 Sirius Reborn is currently in its **alpha development phase**. There's no public build yet. When there is, it will be available right here.
+There will be early playable demos though!
 
 ## Stay in the loop
 
 - Follow the **Development News Timeline** on the home page.
-- Join the community through the **Community Hub** below to hear about test builds first.
+- Join the community in [discord](https://discord.com/invite/7H4ndQNEJW) to always be informed early.
 
 ## System requirements (preliminary)
 

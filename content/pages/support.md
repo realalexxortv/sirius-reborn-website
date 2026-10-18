@@ -3,20 +3,22 @@ title: Support
 subtitle: Help & Contact
 ---
 
-## Need a hand?
+## 100% FREE. ALWAYS.
+#### But we need help anyway :D
 
-Sirius Reborn is a fan project in active development. If you run into trouble with a development build, these are the fastest ways to get help.
+Not just for legal reasons (Freelancer is a Microsoft Brand, I am not allowed to make money with it), but also because I want people to enjoy this without a huge paywall.
 
-- **Community Discord**: the quickest place to ask questions and report problems. Use the Discord button in the Community Hub below.
-- **Bug reports**: include your build number (shown in the top-right badge), your operating system and graphics card, and steps to reproduce.
+Sirius Reborn will always stay free.
 
-## Frequently asked questions
+However, I still have costs to cover, especially online servers for you guys to play, as well as Unreal Editor Assets to make the world look better, and of course, paying for the AI Agents.
 
-**Do I need the original game?**
-Details will be announced closer to the first public build.
+TL;DR: Tons of costs, always free, I need any support from you :)
 
-**Which platforms are supported?**
-Windows and Linux are our development targets.
+So if you want to help, here are a bunch of ways. Any amount is enough.
 
-**Can I help?**
-We're always happy to hear from 3D artists, sound designers and testers. Get in touch through the community channels below.
+## How to support the project.
+
+**One Time Payment**
+
+
+**Subscription (always cancellable)**

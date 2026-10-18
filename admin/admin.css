@@ -216,9 +216,11 @@ button.link { background: none; border: 0; padding: 0; font: inherit; color: var
   border-radius: 8px;
   box-shadow: 0 10px 40px #000c, 0 0 20px #4fa9ff33;
   transform: translate(-50%, 140%);
-  transition: transform .25s ease;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform .25s ease, opacity .25s ease;
 }
-.toast.show { transform: translate(-50%, 0); }
+.toast.show { transform: translate(-50%, 0); opacity: 1; pointer-events: auto; }
 .toast.error { border-color: #6b2a28; background: #2a1012; box-shadow: 0 10px 40px #000c, 0 0 20px #ff6b5e33; }
 
 @media (max-width: 860px) {

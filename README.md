@@ -17,7 +17,7 @@ It's a static site (plain HTML/CSS/JS, no build step) that runs on GitHub Pages 
 | `content/pages/*.md` | Support, Gallery, About and Download pages (Markdown with a `title` / `subtitle` header). |
 | `content/settings.json` | Tagline, build badge, project status ring, Community Hub links, footer text. |
 | `assets/ui/` | Every button, frame and panel, cropped straight from the mockup, plus the character cutouts and the nebula. |
-| `tools/extract_assets.py` | Crops the buttons, frames and panels from `tools/mockup.png`. |
+| `tools/extract_assets.py` | Crops the buttons, frames and panels from `tools/mockup.png`, and turns the mockup's Forums hub badge and caption into YouTube (caption set in Barlow, `tools/fonts/`). |
 | `tools/build_layers.py` | Cuts the characters (Trent from `tools/trent.png`, Juni from `tools/juni.jpg`) and the title (from the mockup) out of their backgrounds with rembg, grades the characters to match the nebula, and builds the nebula backdrop. |
 | `admin/` | The CMS. |
 

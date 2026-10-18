@@ -114,13 +114,13 @@ only = set(sys.argv[1:]) or {"characters", "title", "nebula"}
 if "characters" in only:
     print("Cutting characters from tools/trent.png and tools/juni.jpg")
 
-    # Trent, left (blue side): head to waist, fading out behind the nav. His
-    # render is a dark night shot, so the shadows are lifted and cooled.
-    trent = character(ROOT / "tools" / "trent.png", (600, 0, 1240, 860), "birefnet-portrait",
-                      lambda a: fade_bottom(a, a.shape[0] - 300, a.shape[0] - 20),
+    # Trent, left (blue side): down to the hips, then fade, framed like Juni.
+    # His render is a dark night shot, so the shadows are lifted and cooled.
+    trent = character(ROOT / "tools" / "trent.png", (640, 0, 1540, 1200), "birefnet-portrait",
+                      lambda a: fade_bottom(a, 920, 1180),
                       gamma=0.72, gain=1.12, shadow_tint=(0.0, 0.018, 0.06),
                       rim_color=(0.45, 0.7, 1.0), rim_side=-1, rim_strength=1.6)
-    save(fit_height(trent, 880), "char-man.webp", quality=90, method=6)
+    save(fit_height(trent, 1204), "char-man.webp", quality=90, method=6)
 
     # Juni, right (orange side): down to the hips, then fade. Her render is lit
     # by flat daylight, so she's darkened, warmed and given an orange rim.

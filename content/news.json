@@ -12,15 +12,6 @@
       "draft": false
     },
     {
-      "slug": "capital-ships-and-scale",
-      "title": "Capital Ships & Scale in Sirius Reborn",
-      "date": "2024-04-18",
-      "tag": "Feature Preview",
-      "image": "images/news/mockup-2.jpg",
-      "excerpt": "A first look at the next-generation capital ship technology. Massive scale, detailed modeling, and cinematic presentation like never before.",
-      "body": "A first look at our next-generation capital ship pipeline.\n\nIn the original game, battleships and cruisers were imposing, but the hardware of the day limited how close you could get before the illusion broke. In Sirius Reborn, capital ships are built to be inspected up close.\n\n## Real scale\n\nEvery capital ship is modelled at true scale relative to fighters. A Liberty dreadnought now dwarfs your ship the way it always did in your imagination, with turret batteries, hangar bays and running lights you can fly between.\n\n## Detail where it counts\n\nWith Nanite we can keep hull plating, greebles and damage decals on the model itself instead of faking them with textures. Damage is persistent across a fight, so a long engagement leaves its scars.\n\n## Cinematic presentation\n\nDocking approaches, jump gate transits and fleet arrivals get dedicated camera work. They're short and skippable, but they sell the size of the universe you're flying in.\n\nWe'll share more on individual ship classes in upcoming updates.\n"
-    },
-    {
       "slug": "rebuilding-liberty-planets-and-colonies",
       "title": "Rebuilding Liberty: Planets and Colonies",
       "date": "2024-03-07",

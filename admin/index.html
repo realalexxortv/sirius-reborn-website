@@ -17,6 +17,7 @@
     <nav class="tabs" id="tabs" hidden>
       <a href="#/news" data-tab="news">News</a>
       <a href="#/pages" data-tab="pages">Pages</a>
+      <a href="#/wiki" data-tab="wiki">Wiki</a>
       <a href="#/settings" data-tab="settings">Settings</a>
     </nav>
     <div class="who" id="who" hidden>
@@ -177,6 +178,54 @@
     </form>
   </template>
 
+  <template id="tpl-wiki">
+    <section class="card">
+      <div class="card-head"><h1>Wiki</h1></div>
+      <p class="muted intro">Entries come from the game repo. Each update arrives as a pull request on GitHub and goes live when you merge it.
+        Names, stats, images and the original game's descriptions come from there. Here you add our own text, and it stays when the game updates an entry.</p>
+      <div id="wiki-lists"></div>
+    </section>
+  </template>
+
+  <template id="tpl-wiki-entry">
+    <form class="card editor" id="wiki-form">
+      <div class="card-head">
+        <h1 id="wiki-heading">Wiki entry</h1>
+        <div class="actions">
+          <a class="btn" href="#/wiki">Cancel</a>
+          <a class="btn" id="wiki-view" target="_blank" rel="noopener">View on site ↗</a>
+          <button class="btn primary" type="submit">Publish</button>
+        </div>
+      </div>
+      <div class="wiki-auto" id="wiki-auto"></div>
+      <label>Summary <small class="muted">(one or two sentences under the images)</small>
+        <textarea name="summary" rows="2" maxlength="400" placeholder="What makes it special in Sirius Reborn."></textarea>
+      </label>
+      <label class="check"><input type="checkbox" name="hide"> Hidden (not shown on the site)</label>
+      <div class="md-editor">
+        <div class="md-pane">
+          <div class="toolbar" data-for="body">
+            <button type="button" data-md="bold"><b>B</b></button>
+            <button type="button" data-md="italic"><i>I</i></button>
+            <button type="button" data-md="h2">H2</button>
+            <button type="button" data-md="h3">H3</button>
+            <button type="button" data-md="link">Link</button>
+            <button type="button" data-md="ul">• List</button>
+            <button type="button" data-md="quote">❝</button>
+            <button type="button" data-md="image">Image…</button>
+            <button type="button" data-md="video">Video</button>
+            <span class="muted hint">Our own text, shown above the stats</span>
+          </div>
+          <textarea name="body" id="body" placeholder="Design notes, lore, how it flies…"></textarea>
+        </div>
+        <div class="preview-pane">
+          <div class="preview-label">Preview</div>
+          <article class="md" id="preview"></article>
+        </div>
+      </div>
+    </form>
+  </template>
+
   <template id="tpl-settings">
     <form class="card editor" id="settings-form">
       <div class="card-head">
@@ -204,7 +253,7 @@
         <div class="row2">
           <label>Discord <input name="links.discord" type="url" placeholder="https://discord.gg/…"></label>
           <label>YouTube <input name="links.youtube" type="url" placeholder="https://www.youtube.com/@…"></label>
-          <label>Wiki <input name="links.wiki" type="url"></label>
+          <label>Wiki <input name="links.wiki" placeholder="#/wiki (the site's own wiki) or https://…"></label>
           <label>Socials <input name="links.socials" type="url"></label>
         </div>
       </fieldset>

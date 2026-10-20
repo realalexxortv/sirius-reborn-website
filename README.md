@@ -15,6 +15,7 @@ It's a static site (plain HTML/CSS/JS, no build step) that runs on GitHub Pages 
 | `js/content.js` | Markdown rendering, date formatting and front matter helpers, shared by the site and the CMS. |
 | `content/news.json` | All news posts: title, date, tag, timeline image, excerpt and the full Markdown body. |
 | `content/pages/*.md` | Support, Gallery, About and Download pages (Markdown with a `title` / `subtitle` header). |
+| `content/wiki/*.json` | The wiki: ships, systems, stations and weapons (see [The wiki](#the-wiki)). |
 | `content/settings.json` | Tagline, build badge, project status ring, Community Hub links, footer text. |
 | `assets/ui/` | Every button, frame and panel, cropped straight from the mockup, plus the character cutouts and the nebula. |
 | `tools/extract_assets.py` | Crops the buttons, frames and panels from `tools/mockup.png`, and turns the mockup's Forums hub badge and caption into YouTube (caption set in Barlow, `tools/fonts/`). |
@@ -40,9 +41,20 @@ You can then:
 
 - **News**: write, edit, unpublish (draft) and delete posts. Each post has a timeline image (shown in the round frame), an excerpt for the timeline and a full Markdown body with a live preview. You can upload images and embed YouTube videos.
 - **Pages**: edit Support, Gallery, About and Download. Put several images on one line in the Gallery to get a grid.
-- **Settings**: tagline, build badge, project status percentage and text, Community Hub links (an empty link disables its button) and footer text.
+- **Wiki**: add our own summary and text to a wiki entry, or hide it (see below).
+- **Settings**: tagline, build badge, project status percentage and text, Community Hub links (an empty link disables its button; `#/wiki` opens the site's wiki) and footer text.
 
 Uploaded images go to `images/uploads/`.
+
+## The wiki
+
+`#/wiki` on the site (the footer's Wiki button) lists the ships, systems, stations and weapons rebuilt for the game, one page each with in-game shots and stats.
+
+The game repo fills it. After a change there that adds or changes one of them, its `Scripts/run_update_wiki.sh` reads the game's data, takes new in-game shots of what changed and opens a pull request here named **Wiki update** (or adds to the one already open). Nothing goes live until that PR is merged on GitHub.
+
+- `content/wiki/<kind>.json` holds the entries, `images/wiki/<kind>/` their shots (WebP).
+- Values from the original game's data (stats, the original descriptions) are marked on the site with a small amber CD icon: *pulled from the original Freelancer (2003) game data*.
+- `summary`, `body` and `hidden` belong to the CMS (Wiki tab). Updates from the game keep them, and replace everything else.
 
 ## Local preview
 

@@ -4,6 +4,8 @@
  *   content/news.json      { "posts": [ {slug, title, date, tag, image, excerpt, body, draft} ] }
  *   content/settings.json  build badge, project status, community links, footer text
  *   content/pages/*.md     Support / Gallery / About / Download, with a small front matter block
+ *   content/wiki/<kind>.json  { "entries": [ {id, summary, body, hidden, name, subtitle, stats, tables, description, images, ...} ] }
+ *                          written by the game repo's wiki update PRs; summary / body / hidden are edited in the CMS
  */
 (function (global) {
   'use strict';
@@ -12,6 +14,21 @@
     'August', 'September', 'October', 'November', 'December'];
 
   var PAGES = ['support', 'gallery', 'about', 'download'];
+
+  var WIKI_KINDS = [
+    { key: 'ships', title: 'Ships', one: 'Ship' },
+    { key: 'systems', title: 'Systems', one: 'System' },
+    { key: 'stations', title: 'Stations', one: 'Station' },
+    { key: 'weapons', title: 'Weapons', one: 'Weapon' }
+  ];
+
+  // Marks a wiki value taken from the original game's data: a small CD (the game came on one).
+  var OG_TITLE = 'Pulled from the original Freelancer (2003) game data';
+  function ogIcon() {
+    return '<span class="og" title="' + OG_TITLE + '"><svg viewBox="0 0 16 16" role="img" aria-label="' + OG_TITLE + '">' +
+      '<circle class="og-disc" cx="8" cy="8" r="7"/><path class="og-shine" d="M8 3.2a4.8 4.8 0 0 1 4.8 4.8"/>' +
+      '<circle class="og-hole" cx="8" cy="8" r="2"/></svg></span>';
+  }
 
   function escapeHtml(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -106,6 +123,9 @@
 
   global.SR = {
     PAGES: PAGES,
+    WIKI_KINDS: WIKI_KINDS,
+    OG_TITLE: OG_TITLE,
+    ogIcon: ogIcon,
     escapeHtml: escapeHtml,
     slugify: slugify,
     dateParts: dateParts,

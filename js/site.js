@@ -70,6 +70,8 @@
     });
     document.querySelectorAll('[data-link]').forEach(function (a) {
       var url = get(s, 'links.' + a.getAttribute('data-link'));
+      // "#/wiki" and other links into this site open in place
+      if (url && url[0] === '#') a.removeAttribute('target'); else a.target = '_blank';
       if (url) { a.href = url; a.removeAttribute('aria-disabled'); a.title = ''; }
       else { a.removeAttribute('href'); a.setAttribute('aria-disabled', 'true'); a.title = 'Coming soon'; }
     });
@@ -156,6 +158,100 @@
     });
   }
 
+  // ------------------------------------------------------------------ wiki
+  // content/wiki/<kind>.json, filled by the game repo's wiki update PRs. Values marked og come from the original game's
+  // data and get SR.ogIcon(); summary and body are our own text from the CMS.
+  var wikiCache = {};
+  function loadWiki(kind) {
+    return wikiCache[kind] || (wikiCache[kind] = getJSON('content/wiki/' + kind + '.json').then(function (d) {
+      return (d.entries || []).filter(function (e) { return !e.hidden; });
+    }, function () { return []; }));
+  }
+
+  function wikiKind(key) { return SR.WIKI_KINDS.filter(function (k) { return k.key === key; })[0]; }
+
+  function wikiCardHtml(kind, e) {
+    var img = e.images && e.images[0];
+    return '<a class="wiki-card" href="#/wiki/' + kind + '/' + encodeURIComponent(e.id) + '">' +
+      (img ? '<img src="' + esc(img) + '" alt="" loading="lazy">' : '<span class="wiki-noimg"></span>') +
+      '<b>' + esc(e.name) + '</b>' + (e.subtitle ? '<small>' + esc(e.subtitle) + '</small>' : '') + '</a>';
+  }
+
+  function ogLegendHtml() {
+    return '<p class="og-legend">' + SR.ogIcon() + '<span>' + esc(SR.OG_TITLE) + '</span></p>';
+  }
+
+  function renderWiki(kindKey) {
+    var kinds = kindKey ? [wikiKind(kindKey)] : SR.WIKI_KINDS;
+    if (!kinds[0]) return Promise.resolve(renderNotFound());
+    if (kindKey) setHead(kinds[0].title, 'Sirius Wiki', kinds[0].title + ' | Wiki');
+    else setHead('Sirius Wiki', 'The Remake, Piece by Piece', 'Wiki');
+    return Promise.all(kinds.map(function (k) { return loadWiki(k.key); })).then(function (lists) {
+      var html = kinds.map(function (k, i) {
+        if (!lists[i].length) return '';
+        var head = kindKey ? '' : '<h2><a href="#/wiki/' + k.key + '">' + esc(k.title) + '</a></h2>';
+        return '<section class="wiki-section">' + head +
+          '<div class="wiki-grid">' + lists[i].map(function (e) { return wikiCardHtml(k.key, e); }).join('') + '</div></section>';
+      }).join('');
+      view.innerHTML = '<div class="wiki">' +
+        (kindKey ? '<a class="more back" href="#/wiki">Wiki</a>'
+          : '<p class="wiki-intro">Every ship, system, station and weapon rebuilt for Sirius Reborn so far. New ones show up here as they make it into the game.</p>') +
+        (html || '<p class="empty">Nothing here yet. Stay tuned.</p>') + '</div>';
+    });
+  }
+
+  function ogValue(row) { return esc(row.value) + (row.og ? ' ' + SR.ogIcon() : ''); }
+
+  function wikiTableHtml(t) {
+    return '<div class="wiki-table-wrap"><table class="wiki-table">' +
+      '<caption>' + esc(t.title) + (t.og ? ' ' + SR.ogIcon() : '') + '</caption>' +
+      '<thead><tr>' + t.columns.map(function (c) { return '<th>' + esc(c) + '</th>'; }).join('') + '</tr></thead>' +
+      '<tbody>' + t.rows.map(function (r) {
+        return '<tr>' + r.map(function (c) { return '<td>' + esc(c) + '</td>'; }).join('') + '</tr>';
+      }).join('') + '</tbody></table></div>';
+  }
+
+  function renderWikiEntry(kindKey, id) {
+    var k = wikiKind(kindKey);
+    if (!k) return Promise.resolve(renderNotFound());
+    return loadWiki(k.key).then(function (list) {
+      var e = list.filter(function (x) { return x.id === id; })[0];
+      if (!e) return renderNotFound();
+      setHead(e.name, e.subtitle || k.one, e.name + ' | Wiki');
+      var imgs = e.images || [];
+      var stats = e.stats || [];
+      var desc = String(e.description || '').split(/\n+/).filter(Boolean);
+      view.innerHTML = '<article class="wiki-entry">' +
+        '<a class="more back" href="#/wiki/' + k.key + '">' + esc(k.title) + '</a>' +
+        (imgs.length ? '<figure class="wiki-hero"><a href="' + esc(imgs[0]) + '" target="_blank" rel="noopener">' +
+          '<img src="' + esc(imgs[0]) + '" alt="' + esc(e.name) + '"></a></figure>' : '') +
+        (imgs.length > 1 ? '<div class="wiki-thumbs">' + imgs.map(function (src, i) {
+          return '<button type="button" data-src="' + esc(src) + '"' + (i ? '' : ' aria-current="true"') + '>' +
+            '<img src="' + esc(src) + '" alt=""></button>';
+        }).join('') + '</div>' : '') +
+        (e.summary ? '<p class="wiki-summary">' + esc(e.summary) + '</p>' : '') +
+        (e.body ? '<div class="md">' + SR.renderMarkdown(e.body) + '</div>' : '') +
+        (stats.length ? '<table class="wiki-stats"><tbody>' + stats.map(function (r) {
+          return '<tr><th>' + esc(r.label) + '</th><td>' + ogValue(r) + '</td></tr>';
+        }).join('') + '</tbody></table>' : '') +
+        (e.tables || []).map(wikiTableHtml).join('') +
+        (desc.length ? '<section class="wiki-og-text"><h3>From the original game ' + SR.ogIcon() + '</h3>' +
+          desc.map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('') + '</section>' : '') +
+        ogLegendHtml() +
+        '<p class="wiki-meta">Added ' + esc(SR.formatDate(e.added)) +
+          (e.updated && e.updated !== e.added ? ' · Updated ' + esc(SR.formatDate(e.updated)) : '') + '</p>' +
+      '</article>';
+      var hero = view.querySelector('.wiki-hero');
+      view.querySelectorAll('.wiki-thumbs button').forEach(function (b) {
+        b.addEventListener('click', function () {
+          hero.querySelector('img').src = hero.querySelector('a').href = b.getAttribute('data-src');
+          view.querySelectorAll('.wiki-thumbs button').forEach(function (x) { x.removeAttribute('aria-current'); });
+          b.setAttribute('aria-current', 'true');
+        });
+      });
+    });
+  }
+
   function renderNotFound() {
     setHead('Lost in Space', 'Signal not found', 'Not found');
     view.innerHTML = '<p class="empty">Nothing at these coordinates. <a class="more" href="#/">Back to the timeline</a></p>';
@@ -169,6 +265,7 @@
 
     if (!parts.length) job = renderTimeline();
     else if (parts[0] === 'news' && parts[1]) job = renderPost(parts[1]);
+    else if (parts[0] === 'wiki') { navKey = 'wiki'; job = parts[2] ? renderWikiEntry(parts[1], parts[2]) : renderWiki(parts[1]); }
     else if (SR.PAGES.indexOf(parts[0]) >= 0) { navKey = parts[0]; job = renderPage(parts[0]); }
     else job = Promise.resolve(renderNotFound());
 

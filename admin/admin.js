@@ -526,6 +526,90 @@
     });
   }
 
+  // Wiki ------------------------------------------------------------------
+  // content/wiki/<kind>.json comes from the game repo's wiki update PRs; the CMS edits only summary, body and hidden.
+  function wikiPath(kind) { return 'content/wiki/' + kind + '.json'; }
+
+  function viewWiki() {
+    mount('tpl-wiki');
+    var box = document.getElementById('wiki-lists');
+    box.innerHTML = '<p class="muted">Loading…</p>';
+    Promise.all(SR.WIKI_KINDS.map(function (k) {
+      return getJson(wikiPath(k.key)).catch(function (e) { if (e.status === 404) return {}; throw e; });
+    })).then(function (all) {
+      var html = SR.WIKI_KINDS.map(function (k, i) {
+        var entries = all[i].entries || [];
+        if (!entries.length) return '';
+        return '<h2 class="list-head">' + esc(k.title) + '</h2><ul class="post-list">' + entries.map(function (e) {
+          var href = '#/wiki/' + k.key + '/' + encodeURIComponent(e.id);
+          return '<li>' +
+            '<span class="mini-thumb wide">' + (e.images && e.images[0] ? '<img src="' + esc(previewSrc(e.images[0])) + '" alt="">' : '') + '</span>' +
+            '<a class="post-link" href="' + href + '"><b>' + esc(e.name) + '</b>' +
+              '<small>' + esc(e.subtitle || k.one) + ' · updated ' + esc(SR.formatDate(e.updated)) + '</small></a>' +
+            (e.hidden ? '<span class="badge">Hidden</span>' : '') +
+            (!e.summary && !e.body ? '<span class="badge quiet">No text yet</span>' : '') +
+            '<span class="row-actions"><a class="btn small" href="' + href + '">Edit</a></span></li>';
+        }).join('') + '</ul>';
+      }).join('');
+      box.innerHTML = html || '<p class="muted">No entries yet. The first wiki update from the game repo fills this in.</p>';
+    }).catch(function (e) { box.innerHTML = '<p class="error">' + esc(e.message) + '</p>'; });
+  }
+
+  // What the game repo wrote, read-only: images, stats (og = from the original game) and the original description.
+  function wikiAutoHtml(e) {
+    var og = function (on) { return on ? ' ' + SR.ogIcon() : ''; };
+    return (e.images && e.images.length ? '<div class="wiki-images">' + e.images.map(function (src) {
+        return '<img src="' + esc(previewSrc(src)) + '" alt="">';
+      }).join('') + '</div>' : '') +
+      ((e.stats || []).length ? '<table class="wiki-stats"><tbody>' + e.stats.map(function (r) {
+        return '<tr><th>' + esc(r.label) + '</th><td>' + esc(r.value) + og(r.og) + '</td></tr>';
+      }).join('') + '</tbody></table>' : '') +
+      (e.description ? '<p class="wiki-desc">' + esc(e.description).replace(/\n+/g, '<br>') + og(true) + '</p>' : '') +
+      '<p class="muted small">' + SR.ogIcon() + ' ' + esc(SR.OG_TITLE) + '. These come from the game repo and change with its updates.</p>';
+  }
+
+  function viewWikiEntry(kind, id) {
+    if (!SR.WIKI_KINDS.some(function (k) { return k.key === kind; })) { location.hash = '#/wiki'; return; }
+    mount('tpl-wiki-entry');
+    var f = document.getElementById('wiki-form');
+    var preview = document.getElementById('preview');
+    var name = id;
+    f.querySelectorAll('input, textarea, button').forEach(function (el) { el.disabled = true; });
+    document.getElementById('wiki-view').href = siteUrl() + '#/wiki/' + kind + '/' + encodeURIComponent(id);
+    getJson(wikiPath(kind)).then(function (d) {
+      var e = (d.entries || []).filter(function (x) { return x.id === id; })[0];
+      if (!e) { toast('That entry no longer exists.', 'error'); location.hash = '#/wiki'; return; }
+      name = e.name;
+      document.getElementById('wiki-heading').textContent = e.name;
+      document.getElementById('wiki-auto').innerHTML = wikiAutoHtml(e);
+      f.summary.value = e.summary || '';
+      f.body.value = e.body || '';
+      f.elements.hide.checked = !!e.hidden;
+      f.querySelectorAll('input, textarea, button').forEach(function (el) { el.disabled = false; });
+      refresh();
+      trackDirty(f);
+    }).catch(failed);
+    function refresh() { renderPreview(f.body.value || '*No text yet.*', preview); }
+    f.addEventListener('input', refresh);
+    wireToolbar(f, f.body);
+    f.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var btn = f.querySelector('button[type=submit]');
+      busy(btn, true);
+      updateJson(wikiPath(kind), function (d) {
+        var e = (d.entries || []).filter(function (x) { return x.id === id; })[0];
+        if (!e) throw new Error('That entry is gone from the wiki (a game update removed or renamed it).');
+        e.summary = f.summary.value.trim();
+        e.body = f.body.value.trim() ? f.body.value.replace(/\s+$/, '') + '\n' : '';
+        e.hidden = f.elements.hide.checked;
+      }, 'Wiki: update text of ' + name).then(function () {
+        dirty = false;
+        busy(btn, false);
+        published('Wiki text');
+      }).catch(function (err) { busy(btn, false); failed(err); });
+    });
+  }
+
   // Settings --------------------------------------------------------------
   function get(o, path) { return path.split('.').reduce(function (x, k) { return x == null ? x : x[k]; }, o); }
   function set(o, path, v) {
@@ -575,6 +659,7 @@
     });
     if (parts[0] === 'pages') return parts[1] ? viewPage(parts[1]) : viewPages();
     if (parts[0] === 'settings') return viewSettings();
+    if (parts[0] === 'wiki') return parts[2] ? viewWikiEntry(parts[1], parts[2]) : viewWiki();
     if (parts[0] === 'news' && parts[1] === 'new') return viewPost(null);
     if (parts[0] === 'news' && parts[1] === 'edit' && parts[2]) return viewPost(parts[2]);
     return viewNews();

@@ -114,6 +114,17 @@
     });
   }
 
+  // Discussion happens on the community Discord rather than in on-site comments.
+  function discussHtml() {
+    var url = get(state.settings, 'links.discord');
+    if (!url) return '';
+    return '<aside class="discuss">' +
+      '<p>Thoughts on this update? Join the conversation with the community.</p>' +
+      '<a class="discuss-btn" href="' + esc(url) + '" target="_blank" rel="noopener">' +
+        '<img src="assets/ui/hub-discord.png" alt="" width="40" height="40">Discuss on Discord</a>' +
+    '</aside>';
+  }
+
   function renderPost(slug) {
     return loadPosts().then(function (posts) {
       var p = posts.filter(function (x) { return x.slug === slug; })[0];
@@ -126,6 +137,7 @@
         '<h2 class="post-title">' + esc(p.title) + '</h2>' +
         (p.image && p.showImage !== false ? '<figure class="post-hero" hidden><img src="' + esc(p.image) + '" alt=""></figure>' : '') +
         '<div class="md">' + SR.renderMarkdown(p.body || p.excerpt || '') + '</div>' +
+        discussHtml() +
       '</article>';
       // Timeline thumbnails are often small; only show a hero image when it's big enough.
       var hero = view.querySelector('.post-hero');

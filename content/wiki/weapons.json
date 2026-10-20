@@ -1,3 +1,247 @@
 {
-  "entries": []
+  "entries": [
+    {
+      "id": "death-s-hand",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Death's Hand",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (gun)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "600 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "750 m/s",
+          "og": true
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Class",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Death's Hand Mk I",
+              "5",
+              "40.4",
+              "20.2",
+              "337",
+              "12.6",
+              "70 cr"
+            ],
+            [
+              "Death's Hand Mk II",
+              "6",
+              "52.7",
+              "26.4",
+              "439",
+              "16.5",
+              "140 cr"
+            ],
+            [
+              "Death's Hand Mk III",
+              "7",
+              "69.7",
+              "34.8",
+              "581",
+              "21.8",
+              "250 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "G2 \"Death's Hand\" Order Laser Cannon Mk I\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields.",
+      "images": [
+        "images/wiki/weapons/death-s-hand-model.webp"
+      ],
+      "source": "81b7aa46c201",
+      "added": "2026-10-20",
+      "updated": "2026-10-20"
+    },
+    {
+      "id": "justice",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Justice",
+      "subtitle": "Laser · Liberty",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (gun)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "600 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "750 m/s",
+          "og": true
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Class",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Justice Mk I",
+              "1",
+              "16.3",
+              "8.1",
+              "136",
+              "5.1",
+              "500 cr"
+            ],
+            [
+              "Justice Mk II",
+              "2",
+              "20.4",
+              "10.2",
+              "170",
+              "6.4",
+              "860 cr"
+            ],
+            [
+              "Justice Mk III",
+              "3",
+              "24.9",
+              "12.4",
+              "208",
+              "7.8",
+              "1,830 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "R6-A \"Justice\" Liberty Laser Cannon Mk I\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields.",
+      "images": [
+        "images/wiki/weapons/justice-model.webp"
+      ],
+      "source": "81b7aa46c201",
+      "added": "2026-10-20",
+      "updated": "2026-10-20"
+    },
+    {
+      "id": "vengeance",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Vengeance",
+      "subtitle": "Laser · Liberty",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (gun)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "600 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "750 m/s",
+          "og": true
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Class",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Vengeance Mk I",
+              "4",
+              "31.6",
+              "15.8",
+              "263",
+              "9.9",
+              "3,710 cr"
+            ],
+            [
+              "Vengeance Mk II",
+              "5",
+              "40.4",
+              "20.2",
+              "337",
+              "12.6",
+              "7,460 cr"
+            ],
+            [
+              "Vengeance Mk III",
+              "6",
+              "52.7",
+              "26.4",
+              "439",
+              "16.5",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "R8-A \"Vengeance\" Liberty Laser Cannon Mk I\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields.",
+      "images": [
+        "images/wiki/weapons/vengeance-model.webp"
+      ],
+      "source": "81b7aa46c201",
+      "added": "2026-10-20",
+      "updated": "2026-10-20"
+    }
+  ]
 }

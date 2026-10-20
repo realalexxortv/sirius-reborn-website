@@ -1,3 +1,91 @@
 {
-  "entries": []
+  "entries": [
+    {
+      "id": "newark-station",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Newark Station",
+      "subtitle": "New York",
+      "stats": [
+        {
+          "label": "System",
+          "value": "New York",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Interspace Commerce",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "CLASS: Chasins\nGRAVITY: Complete\nDOCKING: Yes\nAMENITIES: Yes\nPOPULATION: 5K",
+      "images": [
+        "images/wiki/stations/newark-station-close.webp",
+        "images/wiki/stations/newark-station-far_planet.webp"
+      ],
+      "source": "520b1c594d81",
+      "added": "2026-10-20",
+      "updated": "2026-10-20"
+    },
+    {
+      "id": "orbital-station",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Orbital Station",
+      "subtitle": "New York",
+      "stats": [
+        {
+          "label": "System",
+          "value": "New York",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Liberty Police, Inc.",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/stations/orbital-station-close.webp",
+        "images/wiki/stations/orbital-station-far_planet.webp"
+      ],
+      "source": "d93a53e9d1e3",
+      "added": "2026-10-20",
+      "updated": "2026-10-20"
+    },
+    {
+      "id": "trenton-outpost",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Trenton Outpost",
+      "subtitle": "New York",
+      "stats": [
+        {
+          "label": "System",
+          "value": "New York",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Universal Shipping",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "CLASS: Cochrane\nGRAVITY: Partial\nDOCKING: Yes\nAMENITIES: Yes\nPOPULATION: 1K",
+      "images": [
+        "images/wiki/stations/trenton-outpost-close.webp",
+        "images/wiki/stations/trenton-outpost-far_planet.webp"
+      ],
+      "source": "dbffb95b9a8f",
+      "added": "2026-10-20",
+      "updated": "2026-10-20"
+    }
+  ]
 }

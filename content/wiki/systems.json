@@ -1,3 +1,58 @@
 {
-  "entries": []
+  "entries": [
+    {
+      "id": "new-york",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "New York",
+      "subtitle": "Liberty space",
+      "stats": [
+        {
+          "label": "House",
+          "value": "Liberty",
+          "og": true
+        },
+        {
+          "label": "Planets",
+          "value": "Planet Manhattan, Planet Pittsburgh, Maine",
+          "og": true
+        },
+        {
+          "label": "Bases",
+          "value": "Planet Manhattan, Planet Pittsburgh, Battleship Missouri, Trenton Outpost, Norfolk Shipyard, Newark Station, West Point Military Academy, Detroit Munitions, Fort Bush, Buffalo Base, Rochester Base, Baltimore Shipyard",
+          "og": true
+        },
+        {
+          "label": "Trade lanes",
+          "value": "10",
+          "og": true
+        },
+        {
+          "label": "Jump gates",
+          "value": "5",
+          "og": true
+        },
+        {
+          "label": "Jump holes",
+          "value": "4",
+          "og": true
+        },
+        {
+          "label": "Connects to",
+          "value": "California, Colorado, Texas, Alaska, Magellan",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "LIBERTY\nSettled Planets\nManhattan\nPittsburgh\nBases\nFt. Bush\nNewark Station\nTrenton Outpost\nDetroit Munitions\nWest Point Academy\nNorfolk Shipyard\nBaltimore Shipyard\nBattleship Missouri\nCorporations\nAgeira Technologies\nInterspace Commerce\nUniversal Shipping\nDeep Space Engineering\nLiberty Police, Inc.\nCriminals\nLiberty Rogues\nOutcasts\nXenos\nJunkers\nProduces\nBoron\nSide Arms\nLuxury Consumer Goods\nToxic Waste",
+      "images": [
+        "images/wiki/systems/new-york-start.webp",
+        "images/wiki/systems/new-york-planet.webp"
+      ],
+      "source": "a8ff26c812fb",
+      "added": "2026-10-20",
+      "updated": "2026-10-20"
+    }
+  ]
 }

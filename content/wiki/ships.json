@@ -1,0 +1,312 @@
+{
+  "entries": [
+    {
+      "id": "defender",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Defender",
+      "subtitle": "Heavy Fighter · Liberty Navy",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Heavy Fighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "1,600",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "895",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "80 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "1,500",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "157 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "30 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "14",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "14",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "5 (class 4 max)",
+          "og": true
+        },
+        {
+          "label": "Turret mounts",
+          "value": "1",
+          "og": true
+        },
+        {
+          "label": "Max shield class",
+          "value": "4",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "150",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "10,400 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Battleship Mississippi (Texas), Battleship Missouri (New York), Battleship Rio Grande (Colorado), Battleship Yukon (California)",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "BDR-337 \"Defender\" Liberty Heavy Fighter\n“The best of the best,” this heavily outfitted rig represents the pinnacle of Liberty’s technological advances and design savoir faire. With its elevated armor and power rating as standard and the additional mount for firepower, it’s no wonder that this ship is the number one choice of the Liberty Armed Forces.",
+      "images": [
+        "images/wiki/ships/defender-hero.webp",
+        "images/wiki/ships/defender-side.webp",
+        "images/wiki/ships/defender-top.webp",
+        "images/wiki/ships/defender-rear.webp"
+      ],
+      "source": "278a11f0101c",
+      "added": "2026-10-20",
+      "updated": "2026-10-20"
+    },
+    {
+      "id": "rhino",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Rhino",
+      "subtitle": "Freighter · Liberty Police, Inc.",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Freighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "1,600",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "765",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "80 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "1,300",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "126 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "80 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "12",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "12",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "3 (class 3 max)",
+          "og": true
+        },
+        {
+          "label": "Turret mounts",
+          "value": "5",
+          "og": true
+        },
+        {
+          "label": "Max shield class",
+          "value": "3",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "300",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "7,900 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Planet Denver (Colorado), Planet Houston (Texas), Planet Los Angeles (California), Planet Manhattan (New York), Planet Pittsburgh (New York)",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "EL-HiL27 \"Rhino\" Liberty Freighter\nWith the economic foundation of Sirius firmly built on Liberty’s commercial interests, the Rhino certainly lives up to its name. The vast cargo hold is the hallmark of this impressive beast, surrounded by doubly reinforced structure and protective armor hull. This and the advanced weapon system make the Rhino a force to be reckoned with.",
+      "images": [
+        "images/wiki/ships/rhino-hero.webp",
+        "images/wiki/ships/rhino-side.webp",
+        "images/wiki/ships/rhino-top.webp",
+        "images/wiki/ships/rhino-rear.webp"
+      ],
+      "source": "a9cd615ca381",
+      "added": "2026-10-20",
+      "updated": "2026-10-20"
+    },
+    {
+      "id": "starflier",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Starflier",
+      "subtitle": "Light Fighter · Samura Industries",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Light Fighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "1,100",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "600",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "80 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "95 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "20 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "10",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "10",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "3 (class 3 max)",
+          "og": true
+        },
+        {
+          "label": "Max shield class",
+          "value": "3",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "100",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "6,000 credits",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "CTE 750AE Civilian Starflier\nManufactured in the heartland of Liberty, the 750 is the most economical ship of its class. With ample cargo space and improved handling over previous models, this ship distinguishes itself as the veritable “workhorse for the working man.”",
+      "images": [
+        "images/wiki/ships/starflier-hero.webp",
+        "images/wiki/ships/starflier-side.webp",
+        "images/wiki/ships/starflier-top.webp",
+        "images/wiki/ships/starflier-rear.webp"
+      ],
+      "source": "8b075bc0f12d",
+      "added": "2026-10-20",
+      "updated": "2026-10-20"
+    }
+  ]
+}

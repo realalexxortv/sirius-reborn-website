@@ -1,6 +1,17 @@
 {
   "posts": [
     {
+      "slug": "multiple-ships-liveries-and-redoing-it-all-again",
+      "title": "Multiple Ships, Liveries, and redoing it all again",
+      "date": "2026-10-21",
+      "tag": "Developer Log",
+      "image": "images/uploads/2026-10-21-de60ae2b-6848-4444-a072-e3d82be5bfba-mvi5gukd.jpg",
+      "showImage": true,
+      "excerpt": "Redoing the Starflier, Rhino and Defender, and multiple ships hangar!",
+      "body": "# Never enough...\n\nI have this issue that when I do something I demand absolute perfection from myself (and others (the AI lol)) and while it helps with details, it's not a healthy way to go about things :D\n\nEither way, the closest to \"perfect\" I could've gotten was with Tripo AI modelling which turns images into wireframe models (textured) which I can then port 1:1 into the game.\n\nHence why now have the new Starflier:\n\n![](images/uploads/2026-10-21-c02340c4-a134-4d0c-85c4-caec41025b44-mvi5j6v6.jpg)\n\nNew Rhino:\n\n![](images/uploads/2026-10-21-image-mvi5jnqr.jpg)\n\nAnd currently rebuilding the Defender:\n\n![](images/uploads/2026-10-21-de60ae2b-6848-4444-a072-e3d82be5bfba-mvi5k7xy.jpg)\n\nIngame shots in the wiki soon.\n\nNow I wanna redo the stations... man, it's not healthy :D\n\n## Hangars, Multiple Ships and Liveries\n\nYes, you heard that right, multiple ships being owned will be possible. Well, it already is implemented :D Not a dream, it's already working.\n\nWith a storage where you can keep guns and cargo and whatnot.\n\nI also wanna put more effort into the trading system of the game because I thought the original lacked this a bit.\n\nWhat else happened:\n* Liveries for each ship per player are possible and already work (eventually I wanna add an editor so you can make em yourself)\n* Player storage MMO baseline for the servers works\n* NPC combat is in\n* Friendly NPCs\n* Redid the Trade lane VFX\n* Missiles, torpedos, shields, all added to the game (no visuals yet)\n* Main menu with graphics settings etc\n* Redid the badlands nebula (again)\n* Lots of bugfixes\n",
+      "draft": false
+    },
+    {
       "slug": "0-2-1-we-have-a-working-new-york-and-rhino-all-new",
       "title": "0.2.1 we have a working New York and Rhino ALL NEW!",
       "date": "2026-10-18",

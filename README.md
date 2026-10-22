@@ -14,11 +14,12 @@ It's a static site (plain HTML/CSS/JS, no build step) that runs on GitHub Pages 
 | `index.html`, `css/site.css`, `js/site.js` | The site. A hash router renders the news timeline, single posts and the four pages inside the main panel. |
 | `js/content.js` | Markdown rendering, date formatting and front matter helpers, shared by the site and the CMS. |
 | `content/news.json` | All news posts: title, date, tag, timeline image, excerpt and the full Markdown body. |
-| `content/pages/*.md` | Support, Gallery, About and Download pages (Markdown with a `title` / `subtitle` header). |
+| `content/pages/*.md` | Donate, Gallery, About, How it's done and Download pages (Markdown with a `title` / `subtitle` header). |
 | `content/wiki/*.json` | The wiki: ships, systems, stations and weapons (see [The wiki](#the-wiki)). |
 | `content/settings.json` | Tagline, build badge, project status ring, Community Hub links, footer text. |
 | `assets/ui/` | Every button, frame and panel, cropped straight from the mockup, plus the character cutouts and the nebula. |
 | `tools/extract_assets.py` | Crops the buttons, frames and panels from `tools/mockup.png`, and turns the mockup's Forums hub badge and caption into YouTube (caption set in Barlow, `tools/fonts/`). |
+| `tools/make_nav_buttons.py` | Makes the Donate and How? buttons, which the mockup does not have: takes a cut button, paints its icon and label out, recolours it for How?, and draws a new icon and a Cinzel label (`tools/fonts/`). |
 | `tools/build_layers.py` | Cuts the characters (Trent from `tools/trent.png`, Juni from `tools/juni.jpg`) and the title (from the mockup) out of their backgrounds with rembg, grades the characters to match the nebula, and builds the nebula backdrop. |
 | `admin/` | The CMS. |
 
@@ -40,7 +41,7 @@ The CMS is a static page that commits to this repository through the GitHub API,
 You can then:
 
 - **News**: write, edit, unpublish (draft) and delete posts. Each post has a timeline image (shown in the round frame), an excerpt for the timeline and a full Markdown body with a live preview. You can upload images and embed YouTube videos.
-- **Pages**: edit Support, Gallery, About and Download. Put several images on one line in the Gallery to get a grid.
+- **Pages**: edit Donate, Gallery, About, How it's done and Download. Put several images on one line in the Gallery to get a grid.
 - **Wiki**: add our own summary and text to a wiki entry, or hide it (see below).
 - **Settings**: tagline, build badge, project status percentage and text, Community Hub links (an empty link disables its button; `#/wiki` opens the site's wiki) and footer text.
 
@@ -72,6 +73,7 @@ If the mockup changes, replace `tools/mockup.png` and run:
 ```sh
 pip install numpy pillow opencv-python-headless "rembg[cpu]"
 python3 tools/extract_assets.py
+python3 tools/make_nav_buttons.py   # after extract_assets.py: builds on its buttons
 python3 tools/build_layers.py   # first run downloads ~1 GB of segmentation models
 ```
 

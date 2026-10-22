@@ -145,10 +145,11 @@ img { display: block; }
 .nav-btn.active:hover img { filter: brightness(1.14) drop-shadow(0 0 5px var(--glow)) drop-shadow(0 0 16px var(--glow)); }
 
 .nav-home     { --glow: #4fa9ff; }
-.nav-support  { --glow: #a76cff; }
+.nav-donate   { --glow: #a76cff; }
 .nav-gallery  { --glow: #4fa9ff; }
 .nav-about    { --glow: #3fd6e6; }
 .nav-download { --glow: #ff9b3d; }
+.nav-how      { --glow: #4fe08a; }
 
 /* ------------------------------------------------------------- the panel */
 
@@ -595,7 +596,7 @@ img { display: block; }
   padding: 6px 4px 10px;
   max-width: 560px; margin: 0 auto;
 }
-.compact .nav-download { grid-column: 1 / -1; justify-self: center; width: 50%; }
+.compact .nav-download, .compact .nav-how { grid-column: 1 / -1; justify-self: center; width: 50%; }
 
 .compact .panel { --fs: .5; margin: 0; width: auto; min-height: 0; }
 .compact .panel-head {

@@ -261,6 +261,7 @@
   function route() {
     var path = decodeURIComponent((location.hash || '#/').slice(1)).replace(/\/+$/, '') || '/';
     var parts = path.split('/').filter(Boolean);
+    if (parts[0] === 'support') parts[0] = 'donate';   // the page's old name, for old links
     var navKey = 'home', job;
 
     if (!parts.length) job = renderTimeline();

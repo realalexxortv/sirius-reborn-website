@@ -3,7 +3,7 @@
  * Content lives in the repo as plain files:
  *   content/news.json      { "posts": [ {slug, title, date, tag, image, excerpt, body, draft} ] }
  *   content/settings.json  build badge, project status, community links, footer text
- *   content/pages/*.md     Support / Gallery / About / Download, with a small front matter block
+ *   content/pages/*.md     Donate / Gallery / About / How it's done / Download, with a small front matter block
  *   content/wiki/<kind>.json  { "entries": [ {id, summary, body, hidden, name, subtitle, stats, tables, description, images, ...} ] }
  *                          written by the game repo's wiki update PRs; summary / body / hidden are edited in the CMS
  */
@@ -13,7 +13,7 @@
   var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
     'August', 'September', 'October', 'November', 'December'];
 
-  var PAGES = ['support', 'gallery', 'about', 'download'];
+  var PAGES = ['donate', 'gallery', 'about', 'how', 'download'];
 
   var WIKI_KINDS = [
     { key: 'ships', title: 'Ships', one: 'Ship' },

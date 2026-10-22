@@ -1,5 +1,5 @@
 ---
-title: Support
+title: Donate
 subtitle: Help & Contact
 ---
 

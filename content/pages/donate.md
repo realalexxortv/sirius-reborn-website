@@ -22,7 +22,7 @@ However, I still have costs to cover, especially online servers for you guys to 
 #### Servers:
 * Not yet
 
-I also paid about 1 grand in Unreal Assets :D but these are mine and not your issue :)
+I also paid about 2 grand in Unreal Assets :D but these are mine and not your issue :)
 
 TL;DR: Tons of costs, always free, I need any support from you :)
 
@@ -30,7 +30,6 @@ So if you want to help, here are a bunch of ways. Any amount is enough.
 
 ## How to support the project.
 
-**One Time Payment**
+**One Time Payment or monthly tips possible**
 
-
-**Subscription (always cancellable)**
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L2C029BN64)

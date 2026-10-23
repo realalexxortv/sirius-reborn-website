@@ -12,6 +12,18 @@ Sirius Reborn will always stay free.
 
 However, I still have costs to cover, especially online servers for you guys to play, as well as Unreal Editor Assets to make the world look better, and of course, paying for the AI Agents.
 
+### Here are the costs for the whole game so far:
+#### AI Agents:
+* Claude Code Max: 90 EUR / month since October 2026
+* Grok Imagine: 15 EUR / month
+* OpenGenAI: 40 EUR / month
+* Tripo 3D Converter: 40 EUR / month
+
+#### Servers:
+* Not yet
+
+I also paid about 1 grand in Unreal Assets :D but these are mine and not your issue :)
+
 TL;DR: Tons of costs, always free, I need any support from you :)
 
 So if you want to help, here are a bunch of ways. Any amount is enough.

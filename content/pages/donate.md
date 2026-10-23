@@ -33,3 +33,9 @@ So if you want to help, here are a bunch of ways. Any amount is enough.
 **One Time Payment or monthly tips possible**
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L2C029BN64)
+
+Or you can donate/subscribe on my Streaming channels, it pours all into this game anyway :D
+
+Youtube: https://www.youtube.com/@alexxortv
+
+Twitch: https://twitch.tv/alexxortv

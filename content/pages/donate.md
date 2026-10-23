@@ -1,6 +1,6 @@
 ---
 title: Donate
-subtitle: Help & Contact
+subtitle: Support the Development of SR!
 ---
 
 ## 100% FREE. ALWAYS.

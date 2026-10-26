@@ -22,8 +22,7 @@
       "tables": [],
       "description": "",
       "images": [
-        "images/wiki/stations/baltimore-shipyard-close.webp",
-        "images/wiki/stations/baltimore-shipyard-far_planet.webp"
+        "images/wiki/stations/baltimore-shipyard-close.webp"
       ],
       "source": "516ee8b4ab83",
       "added": "2026-10-26",
@@ -50,10 +49,7 @@
       ],
       "tables": [],
       "description": "CLASS: Leviathan\nGRAVITY: Complete\nDOCKING: Yes\nAMENITIES: Limited\nPOPULATION: Unknown",
-      "images": [
-        "images/wiki/stations/buffalo-base-close.webp",
-        "images/wiki/stations/buffalo-base-far_planet.webp"
-      ],
+      "images": [],
       "source": "22460398cd85",
       "added": "2026-10-26",
       "updated": "2026-10-26"

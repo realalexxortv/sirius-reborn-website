@@ -79,7 +79,10 @@
       ],
       "tables": [],
       "description": "",
-      "images": [],
+      "images": [
+        "images/wiki/stations/new-york-california-close.webp",
+        "images/wiki/stations/new-york-california-far_planet.webp"
+      ],
       "source": "6fe28797a0e3",
       "added": "2026-10-26",
       "updated": "2026-10-26"

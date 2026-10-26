@@ -1,6 +1,60 @@
 {
   "entries": [
     {
+      "id": "california",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "California",
+      "subtitle": "Liberty space",
+      "stats": [
+        {
+          "label": "House",
+          "value": "Liberty",
+          "og": true
+        },
+        {
+          "label": "Planets",
+          "value": "Planet Los Angeles, Planet Mojave, California Minor",
+          "og": true
+        },
+        {
+          "label": "Bases",
+          "value": "Planet Los Angeles, California Minor, Battleship Yukon, Willard Research Station, San Diego Border Station, Alcatraz Depot",
+          "og": true
+        },
+        {
+          "label": "Trade lanes",
+          "value": "6",
+          "og": true
+        },
+        {
+          "label": "Jump gates",
+          "value": "3",
+          "og": true
+        },
+        {
+          "label": "Jump holes",
+          "value": "2",
+          "og": true
+        },
+        {
+          "label": "Connects to",
+          "value": "New York, Cortez, Magellan, Texas",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "LIBERTY\nSettled Planets\nLos Angeles\nCalifornia Minor\nBases\nBattleship Yukon\nSan Diego Border Station\nCorporations\nSynth Foods\nAgeira Technologies\nPlanetform, Inc.\nCriminals\nLiberty Rogues\nOutcasts\nLane Hackers\nProduces\nFood\nOptical Chips\nOxygen",
+      "images": [
+        "images/wiki/systems/california-start.webp",
+        "images/wiki/systems/california-planet.webp"
+      ],
+      "source": "c94d78e6e5e3",
+      "added": "2026-10-26",
+      "updated": "2026-10-26"
+    },
+    {
       "id": "new-york",
       "summary": "",
       "body": "",
@@ -50,9 +104,9 @@
         "images/wiki/systems/new-york-start.webp",
         "images/wiki/systems/new-york-planet.webp"
       ],
-      "source": "a8ff26c812fb",
+      "source": "22460398cd85",
       "added": "2026-10-20",
-      "updated": "2026-10-20"
+      "updated": "2026-10-26"
     }
   ]
 }

@@ -1,6 +1,17 @@
 {
   "posts": [
     {
+      "slug": "wiki-update-20261026-0731",
+      "title": "Patch notes",
+      "date": "2026-10-26",
+      "tag": "Patch Notes",
+      "image": "images/wiki/systems/california-start.webp",
+      "showImage": true,
+      "excerpt": "New: California, West Point Military Academy, Buffalo Base and 3 more. Updated: Rhino, Starflier, Defender and 4 more.",
+      "body": "What changed in the [wiki](#/wiki):\n\n- New system **[California](#/wiki/systems/california)**: Sun per system: New York's round warm sun back, California keeps its own (issue #331).\n- New station **[West Point Military Academy](#/wiki/stations/west-point-military-academy)**: West Point: baked from Alex's further layout edits.\n- New station **[Buffalo Base](#/wiki/stations/buffalo-base)**: Rock hangar: the pirates' docking bay cut into an asteroid, first Buffalo Base's.\n- New station **[Willard Research Station](#/wiki/stations/willard-research-station)**: Buffalo Base's asteroid base design on ice, the Buffalo build made one tool for every asteroid base.\n- New station **[New York –> California](#/wiki/stations/new-york-california)**: Jump vortex: the blue and black clouds stream three times as fast, smeared over a 60th of a second; the white core keeps its pace.\n- New station **[Baltimore Shipyard](#/wiki/stations/baltimore-shipyard)**: Liberty shipyard: Norfolk and Baltimore Shipyard rebuilt with two dreadnought construction bays.\n- **[Rhino](#/wiki/ships/rhino)**: The under-nose turret moves onto the nose's spine plate between the forward guns.\n- **[Starflier](#/wiki/ships/starflier)**: Starflier lettering as decals: sharp at any distance; Tripo's lettering painted out smoothly.\n- **[Defender](#/wiki/ships/defender)**: Hull plating on the navy underside, each navy panel its own shade.\n- **[New York](#/wiki/systems/new-york)**: FL's Badlands hazard marker removed (Li01_blhazard_1).\n- **[Trenton Outpost](#/wiki/stations/trenton-outpost)**: Trenton Outpost with 2 bays: the middle row's ends (01 the player's, 02 NPC traffic's), the other ends capped.\n- **[Newark Station](#/wiki/stations/newark-station)**: Body made symmetric (Tripo's crumpled recess gone), lettering as decals after the infocard, the old Newark leftovers removed.\n- **[Orbital Station](#/wiki/stations/orbital-station)**: Lamp housings in plain paint; Orbital Station and trade lane rings rebuilt at full detail.\n",
+      "draft": false
+    },
+    {
       "slug": "multiple-ships-liveries-and-redoing-it-all-again",
       "title": "Multiple Ships, Liveries, and redoing it all again",
       "date": "2026-10-21",

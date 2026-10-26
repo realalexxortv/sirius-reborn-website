@@ -102,9 +102,9 @@
         "images/wiki/ships/defender-top.webp",
         "images/wiki/ships/defender-rear.webp"
       ],
-      "source": "278a11f0101c",
+      "source": "24c475a7a577",
       "added": "2026-10-20",
-      "updated": "2026-10-20"
+      "updated": "2026-10-26"
     },
     {
       "id": "rhino",
@@ -208,9 +208,9 @@
         "images/wiki/ships/rhino-top.webp",
         "images/wiki/ships/rhino-rear.webp"
       ],
-      "source": "a9cd615ca381",
+      "source": "56ccd90a9852",
       "added": "2026-10-20",
-      "updated": "2026-10-20"
+      "updated": "2026-10-26"
     },
     {
       "id": "starflier",
@@ -304,9 +304,9 @@
         "images/wiki/ships/starflier-top.webp",
         "images/wiki/ships/starflier-rear.webp"
       ],
-      "source": "8b075bc0f12d",
+      "source": "8fd5121a5178",
       "added": "2026-10-20",
-      "updated": "2026-10-20"
+      "updated": "2026-10-26"
     }
   ]
 }

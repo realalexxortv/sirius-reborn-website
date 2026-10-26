@@ -1,6 +1,90 @@
 {
   "entries": [
     {
+      "id": "baltimore-shipyard",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Baltimore Shipyard",
+      "subtitle": "New York",
+      "stats": [
+        {
+          "label": "System",
+          "value": "New York",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Deep Space Engineering",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/stations/baltimore-shipyard-close.webp",
+        "images/wiki/stations/baltimore-shipyard-far_planet.webp"
+      ],
+      "source": "516ee8b4ab83",
+      "added": "2026-10-26",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "buffalo-base",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Buffalo Base",
+      "subtitle": "New York",
+      "stats": [
+        {
+          "label": "System",
+          "value": "New York",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Liberty Rogues",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "CLASS: Leviathan\nGRAVITY: Complete\nDOCKING: Yes\nAMENITIES: Limited\nPOPULATION: Unknown",
+      "images": [
+        "images/wiki/stations/buffalo-base-close.webp",
+        "images/wiki/stations/buffalo-base-far_planet.webp"
+      ],
+      "source": "22460398cd85",
+      "added": "2026-10-26",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "new-york-california",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "New York –> California",
+      "subtitle": "New York",
+      "stats": [
+        {
+          "label": "System",
+          "value": "New York",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Liberty Police, Inc.",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [],
+      "source": "6fe28797a0e3",
+      "added": "2026-10-26",
+      "updated": "2026-10-26"
+    },
+    {
       "id": "newark-station",
       "summary": "",
       "body": "",
@@ -25,9 +109,9 @@
         "images/wiki/stations/newark-station-close.webp",
         "images/wiki/stations/newark-station-far_planet.webp"
       ],
-      "source": "520b1c594d81",
+      "source": "9121fad7a6e8",
       "added": "2026-10-20",
-      "updated": "2026-10-20"
+      "updated": "2026-10-26"
     },
     {
       "id": "orbital-station",
@@ -54,9 +138,9 @@
         "images/wiki/stations/orbital-station-close.webp",
         "images/wiki/stations/orbital-station-far_planet.webp"
       ],
-      "source": "d93a53e9d1e3",
+      "source": "5580b1996537",
       "added": "2026-10-20",
-      "updated": "2026-10-20"
+      "updated": "2026-10-26"
     },
     {
       "id": "trenton-outpost",
@@ -83,9 +167,67 @@
         "images/wiki/stations/trenton-outpost-close.webp",
         "images/wiki/stations/trenton-outpost-far_planet.webp"
       ],
-      "source": "dbffb95b9a8f",
+      "source": "f0fbf3b4517a",
       "added": "2026-10-20",
-      "updated": "2026-10-20"
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "west-point-military-academy",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "West Point Military Academy",
+      "subtitle": "New York",
+      "stats": [
+        {
+          "label": "System",
+          "value": "New York",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Liberty Navy",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "CLASS: Military\nGRAVITY: CLASSIFIED\nDOCKING: CLASSIFIED\nAMENITIES: CLASSIFIED\nPOPULATION: CLASSIFIED",
+      "images": [
+        "images/wiki/stations/west-point-military-academy-close.webp",
+        "images/wiki/stations/west-point-military-academy-far_planet.webp"
+      ],
+      "source": "22460398cd85",
+      "added": "2026-10-26",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "willard-research-station",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Willard Research Station",
+      "subtitle": "California",
+      "stats": [
+        {
+          "label": "System",
+          "value": "California",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Liberty Navy",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "CLASS: Unknown\nGRAVITY: Complete\nDOCKING: Yes\nAMENITIES: Unknown\nPOPULATION: Unknown",
+      "images": [
+        "images/wiki/stations/willard-research-station-close.webp",
+        "images/wiki/stations/willard-research-station-far_planet.webp"
+      ],
+      "source": "c94d78e6e5e3",
+      "added": "2026-10-26",
+      "updated": "2026-10-26"
     }
   ]
 }

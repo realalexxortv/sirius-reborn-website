@@ -22,11 +22,12 @@
       "tables": [],
       "description": "",
       "images": [
-        "images/wiki/stations/baltimore-shipyard-close.webp"
+        "images/wiki/stations/baltimore-shipyard-close.webp",
+        "images/wiki/stations/baltimore-shipyard-far_planet.webp"
       ],
-      "source": "516ee8b4ab83",
+      "source": "1ac9037d10bf",
       "added": "2026-10-26",
-      "updated": "2026-10-26"
+      "updated": "2026-10-31"
     },
     {
       "id": "buffalo-base",
@@ -49,10 +50,13 @@
       ],
       "tables": [],
       "description": "CLASS: Leviathan\nGRAVITY: Complete\nDOCKING: Yes\nAMENITIES: Limited\nPOPULATION: Unknown",
-      "images": [],
-      "source": "22460398cd85",
+      "images": [
+        "images/wiki/stations/buffalo-base-close.webp",
+        "images/wiki/stations/buffalo-base-far_planet.webp"
+      ],
+      "source": "1c096c94a125",
       "added": "2026-10-26",
-      "updated": "2026-10-26"
+      "updated": "2026-10-31"
     },
     {
       "id": "new-york-california",
@@ -108,9 +112,9 @@
         "images/wiki/stations/newark-station-close.webp",
         "images/wiki/stations/newark-station-far_planet.webp"
       ],
-      "source": "9121fad7a6e8",
+      "source": "3e922c3f9f2c",
       "added": "2026-10-20",
-      "updated": "2026-10-26"
+      "updated": "2026-10-31"
     },
     {
       "id": "orbital-station",
@@ -137,9 +141,9 @@
         "images/wiki/stations/orbital-station-close.webp",
         "images/wiki/stations/orbital-station-far_planet.webp"
       ],
-      "source": "5580b1996537",
+      "source": "bc85909b6c65",
       "added": "2026-10-20",
-      "updated": "2026-10-26"
+      "updated": "2026-10-31"
     },
     {
       "id": "trenton-outpost",
@@ -166,9 +170,9 @@
         "images/wiki/stations/trenton-outpost-close.webp",
         "images/wiki/stations/trenton-outpost-far_planet.webp"
       ],
-      "source": "f0fbf3b4517a",
+      "source": "9a5adafdf510",
       "added": "2026-10-20",
-      "updated": "2026-10-26"
+      "updated": "2026-10-31"
     },
     {
       "id": "west-point-military-academy",
@@ -195,9 +199,9 @@
         "images/wiki/stations/west-point-military-academy-close.webp",
         "images/wiki/stations/west-point-military-academy-far_planet.webp"
       ],
-      "source": "22460398cd85",
+      "source": "1c096c94a125",
       "added": "2026-10-26",
-      "updated": "2026-10-26"
+      "updated": "2026-10-31"
     },
     {
       "id": "willard-research-station",
@@ -224,9 +228,9 @@
         "images/wiki/stations/willard-research-station-close.webp",
         "images/wiki/stations/willard-research-station-far_planet.webp"
       ],
-      "source": "c94d78e6e5e3",
+      "source": "60ee5a9a99d2",
       "added": "2026-10-26",
-      "updated": "2026-10-26"
+      "updated": "2026-10-31"
     }
   ]
 }

@@ -15,7 +15,7 @@
         },
         {
           "label": "Hull strength",
-          "value": "1,600",
+          "value": "2,000",
           "og": true
         },
         {
@@ -25,7 +25,7 @@
         },
         {
           "label": "Top speed",
-          "value": "80 m/s",
+          "value": "76 m/s",
           "og": true
         },
         {
@@ -64,21 +64,6 @@
           "og": true
         },
         {
-          "label": "Gun mounts",
-          "value": "5 (class 4 max)",
-          "og": true
-        },
-        {
-          "label": "Turret mounts",
-          "value": "1",
-          "og": true
-        },
-        {
-          "label": "Max shield class",
-          "value": "4",
-          "og": true
-        },
-        {
           "label": "Mass",
           "value": "150",
           "og": true
@@ -92,6 +77,16 @@
           "label": "Sold at",
           "value": "Battleship Mississippi (Texas), Battleship Missouri (New York), Battleship Rio Grande (Colorado), Battleship Yukon (California)",
           "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "2 large, 3 medium",
+          "og": false
+        },
+        {
+          "label": "Turret mounts",
+          "value": "1 medium",
+          "og": false
         }
       ],
       "tables": [],
@@ -102,9 +97,105 @@
         "images/wiki/ships/defender-top.webp",
         "images/wiki/ships/defender-rear.webp"
       ],
-      "source": "24c475a7a577",
+      "source": "a72e37af41bf",
       "added": "2026-10-20",
-      "updated": "2026-10-26"
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "patriot",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Patriot",
+      "subtitle": "Light Fighter · Liberty Police, Inc.",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Light Fighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "1,105",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "600",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "88 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "1,300",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "126 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "25 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "12",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "12",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "100",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "6,600 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "California Minor (California), Planet Denver (Colorado), Planet Houston (Texas), Planet Los Angeles (California), Planet Manhattan (New York)",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "2 medium, 2 small",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "LZF-6364 \"Patriot\" Liberty Light Fighter\nWith comparable models in active government and military service, the Patriot delivers state-of-the-art maneuverability and punishing firepower in one unbeatable package. Impressive extensibility and a generous cargo hold round out the top-notch appointments.",
+      "images": [
+        "images/wiki/ships/patriot-hero.webp",
+        "images/wiki/ships/patriot-side.webp",
+        "images/wiki/ships/patriot-top.webp",
+        "images/wiki/ships/patriot-rear.webp"
+      ],
+      "source": "4cd8edd684de",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
     },
     {
       "id": "rhino",
@@ -121,7 +212,7 @@
         },
         {
           "label": "Hull strength",
-          "value": "1,600",
+          "value": "2,000",
           "og": true
         },
         {
@@ -170,21 +261,6 @@
           "og": true
         },
         {
-          "label": "Gun mounts",
-          "value": "3 (class 3 max)",
-          "og": true
-        },
-        {
-          "label": "Turret mounts",
-          "value": "5",
-          "og": true
-        },
-        {
-          "label": "Max shield class",
-          "value": "3",
-          "og": true
-        },
-        {
           "label": "Mass",
           "value": "300",
           "og": true
@@ -198,6 +274,16 @@
           "label": "Sold at",
           "value": "Planet Denver (Colorado), Planet Houston (Texas), Planet Los Angeles (California), Planet Manhattan (New York), Planet Pittsburgh (New York)",
           "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "1 medium, 2 small",
+          "og": false
+        },
+        {
+          "label": "Turret mounts",
+          "value": "2 medium, 3 small",
+          "og": false
         }
       ],
       "tables": [],
@@ -208,9 +294,9 @@
         "images/wiki/ships/rhino-top.webp",
         "images/wiki/ships/rhino-rear.webp"
       ],
-      "source": "56ccd90a9852",
+      "source": "fb88d8b804c0",
       "added": "2026-10-20",
-      "updated": "2026-10-26"
+      "updated": "2026-10-31"
     },
     {
       "id": "starflier",
@@ -227,7 +313,7 @@
         },
         {
           "label": "Hull strength",
-          "value": "1,100",
+          "value": "935",
           "og": true
         },
         {
@@ -237,7 +323,7 @@
         },
         {
           "label": "Top speed",
-          "value": "80 m/s",
+          "value": "88 m/s",
           "og": true
         },
         {
@@ -276,16 +362,6 @@
           "og": true
         },
         {
-          "label": "Gun mounts",
-          "value": "3 (class 3 max)",
-          "og": true
-        },
-        {
-          "label": "Max shield class",
-          "value": "3",
-          "og": true
-        },
-        {
           "label": "Mass",
           "value": "100",
           "og": true
@@ -294,6 +370,11 @@
           "label": "Hull price",
           "value": "6,000 credits",
           "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "1 medium, 2 small",
+          "og": false
         }
       ],
       "tables": [],
@@ -304,9 +385,105 @@
         "images/wiki/ships/starflier-top.webp",
         "images/wiki/ships/starflier-rear.webp"
       ],
-      "source": "8fd5121a5178",
+      "source": "920604671b94",
       "added": "2026-10-20",
-      "updated": "2026-10-26"
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "startracker",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Startracker",
+      "subtitle": "Light Fighter · Liberty Police, Inc.",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Light Fighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "1,530",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "821",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "88 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "1,800",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "183 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "30 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "15",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "15",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "100",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "15,300 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Planet Denver (Colorado), Planet Houston (Texas), Planet Los Angeles (California), Planet Manhattan (New York)",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "1 medium, 2 small",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "CTE 1270AV Startracker\nSuperior craftsmanship, excellent handling, a larger cargo bay, and an expanded power rating to support more energy-hungry equipment. These are the characteristics that set the Startracker above other models of comparable price. This fighter is an excellent value in today’s market.",
+      "images": [
+        "images/wiki/ships/startracker-hero.webp",
+        "images/wiki/ships/startracker-side.webp",
+        "images/wiki/ships/startracker-top.webp",
+        "images/wiki/ships/startracker-rear.webp"
+      ],
+      "source": "bd843598f11c",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
     }
   ]
 }

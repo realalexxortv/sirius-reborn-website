@@ -1,6 +1,690 @@
 {
   "entries": [
     {
+      "id": "adv-debilitator-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Adv. Debilitator Turret",
+      "subtitle": "Pulse",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Pulse (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Adv. Debilitator Turret",
+              "6",
+              "202",
+              "23.9",
+              "71.6",
+              "49,320 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "CPT-d \"Advanced Debilitator\" Civilian Pulse Turret\nThis is a pulse-based weapon that does enormous amounts of shield damage, but virtually no hull damage. This weapon is most effective against positron shields, and weakest against graviton shields. This is the best Civilian Pulse Turret available.",
+      "images": [
+        "images/wiki/weapons/adv-debilitator-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "adv-ripper-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Adv. Ripper Turret",
+      "subtitle": "Tachyon · Bretonia",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Tachyon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "800 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Adv. Ripper Turret",
+              "126",
+              "126",
+              "505",
+              "30.3",
+              "7,460 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "3-8r \"Advanced Ripper\" Bretonia Tachyon Turret\nThis is a tachyon-based weapon that has the longest range of all energy-based weapons, but requires enormous amounts of power to fire. This weapon is most effective against molecular shields, and weakest against positron shields.",
+      "images": [
+        "images/wiki/weapons/adv-ripper-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "adv-skyrail-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Adv. Skyrail Turret",
+      "subtitle": "Particle · Bretonia",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Particle (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Adv. Skyrail Turret",
+              "303",
+              "75.8",
+              "1,212",
+              "45.4",
+              "7,460 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "8-2s \"Advanced Skyrail\" Bretonia Particle Turret\nThis is a particle-based weapon which, though delivers significant damage at a decent fire rate, requires enormous amounts of energy. This weapon is most effective against graviton shields, and weakest against molecular shields.",
+      "images": [
+        "images/wiki/weapons/adv-skyrail-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "adv-starbeam-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Adv. Starbeam Turret",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Adv. Starbeam Turret",
+              "28",
+              "28",
+              "233",
+              "7",
+              "1,650 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "CLT-b \"Advanced Starbeam\" Civilian Laser Turret\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields.",
+      "images": [
+        "images/wiki/weapons/adv-starbeam-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "angelito-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Angelito Turret",
+      "subtitle": "Neutron",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Neutron (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Large",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Angelito Turret Mk I",
+              "303",
+              "75.8",
+              "1,212",
+              "36.4",
+              "7,460 cr"
+            ],
+            [
+              "Angelito Turret Mk II",
+              "523",
+              "131",
+              "2,091",
+              "62.7",
+              "24,790 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Corsair \"Angelito\" Neutron Turret Mk I\nThis is a neutron-based weapon which, though very energy efficient, has a shorter effective range than most energy weapons. This weapon is most effective against molecular shields, and weakest against positron shields. Corsair weapons use a bit more energy, but have better ranges and damage outputs.",
+      "images": [
+        "images/wiki/weapons/angelito-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "badariel-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Badariel Turret",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Badariel Turret",
+              "37.4",
+              "37.4",
+              "311",
+              "9.3",
+              "1,830 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Liberty Rogue \"Badariel\" Laser Turret\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields. Liberty Rogue weapons do a little more damage, but use more energy.",
+      "images": [
+        "images/wiki/weapons/badariel-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "barrager-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Barrager Turret",
+      "subtitle": "Photon",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Photon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Barrager Turret Mk I",
+              "38.2",
+              "38.2",
+              "319",
+              "9.2",
+              "860 cr"
+            ],
+            [
+              "Barrager Turret Mk II",
+              "59.2",
+              "59.2",
+              "494",
+              "14.2",
+              "3,710 cr"
+            ],
+            [
+              "Barrager Turret Mk III",
+              "98.9",
+              "98.9",
+              "824",
+              "23.7",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "\"Barrager\" Photon Turret Mk I\nThis is a photon-based weapon which, though providing a high refire rate, requires enormous amounts of energy to deliver a significant damage output. This weapon is most effective against positron shields, and weakest against graviton shields.",
+      "images": [
+        "images/wiki/weapons/barrager-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "borroco-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Borroco Turret",
+      "subtitle": "Pulse",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Pulse (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Borroco Turret",
+              "3.3",
+              "100",
+              "13.2",
+              "47.4",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Corsair \"Borroco\" Pulse Turret\nThis is a pulse-based weapon that does enormous amounts of shield damage, but virtually no hull damage. This weapon is most effective against positron shields, and weakest against graviton shields. Corsair weapons use a bit more energy, but have better ranges and damage outputs.",
+      "images": [
+        "images/wiki/weapons/borroco-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "brave-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Brave Turret",
+      "subtitle": "Particle",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Particle (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "750 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "750 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Brave Turret",
+              "190",
+              "47.4",
+              "758",
+              "35.6",
+              "3,710 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "PT71 \"Brave\" Bounty Hunter Particle Turret\nThis is a particle-based weapon which, though delivers significant damage at a decent fire rate, requires enormous amounts of energy. This weapon is most effective against graviton shields, and weakest against molecular shields. Bounty Hunter weapons have an improved range, but sacrifice damage and energy efficiency.",
+      "images": [
+        "images/wiki/weapons/brave-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "buckshot-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Buckshot Turret",
+      "subtitle": "Particle",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Particle (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "750 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "750 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Buckshot Turret",
+              "978",
+              "244",
+              "3,912",
+              "183",
+              "120,480 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "PT91 \"Buckshot\" Bounty Hunter Particle Turret\nThis is a particle-based weapon which, though delivers significant damage at a decent fire rate, requires enormous amounts of energy. This weapon is most effective against graviton shields, and weakest against molecular shields. Bounty Hunter weapons have an improved range, but sacrifice damage and energy efficiency. This is the best Particle Turret the Bounty Hunters have to offer.",
+      "images": [
+        "images/wiki/weapons/buckshot-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
       "id": "death-s-hand",
       "summary": "",
       "body": "",
@@ -27,6 +711,11 @@
           "label": "Muzzle velocity",
           "value": "750 m/s",
           "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
         }
       ],
       "tables": [
@@ -35,7 +724,6 @@
           "og": true,
           "columns": [
             "Mark",
-            "Class",
             "Hull damage",
             "Shield damage",
             "Hull DPS",
@@ -45,28 +733,25 @@
           "rows": [
             [
               "Death's Hand Mk I",
-              "5",
-              "40.4",
-              "20.2",
-              "337",
+              "50.5",
+              "50.5",
+              "421",
               "12.6",
               "70 cr"
             ],
             [
               "Death's Hand Mk II",
-              "6",
-              "52.7",
-              "26.4",
-              "439",
+              "65.9",
+              "65.9",
+              "549",
               "16.5",
               "140 cr"
             ],
             [
               "Death's Hand Mk III",
-              "7",
-              "69.7",
-              "34.8",
-              "581",
+              "87.1",
+              "87.1",
+              "726",
               "21.8",
               "250 cr"
             ]
@@ -77,9 +762,1295 @@
       "images": [
         "images/wiki/weapons/death-s-hand-model.webp"
       ],
-      "source": "81b7aa46c201",
+      "source": "8d03b6d74d9d",
       "added": "2026-10-20",
-      "updated": "2026-10-20"
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "death-s-hand-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Death's Hand Turret",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Death's Hand Turret Mk I",
+              "50.5",
+              "50.5",
+              "421",
+              "12.6",
+              "70 cr"
+            ],
+            [
+              "Death's Hand Turret Mk II",
+              "87.1",
+              "87.1",
+              "726",
+              "21.8",
+              "250 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "G2t \"Death's Hand\" Order Laser Turret Mk I\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields.",
+      "images": [
+        "images/wiki/weapons/death-s-hand-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "debilitator-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Debilitator Turret",
+      "subtitle": "Pulse",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Pulse (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Debilitator Turret",
+              "3",
+              "100",
+              "11.9",
+              "35.6",
+              "12,870 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "CPT-c \"Debilitator\" Civilian Pulse Turret\nThis is a pulse-based weapon that does enormous amounts of shield damage, but virtually no hull damage. This weapon is most effective against positron shields, and weakest against graviton shields.",
+      "images": [
+        "images/wiki/weapons/debilitator-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "disinfector-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Disinfector Turret",
+      "subtitle": "Neutron · Kusari",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Neutron (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "650 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "650 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Large",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Disinfector Turret",
+              "436",
+              "109",
+              "1,743",
+              "52.3",
+              "24,790 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Va-14 \"Disinfector\" Kusari Neutron Turret\nThis is a neutron-based weapon which, though very energy efficient, has a shorter effective range than most energy weapons. This weapon is most effective against molecular shields, and weakest against positron shields. This is the best Neutron Turret Kusari has to offer.",
+      "images": [
+        "images/wiki/weapons/disinfector-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "dissolver-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Dissolver Turret",
+      "subtitle": "Tachyon · Bretonia",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Tachyon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "800 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Dissolver Turret",
+              "165",
+              "165",
+              "659",
+              "39.5",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "4-7r \"Dissolver\" Bretonia Tachyon Turret\nThis is a tachyon-based weapon that has the longest range of all energy-based weapons, but requires enormous amounts of power to fire. This weapon is most effective against molecular shields, and weakest against positron shields. This is the best Tachyon Turret Bretonia has to offer.",
+      "images": [
+        "images/wiki/weapons/dissolver-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "dragoon-type-1-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Dragoon Type 1 Turret",
+      "subtitle": "Tachyon",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Tachyon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "800 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "702 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Dragoon Type 1 Turret",
+              "118",
+              "118",
+              "474",
+              "23.7",
+              "3,710 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "\"Dragoon Type 1\" Outcast Tachyon Turret\nThis is a tachyon-based weapon that has the longest range of all energy-based weapons, but requires enormous amounts of power to fire. This weapon is most effective against molecular shields, and weakest against positron shields. Outcast weapons have an improved damage output, but sacrifice range and refire rate.",
+      "images": [
+        "images/wiki/weapons/dragoon-type-1-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "dragoon-type-2-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Dragoon Type 2 Turret",
+      "subtitle": "Tachyon",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Tachyon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "800 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "702 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Dragoon Type 2 Turret",
+              "198",
+              "198",
+              "790",
+              "39.5",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "\"Dragoon Type 2\" Outcast Tachyon Turret\nThis is a tachyon-based weapon that has the longest range of all energy-based weapons, but requires enormous amounts of power to fire. This weapon is most effective against molecular shields, and weakest against positron shields. Outcast weapons have an improved damage output, but sacrifice range and refire rate.",
+      "images": [
+        "images/wiki/weapons/dragoon-type-2-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "drake-type-a-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Drake Type A Turret",
+      "subtitle": "Plasma",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Plasma (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "650 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "650 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Large",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Drake Type A Turret",
+              "395",
+              "98.8",
+              "1,581",
+              "49.4",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Hogosha \"Drake\" Type A Plasma Turret\nThis is a plasma-based weapon that delivers large amounts of damage, but cannot be refired quickly. This weapon is most effective against graviton shields, and weakest against molecular shields. Hogosha weapons have improved rates of fire, but at a reduced range.",
+      "images": [
+        "images/wiki/weapons/drake-type-a-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "drake-type-b-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Drake Type B Turret",
+      "subtitle": "Plasma",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Plasma (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "650 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "650 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Large",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Drake Type B Turret",
+              "795",
+              "199",
+              "3,180",
+              "99.4",
+              "54,810 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Hogosha \"Drake\" Type B Plasma Turret\nThis is a plasma-based weapon that delivers large amounts of damage, but cannot be refired quickly. This weapon is most effective against graviton shields, and weakest against molecular shields. Hogosha weapons have improved rates of fire, but at a reduced range. This is the best Plasma Turret the Hogosha have to offer.",
+      "images": [
+        "images/wiki/weapons/drake-type-b-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "dublin-duster-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Dublin Duster Turret",
+      "subtitle": "Neutron",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Neutron (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "650 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "650 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Large",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Dublin Duster Turret Mk I",
+              "252",
+              "63.1",
+              "1,010",
+              "30.3",
+              "7,460 cr"
+            ],
+            [
+              "Dublin Duster Turret Mk II",
+              "436",
+              "109",
+              "1,743",
+              "52.3",
+              "24,790 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Molly KA-1t \"Dublin Duster\" Neutron Turret Mk I\nThis is a neutron-based weapon which, though very energy efficient, has a shorter effective range than most energy weapons. This weapon is most effective against molecular shields, and weakest against positron shields.",
+      "images": [
+        "images/wiki/weapons/dublin-duster-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "firekiss-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Firekiss Turret",
+      "subtitle": "Plasma · Rheinland",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Plasma (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "2 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "500 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Large",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Firekiss Turret",
+              "1,590",
+              "398",
+              "3,180",
+              "199",
+              "54,810 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "TR6-s \"Firekiss\" Rheinland Plasma Turret\nThis is a plasma-based weapon that delivers large amounts of damage, but cannot be refired quickly. This weapon is most effective against graviton shields, and weakest against molecular shields. This is the best Plasma Turret Rheinland has to offer.",
+      "images": [
+        "images/wiki/weapons/firekiss-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "flamecurse-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Flamecurse Turret",
+      "subtitle": "Plasma · Rheinland",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Plasma (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "2 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "500 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Large",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Flamecurse Turret Mk I",
+              "790",
+              "198",
+              "1,581",
+              "98.8",
+              "14,300 cr"
+            ],
+            [
+              "Flamecurse Turret Mk II",
+              "1,046",
+              "261",
+              "2,091",
+              "131",
+              "24,790 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "TR3-s \"Flamecurse\" Rheinland Plasma Turret Mk I\nThis is a plasma-based weapon that delivers large amounts of damage, but cannot be refired quickly. This weapon is most effective against graviton shields, and weakest against molecular shields.",
+      "images": [
+        "images/wiki/weapons/flamecurse-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "flashpoint-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Flashpoint Turret",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Flashpoint Turret",
+              "78.4",
+              "78.4",
+              "653",
+              "19.6",
+              "22,310 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "CLT-d \"Flashpoint\" Civilian Laser Turret\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields. This is the best Civilian Laser Turret available.",
+      "images": [
+        "images/wiki/weapons/flashpoint-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "fury-2-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Fury 2 Turret",
+      "subtitle": "Photon",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Photon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "5.9 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "750 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "750 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Fury 2 Turret",
+              "221",
+              "221",
+              "1,299",
+              "53",
+              "54,810 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "ZT43t-2 \"Fury 2\" Zoner Photon Turret\nThis is a photon-based weapon which, though providing a high refire rate, requires enormous amounts of energy to deliver a significant damage output. This weapon is most effective against positron shields, and weakest against graviton shields. Zoner weapons have a small range advantage, but at a reduced rate of fire. This is the best Photon Turret the Zoners have to offer.",
+      "images": [
+        "images/wiki/weapons/fury-2-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "fury-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Fury Turret",
+      "subtitle": "Photon",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Photon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "5.9 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "750 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "750 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Fury Turret",
+              "110",
+              "110",
+              "646",
+              "26.4",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "ZT43t \"Fury\" Zoner Photon Turret\nThis is a photon-based weapon which, though providing a high refire rate, requires enormous amounts of energy to deliver a significant damage output. This weapon is most effective against positron shields, and weakest against graviton shields. Zoner weapons have a small range advantage, but at a reduced rate of fire.",
+      "images": [
+        "images/wiki/weapons/fury-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "gunslinger-mk-i-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Gunslinger Mk I Turret",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "750 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "750 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Gunslinger Mk I Turret",
+              "25.5",
+              "25.5",
+              "212",
+              "7.7",
+              "860 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "LT21 \"Gunslinger Mk I\" Bounty Hunter Laser Turret\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields. Bounty Hunter weapons have an improved range, but sacrifice damage and energy efficiency.",
+      "images": [
+        "images/wiki/weapons/gunslinger-mk-i-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "gunslinger-mk-ii-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Gunslinger Mk II Turret",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "750 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "750 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Gunslinger Mk II Turret",
+              "39.5",
+              "39.5",
+              "329",
+              "11.9",
+              "3,710 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "LT22 \"Gunslinger Mk II\" Bounty Hunter Laser Turret\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields. Bounty Hunter weapons have an improved range, but sacrifice damage and energy efficiency.",
+      "images": [
+        "images/wiki/weapons/gunslinger-mk-ii-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "helios-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Helios Turret",
+      "subtitle": "Photon",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Photon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "5.9 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "750 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "750 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Helios Turret",
+              "65.9",
+              "65.9",
+              "388",
+              "15.8",
+              "3,710 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "ZT37t \"Helios\" Zoner Photon Turret\nThis is a photon-based weapon which, though providing a high refire rate, requires enormous amounts of energy to deliver a significant damage output. This weapon is most effective against positron shields, and weakest against graviton shields. Zoner weapons have a small range advantage, but at a reduced rate of fire.",
+      "images": [
+        "images/wiki/weapons/helios-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "hellflurry-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Hellflurry Turret",
+      "subtitle": "Tachyon",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Tachyon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "800 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "702 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Hellflurry Turret Mk I",
+              "98.8",
+              "98.8",
+              "395",
+              "23.7",
+              "3,710 cr"
+            ],
+            [
+              "Hellflurry Turret Mk II",
+              "165",
+              "165",
+              "659",
+              "39.5",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "At24 \"Hellflurry\" Lane Hacker Tachyon Turret Mk I\nThis is a tachyon-based weapon that has the longest range of all energy-based weapons, but requires enormous amounts of power to fire. This weapon is most effective against molecular shields, and weakest against positron shields.",
+      "images": [
+        "images/wiki/weapons/hellflurry-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "hornviper-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Hornviper Turret",
+      "subtitle": "Tachyon · Rheinland",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Tachyon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "5.9 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "800 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "800 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Hornviper Turret",
+              "177",
+              "177",
+              "1,039",
+              "53",
+              "54,810 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "TR6-n \"Hornviper\" Rheinland Tachyon Turret\nThis is a tachyon-based weapon that has the longest range of all energy-based weapons, but requires enormous amounts of power to fire. This weapon is most effective against molecular shields, and weakest against positron shields. This is the best Tachyon Turret Rheinland has to offer.",
+      "images": [
+        "images/wiki/weapons/hornviper-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
     },
     {
       "id": "justice",
@@ -108,6 +2079,11 @@
           "label": "Muzzle velocity",
           "value": "750 m/s",
           "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
         }
       ],
       "tables": [
@@ -116,7 +2092,6 @@
           "og": true,
           "columns": [
             "Mark",
-            "Class",
             "Hull damage",
             "Shield damage",
             "Hull DPS",
@@ -126,28 +2101,25 @@
           "rows": [
             [
               "Justice Mk I",
-              "1",
-              "16.3",
-              "8.1",
-              "136",
+              "20.4",
+              "20.4",
+              "170",
               "5.1",
               "500 cr"
             ],
             [
               "Justice Mk II",
-              "2",
-              "20.4",
-              "10.2",
-              "170",
+              "25.5",
+              "25.5",
+              "212",
               "6.4",
               "860 cr"
             ],
             [
               "Justice Mk III",
-              "3",
-              "24.9",
-              "12.4",
-              "208",
+              "31.1",
+              "31.1",
+              "259",
               "7.8",
               "1,830 cr"
             ]
@@ -158,9 +2130,2417 @@
       "images": [
         "images/wiki/weapons/justice-model.webp"
       ],
-      "source": "81b7aa46c201",
+      "source": "8d03b6d74d9d",
       "added": "2026-10-20",
-      "updated": "2026-10-20"
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "justice-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Justice Turret",
+      "subtitle": "Laser · Liberty",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Justice Turret Mk I",
+              "20.4",
+              "20.4",
+              "170",
+              "5.1",
+              "500 cr"
+            ],
+            [
+              "Justice Turret Mk II",
+              "31.1",
+              "31.1",
+              "259",
+              "7.8",
+              "1,830 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "TR6-A \"Justice\" Liberty Laser Turret Mk I\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields.",
+      "images": [
+        "images/wiki/weapons/justice-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "katana-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Katana Turret",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Katana Turret",
+              "132",
+              "132",
+              "1,104",
+              "33.1",
+              "54,810 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Blood Dragon \"Katana\" Laser Turret\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields. This is the best Laser Turret the Blood Dragons have to offer.",
+      "images": [
+        "images/wiki/weapons/katana-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "kraken-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Kraken Turret",
+      "subtitle": "Particle",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Particle (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Kraken Turret",
+              "954",
+              "238",
+              "3,816",
+              "119",
+              "54,810 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "\"Kraken\" Outcast Particle Turret\nThis is a particle-based weapon which, though delivers significant damage at a decent fire rate, requires enormous amounts of energy. This weapon is most effective against graviton shields, and weakest against molecular shields. Outcast weapons have an improved damage output, but sacrifice range and refire rate. This is the best Particle Turret the Outcasts have to offer.",
+      "images": [
+        "images/wiki/weapons/kraken-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "lavablade-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Lavablade Turret",
+      "subtitle": "Plasma · Liberty",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Plasma (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "2 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "500 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Large",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Lavablade Turret Mk I",
+              "244",
+              "61.1",
+              "489",
+              "30.6",
+              "500 cr"
+            ],
+            [
+              "Lavablade Turret Mk II",
+              "374",
+              "93.4",
+              "747",
+              "46.7",
+              "1,830 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "TN5-A \"Lavablade\" Liberty Plasma Turret Mk I\nThis is a plasma-based weapon that delivers large amounts of damage, but cannot be refired quickly. This weapon is most effective against graviton shields, and weakest against molecular shields.",
+      "images": [
+        "images/wiki/weapons/lavablade-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "luger-turret-type-a",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Luger Turret Type A",
+      "subtitle": "Tachyon",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Tachyon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "1,200 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "702 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Large",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Luger Turret Type A",
+              "527",
+              "132",
+              "1,597",
+              "52.7",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Bundschuh \"Luger\" Tachyon Turret Type A\nThis is a tachyon-based weapon that has the longest range of all energy-based weapons, but requires enormous amounts of power to fire. This weapon is most effective against molecular shields, and weakest against positron shields. Bundschuh weapons do a bit more damage, at a reduced rate of fire.",
+      "images": [
+        "images/wiki/weapons/luger-turret-type-a-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "luger-turret-type-b",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Luger Turret Type B",
+      "subtitle": "Tachyon",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Tachyon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "1,200 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "702 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Large",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Luger Turret Type B",
+              "1,060",
+              "265",
+              "3,212",
+              "106",
+              "54,810 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Bundschuh \"Luger\" Tachyon Turret Type B\nThis is a tachyon-based weapon that has the longest range of all energy-based weapons, but requires enormous amounts of power to fire. This weapon is most effective against molecular shields, and weakest against positron shields. Bundschuh weapons do a bit more damage, at a reduced rate of fire. This is the best Tachyon Turret the Bundschuh have to offer.",
+      "images": [
+        "images/wiki/weapons/luger-turret-type-b-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "magma-hammer-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Magma Hammer Turret",
+      "subtitle": "Plasma · Liberty",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Plasma (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "2 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "500 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Large",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Magma Hammer Turret",
+              "606",
+              "152",
+              "1,212",
+              "75.8",
+              "7,460 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "TN9-A \"Magma Hammer\" Liberty Plasma Turret\nThis is a plasma-based weapon that delivers large amounts of damage, but cannot be refired quickly. This weapon is most effective against graviton shields, and weakest against molecular shields. This is the best Plasma Turret Liberty has to offer.",
+      "images": [
+        "images/wiki/weapons/magma-hammer-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "matterthief-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Matterthief Turret",
+      "subtitle": "Tachyon",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Tachyon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "800 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "702 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Matterthief Turret",
+              "62.2",
+              "62.2",
+              "249",
+              "14.9",
+              "1,830 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "IMG B7a-1t \"Matterthief\" Tachyon Turret\nThis is a tachyon-based weapon that has the longest range of all energy-based weapons, but requires enormous amounts of power to fire. This weapon is most effective against molecular shields, and weakest against positron shields. IMG weapons are more energy efficient, but sacrifice damage output.",
+      "images": [
+        "images/wiki/weapons/matterthief-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "natter-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Natter Turret",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "5.9 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Natter Turret",
+              "67.4",
+              "67.4",
+              "396",
+              "16.8",
+              "7,460 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Red Hessian \"Natter\" Laser Turret\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields. Red Hessian weapons do a bit more damage, but at a reduced rate of fire.",
+      "images": [
+        "images/wiki/weapons/natter-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "pyros-type-1-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Pyros Type 1 Turret",
+      "subtitle": "Particle",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Particle (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Pyros Type 1 Turret",
+              "284",
+              "71.1",
+              "1,138",
+              "35.6",
+              "3,710 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "\"Pyros Type 1\" Outcast Particle Turret\nThis is a particle-based weapon which, though delivers significant damage at a decent fire rate, requires enormous amounts of energy. This weapon is most effective against graviton shields, and weakest against molecular shields. Outcast weapons have an improved damage output, but sacrifice range and refire rate.",
+      "images": [
+        "images/wiki/weapons/pyros-type-1-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "pyros-type-2-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Pyros Type 2 Turret",
+      "subtitle": "Particle",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Particle (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Pyros Type 2 Turret",
+              "474",
+              "119",
+              "1,897",
+              "59.3",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "\"Pyros Type 2\" Outcast Particle Turret\nThis is a particle-based weapon which, though delivers significant damage at a decent fire rate, requires enormous amounts of energy. This weapon is most effective against graviton shields, and weakest against molecular shields. Outcast weapons have an improved damage output, but sacrifice range and refire rate.",
+      "images": [
+        "images/wiki/weapons/pyros-type-2-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "rapier-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Rapier Turret",
+      "subtitle": "Pulse",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Pulse (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Rapier Turret",
+              "6.6",
+              "202",
+              "26.5",
+              "95.4",
+              "54,810 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Corsair \"Rapier\" Pulse Turret\nThis is a pulse-based weapon that does enormous amounts of shield damage, but virtually no hull damage. This weapon is most effective against positron shields, and weakest against graviton shields. Corsair weapons use a bit more energy, but have better ranges and damage outputs. This is the best Pulse Turret the Corsairs have to offer.",
+      "images": [
+        "images/wiki/weapons/rapier-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "reaper-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Reaper Turret",
+      "subtitle": "Neutron",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Neutron (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "650 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "650 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Large",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Reaper Turret Mk I",
+              "252",
+              "63.1",
+              "1,010",
+              "30.3",
+              "70 cr"
+            ],
+            [
+              "Reaper Turret Mk II",
+              "436",
+              "109",
+              "1,743",
+              "52.3",
+              "250 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "H3t \"Reaper\" Order Neutron Turret Mk I\nThis is a neutron-based weapon which, though very energy efficient, has a shorter effective range than most energy weapons. This weapon is most effective against molecular shields, and weakest against positron shields.",
+      "images": [
+        "images/wiki/weapons/reaper-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "reaver-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Reaver Turret",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "750 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "750 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Reaver Turret",
+              "132",
+              "132",
+              "1,104",
+              "39.8",
+              "54,810 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "LT41 \"Reaver\" Bounty Hunter Laser Turret\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields. Bounty Hunter weapons have an improved range, but sacrifice damage and energy efficiency. This is the best Laser Turret the Bounty Hunters have to offer.",
+      "images": [
+        "images/wiki/weapons/reaver-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "ripper-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Ripper Turret",
+      "subtitle": "Tachyon · Bretonia",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Tachyon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "800 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Ripper Turret",
+              "98.8",
+              "98.8",
+              "395",
+              "23.7",
+              "3,710 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "3-7r \"Ripper\" Bretonia Tachyon Turret\nThis is a tachyon-based weapon that has the longest range of all energy-based weapons, but requires enormous amounts of power to fire. This weapon is most effective against molecular shields, and weakest against positron shields.",
+      "images": [
+        "images/wiki/weapons/ripper-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "roter-blitz-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Roter Blitz Turret",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "5.9 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Roter Blitz Turret",
+              "116",
+              "116",
+              "683",
+              "29",
+              "24,790 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Red Hessian \"Roter Blitz\" Laser Turret\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields. Red Hessian weapons do a bit more damage, but at a reduced rate of fire. This is the best Laser Turret the Red Hessians have to offer.",
+      "images": [
+        "images/wiki/weapons/roter-blitz-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "rowlett-s-revenge",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Rowlett's Revenge",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Rowlett's Revenge",
+              "46.8",
+              "46.8",
+              "390",
+              "7.8",
+              "1,830 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Rowlett's Revenge Laser Turret\nThis Turret appears to have been heavily modified to provide greater damage output. This is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields.",
+      "images": [
+        "images/wiki/weapons/rowlett-s-revenge-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "salamanca-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Salamanca Turret",
+      "subtitle": "Neutron",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Neutron (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Large",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Salamanca Turret",
+              "1,222",
+              "306",
+              "4,890",
+              "147",
+              "120,480 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Corsair \"Salamanca\" Neutron Turret\nThis is a neutron-based weapon which, though very energy efficient, has a shorter effective range than most energy weapons. This weapon is most effective against molecular shields, and weakest against positron shields. Corsair weapons use a bit more energy, but have better ranges and damage outputs. This is the best Neutron Turret the Corsairs have to offer.",
+      "images": [
+        "images/wiki/weapons/salamanca-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "sapiel-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Sapiel Turret",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Sapiel Turret",
+              "60.6",
+              "60.6",
+              "505",
+              "15.1",
+              "7,460 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Liberty Rogue \"Sapiel\" Laser Turret\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields. Liberty Rogue weapons do a little more damage, but use more energy.",
+      "images": [
+        "images/wiki/weapons/sapiel-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "scrambler-1-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Scrambler 1 Turret",
+      "subtitle": "Neutron · Kusari",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Neutron (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "650 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "650 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Large",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Scrambler 1 Turret",
+              "252",
+              "63.1",
+              "1,010",
+              "30.3",
+              "7,460 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Va-12t \"Scrambler 1\" Kusari Neutron Turret\nThis is a neutron-based weapon which, though very energy efficient, has a shorter effective range than most energy weapons. This weapon is most effective against molecular shields, and weakest against positron shields.",
+      "images": [
+        "images/wiki/weapons/scrambler-1-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "scrambler-2-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Scrambler 2 Turret",
+      "subtitle": "Neutron · Kusari",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Neutron (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "650 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "650 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Large",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Scrambler 2 Turret",
+              "330",
+              "82.4",
+              "1,318",
+              "39.5",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Vb-12t \"Scrambler 2\" Kusari Neutron Turret\nThis is a neutron-based weapon which, though very energy efficient, has a shorter effective range than most energy weapons. This weapon is most effective against molecular shields, and weakest against positron shields.",
+      "images": [
+        "images/wiki/weapons/scrambler-2-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "skyblast-a-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Skyblast A Turret",
+      "subtitle": "Photon",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Photon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Skyblast A Turret",
+              "199",
+              "199",
+              "1,656",
+              "39.8",
+              "54,810 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "GMG \"Skyblast A\" Photon Turret\nThis is a photon-based weapon which, though providing a high refire rate, requires enormous amounts of energy to deliver a significant damage output. This weapon is most effective against positron shields, and weakest against graviton shields. GMG weapons have improved damage output, but at a slightly reduced range.",
+      "images": [
+        "images/wiki/weapons/skyblast-a-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "skyblast-b-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Skyblast B Turret",
+      "subtitle": "Photon",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Photon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Skyblast B Turret",
+              "306",
+              "306",
+              "2,547",
+              "61.1",
+              "120,480 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "GMG \"Skyblast B\" Photon Turret\nThis is a photon-based weapon which, though providing a high refire rate, requires enormous amounts of energy to deliver a significant damage output. This weapon is most effective against positron shields, and weakest against graviton shields. GMG weapons have improved damage output, but at a slightly reduced range. This is the best Photon Turret the GMG has to offer.",
+      "images": [
+        "images/wiki/weapons/skyblast-b-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "skyrail-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Skyrail Turret",
+      "subtitle": "Particle · Bretonia",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Particle (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Skyrail Turret",
+              "237",
+              "59.2",
+              "948",
+              "35.6",
+              "3,710 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "8-1s \"Skyrail\" Bretonia Particle Turret\nThis is a particle-based weapon which, though delivers significant damage at a decent fire rate, requires enormous amounts of energy. This weapon is most effective against graviton shields, and weakest against molecular shields.",
+      "images": [
+        "images/wiki/weapons/skyrail-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "starbeam-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Starbeam Turret",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Starbeam Turret",
+              "18.4",
+              "18.4",
+              "153",
+              "4.6",
+              "450 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "CLT-a \"Starbeam\" Civilian Laser Turret\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields.",
+      "images": [
+        "images/wiki/weapons/starbeam-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "stealthblade-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Stealthblade Turret",
+      "subtitle": "Tachyon · Rheinland",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Tachyon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "5.9 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "800 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "800 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Stealthblade Turret Mk I",
+              "87.9",
+              "87.9",
+              "517",
+              "26.4",
+              "14,300 cr"
+            ],
+            [
+              "Stealthblade Turret Mk II",
+              "116",
+              "116",
+              "683",
+              "34.8",
+              "24,790 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "TR3-n \"Stealthblade\" Rheinland Tachyon Turret Mk I\nThis is a tachyon-based weapon that has the longest range of all energy-based weapons, but requires enormous amounts of power to fire. This weapon is most effective against molecular shields, and weakest against positron shields.",
+      "images": [
+        "images/wiki/weapons/stealthblade-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "stunpulse-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Stunpulse Turret",
+      "subtitle": "Pulse",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Pulse (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Stunpulse Turret",
+              "1.1",
+              "38.8",
+              "4.6",
+              "13.8",
+              "770 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "CPT-a \"Stunpulse\" Civilian Pulse Turret\nThis is a pulse-based weapon that does enormous amounts of shield damage, but virtually no hull damage. This weapon is most effective against positron shields, and weakest against graviton shields.",
+      "images": [
+        "images/wiki/weapons/stunpulse-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "sunblast-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Sunblast Turret",
+      "subtitle": "Photon",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Photon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Sunblast Turret",
+              "98.9",
+              "98.9",
+              "824",
+              "19.8",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "GMG \"Sunblast\" Photon Turret\nThis is a photon-based weapon which, though providing a high refire rate, requires enormous amounts of energy to deliver a significant damage output. This weapon is most effective against positron shields, and weakest against graviton shields. GMG weapons have improved damage output, but at a slightly reduced range.",
+      "images": [
+        "images/wiki/weapons/sunblast-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "sunfrenzy-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Sunfrenzy Turret",
+      "subtitle": "Photon · Kusari",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Photon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Sunfrenzy Turret",
+              "109",
+              "109",
+              "907",
+              "26.1",
+              "24,790 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Wa-24t \"Sunfrenzy\" Kusari Photon Turret\nThis is a photon-based weapon which, though providing a high refire rate, requires enormous amounts of energy to deliver a significant damage output. This weapon is most effective against positron shields, and weakest against graviton shields. This is the best Photon Turret Kusari has to offer.",
+      "images": [
+        "images/wiki/weapons/sunfrenzy-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "sunfury-1-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Sunfury 1 Turret",
+      "subtitle": "Photon · Kusari",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Photon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Sunfury 1 Turret",
+              "63.1",
+              "63.1",
+              "526",
+              "15.1",
+              "7,460 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Wa-22t \"Sunfury 1\" Kusari Photon Turret\nThis is a photon-based weapon which, though providing a high refire rate, requires enormous amounts of energy to deliver a significant damage output. This weapon is most effective against positron shields, and weakest against graviton shields.",
+      "images": [
+        "images/wiki/weapons/sunfury-1-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "sunfury-2-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Sunfury 2 Turret",
+      "subtitle": "Photon · Kusari",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Photon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Sunfury 2 Turret",
+              "82.4",
+              "82.4",
+              "686",
+              "19.8",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Wb-22t \"Sunfury 2\" Kusari Photon Turret\nThis is a photon-based weapon which, though providing a high refire rate, requires enormous amounts of energy to deliver a significant damage output. This weapon is most effective against positron shields, and weakest against graviton shields.",
+      "images": [
+        "images/wiki/weapons/sunfury-2-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "sunrail-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Sunrail Turret",
+      "subtitle": "Particle · Bretonia",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Particle (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Sunrail Turret",
+              "395",
+              "98.8",
+              "1,581",
+              "59.3",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "9-1s \"Sunrail\" Bretonia Particle Turret\nThis is a particle-based weapon which, though delivers significant damage at a decent fire rate, requires enormous amounts of energy. This weapon is most effective against graviton shields, and weakest against molecular shields. This is the best Particle Turret Bretonia has to offer.",
+      "images": [
+        "images/wiki/weapons/sunrail-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "tanto-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Tanto Turret",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Tanto Turret",
+              "65.9",
+              "65.9",
+              "549",
+              "16.5",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Blood Dragon \"Tanto\" Laser Turret\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields.",
+      "images": [
+        "images/wiki/weapons/tanto-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "thoth-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Thoth Turret",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Thoth Turret",
+              "104",
+              "104",
+              "871",
+              "26.1",
+              "24,790 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Liberty Rogue \"Thoth\" Laser Turret\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields. Liberty Rogue weapons do a little more damage, but use more energy. This is the best Laser Turret the Liberty Rogues have to offer.",
+      "images": [
+        "images/wiki/weapons/thoth-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "vampire-1-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Vampire 1 Turret",
+      "subtitle": "Tachyon",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Tachyon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "800 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "702 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Vampire 1 Turret",
+              "132",
+              "132",
+              "527",
+              "31.6",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "IMG B9a-1t \"Vampire 1\" Tachyon Turret\nThis is a tachyon-based weapon that has the longest range of all energy-based weapons, but requires enormous amounts of power to fire. This weapon is most effective against molecular shields, and weakest against positron shields. IMG weapons are more energy efficient, but sacrifice damage output.",
+      "images": [
+        "images/wiki/weapons/vampire-1-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "vampire-2-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Vampire 2 Turret",
+      "subtitle": "Tachyon",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Tachyon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "800 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "702 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Vampire 2 Turret",
+              "265",
+              "265",
+              "1,060",
+              "63.6",
+              "54,810 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "IMG B9a-2t \"Vampire 2\" Tachyon Turret\nThis is a tachyon-based weapon that has the longest range of all energy-based weapons, but requires enormous amounts of power to fire. This weapon is most effective against molecular shields, and weakest against positron shields. IMG weapons are more energy efficient, but sacrifice damage output. This is the best Tachyon Turret the IMG has to offer.",
+      "images": [
+        "images/wiki/weapons/vampire-2-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
     },
     {
       "id": "vengeance",
@@ -189,6 +4569,11 @@
           "label": "Muzzle velocity",
           "value": "750 m/s",
           "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
         }
       ],
       "tables": [
@@ -197,7 +4582,6 @@
           "og": true,
           "columns": [
             "Mark",
-            "Class",
             "Hull damage",
             "Shield damage",
             "Hull DPS",
@@ -207,28 +4591,25 @@
           "rows": [
             [
               "Vengeance Mk I",
-              "4",
-              "31.6",
-              "15.8",
-              "263",
+              "39.5",
+              "39.5",
+              "329",
               "9.9",
               "3,710 cr"
             ],
             [
               "Vengeance Mk II",
-              "5",
-              "40.4",
-              "20.2",
-              "337",
+              "50.5",
+              "50.5",
+              "421",
               "12.6",
               "7,460 cr"
             ],
             [
               "Vengeance Mk III",
-              "6",
-              "52.7",
-              "26.4",
-              "439",
+              "65.9",
+              "65.9",
+              "549",
               "16.5",
               "14,300 cr"
             ]
@@ -239,9 +4620,339 @@
       "images": [
         "images/wiki/weapons/vengeance-model.webp"
       ],
-      "source": "81b7aa46c201",
+      "source": "8d03b6d74d9d",
       "added": "2026-10-20",
-      "updated": "2026-10-20"
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "vengeance-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Vengeance Turret",
+      "subtitle": "Laser · Liberty",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Vengeance Turret",
+              "50.5",
+              "50.5",
+              "421",
+              "12.6",
+              "7,460 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "TR8-A \"Vengeance\" Liberty Laser Turret\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields. This is the best Laser Turret Liberty has to offer.",
+      "images": [
+        "images/wiki/weapons/vengeance-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "warrior-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Warrior Turret",
+      "subtitle": "Particle",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Particle (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "750 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "750 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Warrior Turret",
+              "418",
+              "105",
+              "1,673",
+              "78.4",
+              "24,790 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "PT81 \"Warrior\" Bounty Hunter Particle Turret\nThis is a particle-based weapon which, though delivers significant damage at a decent fire rate, requires enormous amounts of energy. This weapon is most effective against graviton shields, and weakest against molecular shields. Bounty Hunter weapons have an improved range, but sacrifice damage and energy efficiency.",
+      "images": [
+        "images/wiki/weapons/warrior-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "winchester-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Winchester Turret",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "750 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "750 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Winchester Turret",
+              "65.9",
+              "65.9",
+              "549",
+              "19.8",
+              "14,300 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "LT31 \"Winchester\" Bounty Hunter Laser Turret\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields. Bounty Hunter weapons have an improved range, but sacrifice damage and energy efficiency.",
+      "images": [
+        "images/wiki/weapons/winchester-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "wyrm-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Wyrm Turret",
+      "subtitle": "Tachyon",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Tachyon (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "800 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "702 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Medium",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Wyrm Turret",
+              "398",
+              "398",
+              "1,590",
+              "79.5",
+              "54,810 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "\"Wyrm\" Outcast Tachyon Turret\nThis is a tachyon-based weapon that has the longest range of all energy-based weapons, but requires enormous amounts of power to fire. This weapon is most effective against molecular shields, and weakest against positron shields. Outcast weapons have an improved damage output, but sacrifice range and refire rate. This is the best Tachyon Turret the Outcasts have to offer.",
+      "images": [
+        "images/wiki/weapons/wyrm-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
+    },
+    {
+      "id": "zaphiel-turret",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Zaphiel Turret",
+      "subtitle": "Laser",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Laser (turret)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "8.3 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "700 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "700 m/s",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Zaphiel Turret",
+              "24.5",
+              "24.5",
+              "204",
+              "6.1",
+              "500 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Liberty Rogue \"Zaphiel\" Laser Turret\nThis is a laser-based weapon that provides a high refire rate at a reduced damage output. This weapon is most effective against positron shields, and weakest against graviton shields. Liberty Rogue weapons do a little more damage, but use more energy.",
+      "images": [
+        "images/wiki/weapons/zaphiel-turret-model.webp"
+      ],
+      "source": "9398f11f2671",
+      "added": "2026-10-31",
+      "updated": "2026-10-31"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "phase": "Early Access",
-  "percent": 50,
+  "percent": 48,
   "release": "Alpha 0.3.5",
   "date": "2026-11-06",
   "areas": [
@@ -8,7 +8,7 @@
       "name": "Combat",
       "items": [
         {
-          "title": "Special weapons on key 2 (Railgun, Laser) and weapon groups with a lead indicator each",
+          "title": "Special Weapons on 2 Key: Railguns and Lasers",
           "done": false
         },
         {
@@ -22,6 +22,70 @@
         {
           "title": "Two new Liberty Navy guns: a Railgun (West Point) and a Laser (Willard)",
           "done": false
+        },
+        {
+          "title": "Combat",
+          "done": false
+        },
+        {
+          "title": "AoE Guns",
+          "done": false
+        },
+        {
+          "title": "Make models and VFX for existing guns (EA)",
+          "done": false
+        },
+        {
+          "title": "Jobs: Base attacks",
+          "done": false
+        },
+        {
+          "title": "Trader missions",
+          "done": false
+        },
+        {
+          "title": "Pirate missions",
+          "done": false
+        },
+        {
+          "title": "PvE Missions",
+          "done": false
+        },
+        {
+          "title": "Escort missions",
+          "done": false
+        },
+        {
+          "title": "HUD improvement",
+          "done": true
+        },
+        {
+          "title": "Ship classes: tuning per class (light fighters nimble, heavy fighters heavy)",
+          "done": true
+        },
+        {
+          "title": "Mount sizes (small / medium / large) instead of gun classes",
+          "done": true
+        },
+        {
+          "title": "Weapon families and damage types: Assault, Heavy, Railgun, Laser, EMP",
+          "done": true
+        },
+        {
+          "title": "Gun range falloff, energy rework and heat",
+          "done": true
+        },
+        {
+          "title": "Mine rework: escape tool, EMP mines, traps",
+          "done": true
+        },
+        {
+          "title": "Loot rarity: Common to Legendary",
+          "done": true
+        },
+        {
+          "title": "When you die, your gear loses condition",
+          "done": true
         }
       ]
     },
@@ -59,6 +123,22 @@
         {
           "title": "System: Cortez (border)",
           "done": false
+        },
+        {
+          "title": "Sigma-13",
+          "done": false
+        },
+        {
+          "title": "Big Star Wars scale things in space",
+          "done": false
+        },
+        {
+          "title": "Old FL models replaced EA",
+          "done": false
+        },
+        {
+          "title": "Raise Manhattan",
+          "done": true
         }
       ]
     },
@@ -68,6 +148,14 @@
         {
           "title": "All Liberty and civilian ships flyable, redesigned and classed",
           "done": false
+        },
+        {
+          "title": "NPC ships in the liberty systems",
+          "done": false
+        },
+        {
+          "title": "Decal system on the ships",
+          "done": false
         }
       ]
     },
@@ -75,8 +163,32 @@
       "name": "Missions",
       "items": [
         {
+          "title": "Comm window faces: callers, stations, the ship's AI",
+          "done": false
+        },
+        {
           "title": "Story Early Access: First 3 missions",
           "done": false
+        },
+        {
+          "title": "Story Mission 1",
+          "done": false
+        },
+        {
+          "title": "Story Mission 2",
+          "done": false
+        },
+        {
+          "title": "Story Mission 3",
+          "done": false
+        },
+        {
+          "title": "Mission system and job board",
+          "done": true
+        },
+        {
+          "title": "Missions and Jobs",
+          "done": true
         }
       ]
     },
@@ -94,12 +206,20 @@
         {
           "title": "Game master tools: run events and the war by hand",
           "done": false
+        },
+        {
+          "title": "Keybinds completely configurable",
+          "done": false
         }
       ]
     },
     {
       "name": "Online and social",
       "items": [
+        {
+          "title": "Character Select and Trent and Juni",
+          "done": false
+        },
         {
           "title": "Seeing each other: players in contacts, maps and bars; friends",
           "done": false
@@ -111,6 +231,14 @@
         {
           "title": "Wings: player groups up to 6",
           "done": false
+        },
+        {
+          "title": "Network optimization",
+          "done": false
+        },
+        {
+          "title": "Multiplayer: cargo scans and formation flying",
+          "done": true
         }
       ]
     },
@@ -118,7 +246,11 @@
       "name": "Progression and loot",
       "items": [
         {
-          "title": "Trading system",
+          "title": "Updated Trading system",
+          "done": false
+        },
+        {
+          "title": "Old savegame singleplayer",
           "done": false
         },
         {
@@ -136,6 +268,14 @@
         {
           "title": "Pilot record, medals and titles (early-access systems)",
           "done": false
+        },
+        {
+          "title": "Pirate start",
+          "done": false
+        },
+        {
+          "title": "Loot condition",
+          "done": true
         }
       ]
     }

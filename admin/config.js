@@ -3,5 +3,5 @@ window.CMS_CONFIG = {
   owner: 'realalexxortv',
   repo: 'sirius-reborn-website',
   branch: 'main',
-  siteUrl: 'https://realalexxortv.github.io/sirius-reborn-website/'
+  siteUrl: 'https://siriusreborn.com/'
 };

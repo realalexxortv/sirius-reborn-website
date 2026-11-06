@@ -1,7 +1,7 @@
 {
   "phase": "Early Access",
-  "percent": 52,
-  "release": "Alpha 0.3.5",
+  "percent": 55,
+  "release": "Alpha 0.3.6",
   "date": "2026-11-06",
   "areas": [
     {
@@ -29,10 +29,6 @@
         },
         {
           "title": "AoE Guns",
-          "done": false
-        },
-        {
-          "title": "Make models and VFX for existing guns (EA)",
           "done": false
         },
         {
@@ -89,6 +85,10 @@
         },
         {
           "title": "Shields: three types, five marks, one shield for every ship",
+          "done": true
+        },
+        {
+          "title": "Make models and VFX for existing guns (EA)",
           "done": true
         },
         {
@@ -170,10 +170,6 @@
       "name": "Ships",
       "items": [
         {
-          "title": "All Liberty and civilian ships flyable, redesigned and classed",
-          "done": false
-        },
-        {
           "title": "NPC ships in the liberty systems",
           "done": false
         },
@@ -195,6 +191,10 @@
         },
         {
           "title": "Liveries set up",
+          "done": true
+        },
+        {
+          "title": "All Liberty and civilian ships flyable, redesigned and classed",
           "done": true
         }
       ]
@@ -294,10 +294,6 @@
           "done": false
         },
         {
-          "title": "Leave a mark: discoveries, names in the world, leaderboards",
-          "done": false
-        },
-        {
           "title": "Licences earned by trial missions",
           "done": false
         },
@@ -310,10 +306,6 @@
           "done": false
         },
         {
-          "title": "Pirate start",
-          "done": false
-        },
-        {
           "title": "Fast travel",
           "done": true
         },
@@ -322,7 +314,15 @@
           "done": true
         },
         {
+          "title": "Leave a mark: discoveries, names in the world, leaderboards",
+          "done": true
+        },
+        {
           "title": "Loot condition",
+          "done": true
+        },
+        {
+          "title": "Pirate start",
           "done": true
         }
       ]

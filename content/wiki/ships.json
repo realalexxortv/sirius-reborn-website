@@ -1,6 +1,203 @@
 {
   "entries": [
     {
+      "id": "barracuda",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Barracuda",
+      "subtitle": "Heavy Fighter · Kusari State Police",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Heavy Fighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "4,500",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "1,678",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "76 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "3,400",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "345 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "45 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "26",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "26",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "150",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "63,200 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Planet Curacao (Cortez), Planet Honshu (Honshu), Planet Kyushu (Kyushu), Planet New Tokyo (New Tokyo)",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "4 large, 2 medium",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "AP-7031 \"Barracuda\" Bounty Hunter Heavy Fighter\nWhen the fire is thick and flack and fallout rip the competition apart, the Barracuda still fights. Because of its strength and survivability in open combat as well as its stealthy, maneuverable handling, this ship distinguishes itself as the best friend of the modern Bounty Hunter. This, coupled with the tricked-out power array, makes it an easy choice.",
+      "images": [
+        "images/wiki/ships/barracuda-hero.webp",
+        "images/wiki/ships/barracuda-side.webp",
+        "images/wiki/ships/barracuda-top.webp",
+        "images/wiki/ships/barracuda-rear.webp"
+      ],
+      "source": "3d8c117cfef4",
+      "added": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "id": "bloodhound",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Bloodhound",
+      "subtitle": "Light Fighter · Junkers",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Light Fighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "1,615",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "821",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "88 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "1,500",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "157 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "35 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "14",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "14",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "100",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "10,400 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Rochester Base (New York)",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "2 medium, 1 small",
+          "og": false
+        },
+        {
+          "label": "Turret mounts",
+          "value": "1 small",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "Z-2010 \"Bloodhound\" Pirate Light Fighter\nWith its increased power capacity, the Bloodhound represents a significant threat to police forces and shipping targets in Sirius. Heavily modified from its original chassis design, this fighter is fast and can deliver a lethal payload and array of offensive weaponry. These factors make this ship of great value to alternative fighting forces everywhere.",
+      "images": [
+        "images/wiki/ships/bloodhound-hero.webp",
+        "images/wiki/ships/bloodhound-side.webp",
+        "images/wiki/ships/bloodhound-top.webp",
+        "images/wiki/ships/bloodhound-rear.webp"
+      ],
+      "source": "89e5c5493175",
+      "added": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
       "id": "dagger",
       "summary": "",
       "body": "",
@@ -203,6 +400,107 @@
       "updated": "2026-11-06"
     },
     {
+      "id": "dromedary",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Dromedary",
+      "subtitle": "Freighter · Lane Hackers",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Freighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "4,500",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "1,963",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "80 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "2,900",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "290 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "275 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "23",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "23",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "300",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "53,400 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Mactan Base (Magellan)",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "2 medium, 1 small",
+          "og": false
+        },
+        {
+          "label": "Turret mounts",
+          "value": "3 medium, 2 small",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "Series YX \"Dromedary\" Border Worlds Freighter\nIn the frontier, the need for individuals to move great amounts of cargo securely is crucial. The Dromedary combines the best attributes of the Series Y and an entirely new reinforced structure and defensive matrix to yield an uncompromising solution for commerce and trade in the most rugged of areas.",
+      "images": [
+        "images/wiki/ships/dromedary-hero.webp",
+        "images/wiki/ships/dromedary-side.webp",
+        "images/wiki/ships/dromedary-top.webp",
+        "images/wiki/ships/dromedary-rear.webp"
+      ],
+      "source": "90c3fc7f2a7a",
+      "added": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
       "id": "large-transport",
       "summary": "",
       "body": "",
@@ -270,6 +568,107 @@
         "images/wiki/ships/large-transport-rear.webp"
       ],
       "source": "23ec56c02d8b",
+      "added": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "id": "mule",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Mule",
+      "subtitle": "Freighter · Junkers",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Freighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "3,750",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "1,047",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "80 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "1,800",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "183 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "150 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "20",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "20",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "300",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "18,400 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Alcatraz Depot (California), Rochester Base (New York)",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "2 medium, 2 small",
+          "og": false
+        },
+        {
+          "label": "Turret mounts",
+          "value": "2 medium, 2 small",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "Z-1138 \"Mule\" Pirate Freighter\nThe lifeline of any organization is its ability to monetize opportunity. In the case of more alternative unions, this fundamental truth is even more vital. Fortunately, the Mule is the solution to the problem of moving a significant supply of goods through hazardous opposition in order to maintain these channels of commerce and opportunity.",
+      "images": [
+        "images/wiki/ships/mule-hero.webp",
+        "images/wiki/ships/mule-side.webp",
+        "images/wiki/ships/mule-top.webp",
+        "images/wiki/ships/mule-rear.webp"
+      ],
+      "source": "ba5e44b80f73",
       "added": "2026-11-06",
       "updated": "2026-11-06"
     },
@@ -825,6 +1224,107 @@
       "updated": "2026-11-06"
     },
     {
+      "id": "valkyrie",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Valkyrie",
+      "subtitle": "Heavy Fighter · Rheinland Military",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Heavy Fighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "7,250",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "3,144",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "76 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "5,400",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "545 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "50 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "38",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "38",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "150",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "172,000 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Battleship Westfalen (Hamburg)",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "3 large, 2 medium",
+          "og": false
+        },
+        {
+          "label": "Turret mounts",
+          "value": "1 medium",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "90-ARKM-N9 \"Valkyrie\" Rheinland Heavy Fighter\nThe might that flows through the arms of the Chancellor is epitomized in the god-like attributes of this fighter class. The Valkyrie is the divine union of precise machination and pure, ever-glowing might; and, therefore, is most recognized as the righteous hammer of justice for the Rheinland peacekeeping forces.",
+      "images": [
+        "images/wiki/ships/valkyrie-hero.webp",
+        "images/wiki/ships/valkyrie-side.webp",
+        "images/wiki/ships/valkyrie-top.webp",
+        "images/wiki/ships/valkyrie-rear.webp"
+      ],
+      "source": "366e03ae16c5",
+      "added": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
       "id": "wolfhound",
       "summary": "",
       "body": "",
@@ -921,7 +1421,7 @@
         "images/wiki/ships/wolfhound-top.webp",
         "images/wiki/ships/wolfhound-rear.webp"
       ],
-      "source": "6272662f6b26",
+      "source": "38171354dd8c",
       "added": "2026-11-06",
       "updated": "2026-11-06"
     }

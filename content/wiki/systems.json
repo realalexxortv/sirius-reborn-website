@@ -50,9 +50,9 @@
         "images/wiki/systems/california-start.webp",
         "images/wiki/systems/california-planet.webp"
       ],
-      "source": "60ee5a9a99d2",
+      "source": "3c92054a1f6f",
       "added": "2026-10-26",
-      "updated": "2026-10-31"
+      "updated": "2026-11-06"
     },
     {
       "id": "new-york",
@@ -104,9 +104,9 @@
         "images/wiki/systems/new-york-start.webp",
         "images/wiki/systems/new-york-planet.webp"
       ],
-      "source": "1c096c94a125",
+      "source": "264239235832",
       "added": "2026-10-20",
-      "updated": "2026-10-31"
+      "updated": "2026-11-06"
     }
   ]
 }

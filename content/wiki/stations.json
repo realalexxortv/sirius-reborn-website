@@ -54,9 +54,9 @@
         "images/wiki/stations/buffalo-base-close.webp",
         "images/wiki/stations/buffalo-base-far_planet.webp"
       ],
-      "source": "1c096c94a125",
+      "source": "264239235832",
       "added": "2026-10-26",
-      "updated": "2026-10-31"
+      "updated": "2026-11-06"
     },
     {
       "id": "new-york-california",
@@ -199,9 +199,9 @@
         "images/wiki/stations/west-point-military-academy-close.webp",
         "images/wiki/stations/west-point-military-academy-far_planet.webp"
       ],
-      "source": "1c096c94a125",
+      "source": "264239235832",
       "added": "2026-10-26",
-      "updated": "2026-10-31"
+      "updated": "2026-11-06"
     },
     {
       "id": "willard-research-station",
@@ -228,9 +228,9 @@
         "images/wiki/stations/willard-research-station-close.webp",
         "images/wiki/stations/willard-research-station-far_planet.webp"
       ],
-      "source": "60ee5a9a99d2",
+      "source": "3c92054a1f6f",
       "added": "2026-10-26",
-      "updated": "2026-10-31"
+      "updated": "2026-11-06"
     }
   ]
 }

@@ -1,6 +1,107 @@
 {
   "entries": [
     {
+      "id": "dagger",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Dagger",
+      "subtitle": "Light Fighter · Liberty Rogues",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Light Fighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "1,530",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "821",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "88 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "1,800",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "183 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "35 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "15",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "15",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "100",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "15,300 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Buffalo Base (New York)",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "2 medium, 2 small",
+          "og": false
+        },
+        {
+          "label": "Turret mounts",
+          "value": "1 small",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "Series X \"Dagger\" Border Worlds Light Fighter\nIt may be classified as a light fighter, but there is nothing light about this ship. With its expanded power capacity and armor rating the Dagger has all of the muscle required to survive in the harsh frontier of the Border Worlds, while still being moderately priced. An excellent choice for those craving adventure.",
+      "images": [
+        "images/wiki/ships/dagger-hero.webp",
+        "images/wiki/ships/dagger-side.webp",
+        "images/wiki/ships/dagger-top.webp",
+        "images/wiki/ships/dagger-rear.webp"
+      ],
+      "source": "caaa76db338d",
+      "added": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
       "id": "defender",
       "summary": "",
       "body": "",
@@ -97,9 +198,80 @@
         "images/wiki/ships/defender-top.webp",
         "images/wiki/ships/defender-rear.webp"
       ],
-      "source": "a72e37af41bf",
+      "source": "274d568e1941",
       "added": "2026-10-20",
-      "updated": "2026-10-31"
+      "updated": "2026-11-06"
+    },
+    {
+      "id": "large-transport",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Large Transport",
+      "subtitle": "Transport · Independent Miners Guild",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Transport",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "3,000",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "80 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "50,000",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "50,000 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "2,000 units",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Turret mounts",
+          "value": "5 large",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/ships/large-transport-hero.webp",
+        "images/wiki/ships/large-transport-side.webp",
+        "images/wiki/ships/large-transport-top.webp",
+        "images/wiki/ships/large-transport-rear.webp"
+      ],
+      "source": "23ec56c02d8b",
+      "added": "2026-11-06",
+      "updated": "2026-11-06"
     },
     {
       "id": "patriot",
@@ -193,9 +365,105 @@
         "images/wiki/ships/patriot-top.webp",
         "images/wiki/ships/patriot-rear.webp"
       ],
-      "source": "4cd8edd684de",
+      "source": "7bf2b73d27b2",
       "added": "2026-10-31",
-      "updated": "2026-10-31"
+      "updated": "2026-11-06"
+    },
+    {
+      "id": "piranha",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Piranha",
+      "subtitle": "Light Fighter · Bretonia Police",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Light Fighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "1,530",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "821",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "88 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "1,800",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "183 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "35 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "15",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "15",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "100",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "15,300 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Planet Cambridge (Cambridge), Planet Leeds (Leeds), Planet New London (New London), Sheffield Station (Manchester)",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "2 medium, 2 small",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "AP-6364 \"Piranha\" Bounty Hunter Light Fighter\nWith crime on the rise, there has been a resurgence in the Bounty Hunter trade. To hunt down a criminal one must think like a criminal — and be armed like one too. The Piranha delivers expertly on this note, providing every bit of the firepower and armor needed for the job. The added cargo space for transport and delivery of captured escape pods rounds out its generous appointments.",
+      "images": [
+        "images/wiki/ships/piranha-hero.webp",
+        "images/wiki/ships/piranha-side.webp",
+        "images/wiki/ships/piranha-top.webp",
+        "images/wiki/ships/piranha-rear.webp"
+      ],
+      "source": "029e0eeccd5d",
+      "added": "2026-11-06",
+      "updated": "2026-11-06"
     },
     {
       "id": "rhino",
@@ -294,9 +562,9 @@
         "images/wiki/ships/rhino-top.webp",
         "images/wiki/ships/rhino-rear.webp"
       ],
-      "source": "fb88d8b804c0",
+      "source": "f8051fc8f171",
       "added": "2026-10-20",
-      "updated": "2026-10-31"
+      "updated": "2026-11-06"
     },
     {
       "id": "starflier",
@@ -385,9 +653,9 @@
         "images/wiki/ships/starflier-top.webp",
         "images/wiki/ships/starflier-rear.webp"
       ],
-      "source": "920604671b94",
+      "source": "ed85af05c94f",
       "added": "2026-10-20",
-      "updated": "2026-10-31"
+      "updated": "2026-11-06"
     },
     {
       "id": "startracker",
@@ -481,9 +749,181 @@
         "images/wiki/ships/startracker-top.webp",
         "images/wiki/ships/startracker-rear.webp"
       ],
-      "source": "bd843598f11c",
+      "source": "3acfeb87349c",
       "added": "2026-10-31",
-      "updated": "2026-10-31"
+      "updated": "2026-11-06"
+    },
+    {
+      "id": "transport",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Transport",
+      "subtitle": "Transport · Samura Industries",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Transport",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "3,000",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "80 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "50,000",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "50,000 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "1,000 units",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "500",
+          "og": true
+        },
+        {
+          "label": "Turret mounts",
+          "value": "5 large",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/ships/transport-hero.webp",
+        "images/wiki/ships/transport-side.webp",
+        "images/wiki/ships/transport-top.webp",
+        "images/wiki/ships/transport-rear.webp"
+      ],
+      "source": "23ec56c02d8b",
+      "added": "2026-11-06",
+      "updated": "2026-11-06"
+    },
+    {
+      "id": "wolfhound",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Wolfhound",
+      "subtitle": "Heavy Fighter · Mollys",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Heavy Fighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "4,500",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "1,678",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "76 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "3,400",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "345 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "40 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "26",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "26",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "150",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "63,200 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Arranmore Base (Dublin), Montezuma Base (Cortez)",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "3 large, 2 medium",
+          "og": false
+        },
+        {
+          "label": "Turret mounts",
+          "value": "1 medium",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "Z-3005 \"Wolfhound\" Pirate Heavy Fighter\n“A wolf in the night,” this ship has enough expanded features to ensure that it has the advantage in equal-armed conflict. The Wolfhound has enough armor and a generously amplified power output to easily wear down combatants, while also harboring enough cargo space to easily strip them down and carry off the spoils.",
+      "images": [
+        "images/wiki/ships/wolfhound-hero.webp",
+        "images/wiki/ships/wolfhound-side.webp",
+        "images/wiki/ships/wolfhound-top.webp",
+        "images/wiki/ships/wolfhound-rear.webp"
+      ],
+      "source": "6272662f6b26",
+      "added": "2026-11-06",
+      "updated": "2026-11-06"
     }
   ]
 }

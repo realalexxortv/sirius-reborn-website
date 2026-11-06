@@ -21,6 +21,7 @@ It's a static site (plain HTML/CSS/JS, no build step) that runs on GitHub Pages 
 | `assets/ui/` | Every button, frame and panel, cropped straight from the mockup, plus the character cutouts and the nebula. |
 | `tools/extract_assets.py` | Crops the buttons, frames and panels from `tools/mockup.png`, and turns the mockup's Forums hub badge and caption into YouTube (caption set in Barlow, `tools/fonts/`). |
 | `tools/make_nav_buttons.py` | Makes the Donate, How? and Roadmap buttons, which the mockup does not have: takes a cut button, paints its icon and label out, recolours it for How?, and draws a new icon and a Cinzel label (`tools/fonts/`). |
+| `tools/make_share_image.py` | Makes `assets/share.jpg`, the link preview image (Discord, X and others read it through the `og:` and `twitter:` tags in `index.html`): an in-game shot with the title over it. |
 | `tools/build_layers.py` | Cuts the characters (Trent from `tools/trent.png`, Juni from `tools/juni.jpg`) and the title (from the mockup) out of their backgrounds with rembg, grades the characters to match the nebula, and builds the nebula backdrop. |
 | `admin/` | The CMS. |
 

@@ -416,6 +416,21 @@ img { display: block; }
 }
 .md p:has(> img + img) img:hover, .md p:has(> a > img) img:hover { filter: brightness(1.1) drop-shadow(0 0 8px #4fa9ff88); }
 
+/* The gallery's in-game shots (renderGalleryShots). */
+.page-gallery .wiki-section { margin-top: 30px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.gallery-shot {
+  margin: 0; border: 1px solid #8c9bb344; border-radius: 6px; overflow: hidden;
+  background: linear-gradient(180deg, #111a29, #080d16);
+  transition: border-color .15s, box-shadow .15s;
+}
+.gallery-shot img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #0a1424; }
+.gallery-shot figcaption { padding: 6px 10px 8px; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; }
+.gallery-shot figcaption a { color: var(--ink-3); text-decoration: none; }
+.gallery-shot figcaption a:hover { color: #eef2f8; }
+.gallery-shot:hover { border-color: #4fa9ffaa; box-shadow: 0 0 16px #4fa9ff44; }
+.compact .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+
 /* ------------------------------------------------------------------- wiki */
 
 .wiki, .wiki-entry { padding: 8px 40px 40px 14px; }

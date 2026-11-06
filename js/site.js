@@ -155,6 +155,26 @@
       var fm = SR.parseFrontMatter(text);
       setHead(fm.meta.title || name, fm.meta.subtitle || '', fm.meta.title || name);
       view.innerHTML = '<div class="page page-' + name + '"><div class="md">' + SR.renderMarkdown(fm.body) + '</div></div>';
+      if (name === 'gallery') return renderGalleryShots(view.querySelector('.page'));
+    });
+  }
+
+  // The gallery's in-game shots: every image of the wiki's ships and stations, so each wiki update adds its new shots.
+  var GALLERY_KINDS = ['ships', 'stations'];
+  function renderGalleryShots(page) {
+    return Promise.all(GALLERY_KINDS.map(loadWiki)).then(function (lists) {
+      page.insertAdjacentHTML('beforeend', GALLERY_KINDS.map(function (key, i) {
+        var k = wikiKind(key);
+        var shots = lists[i].map(function (e) {
+          return (e.images || []).map(function (src) {
+            return '<figure class="gallery-shot"><a href="' + esc(src) + '" target="_blank" rel="noopener">' +
+              '<img src="' + esc(src) + '" alt="' + esc(e.name) + '" loading="lazy"></a>' +
+              '<figcaption><a href="#/wiki/' + key + '/' + encodeURIComponent(e.id) + '">' + esc(e.name) + '</a></figcaption></figure>';
+          }).join('');
+        }).join('');
+        return shots ? '<section class="wiki-section"><h2><a href="#/wiki/' + key + '">' + esc(k.title) + '</a></h2>' +
+          '<div class="gallery-grid">' + shots + '</div></section>' : '';
+      }).join(''));
     });
   }
 

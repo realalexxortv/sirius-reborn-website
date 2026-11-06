@@ -1,6 +1,6 @@
 {
   "phase": "Early Access",
-  "percent": 48,
+  "percent": 52,
   "release": "Alpha 0.3.5",
   "date": "2026-11-06",
   "areas": [
@@ -24,7 +24,7 @@
           "done": false
         },
         {
-          "title": "Combat",
+          "title": "Combat Rework",
           "done": false
         },
         {
@@ -56,6 +56,14 @@
           "done": false
         },
         {
+          "title": "NPC combat and hostile factions",
+          "done": true
+        },
+        {
+          "title": "Add all guns to the game from OG",
+          "done": true
+        },
+        {
           "title": "HUD improvement",
           "done": true
         },
@@ -77,6 +85,10 @@
         },
         {
           "title": "Mine rework: escape tool, EMP mines, traps",
+          "done": true
+        },
+        {
+          "title": "Shields: three types, five marks, one shield for every ship",
           "done": true
         },
         {
@@ -129,12 +141,24 @@
           "done": false
         },
         {
+          "title": "Our station designs and docking for New York's remaining bases",
+          "done": false
+        },
+        {
           "title": "Big Star Wars scale things in space",
           "done": false
         },
         {
           "title": "Old FL models replaced EA",
           "done": false
+        },
+        {
+          "title": "Star Systems map",
+          "done": true
+        },
+        {
+          "title": "Seamless landing on planets (and launching)",
+          "done": true
         },
         {
           "title": "Raise Manhattan",
@@ -156,6 +180,22 @@
         {
           "title": "Decal system on the ships",
           "done": false
+        },
+        {
+          "title": "Idle cinematic cam",
+          "done": true
+        },
+        {
+          "title": "Cargo system",
+          "done": true
+        },
+        {
+          "title": "Your own hangar (multiple ships)",
+          "done": true
+        },
+        {
+          "title": "Liveries set up",
+          "done": true
         }
       ]
     },
@@ -272,6 +312,14 @@
         {
           "title": "Pirate start",
           "done": false
+        },
+        {
+          "title": "Fast travel",
+          "done": true
+        },
+        {
+          "title": "Death animation and VFX",
+          "done": true
         },
         {
           "title": "Loot condition",

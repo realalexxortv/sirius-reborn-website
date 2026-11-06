@@ -16,10 +16,11 @@ It's a static site (plain HTML/CSS/JS, no build step) that runs on GitHub Pages 
 | `content/news.json` | All news posts: title, date, tag, timeline image, excerpt and the full Markdown body. |
 | `content/pages/*.md` | Donate, Gallery, About, How it's done and Download pages (Markdown with a `title` / `subtitle` header). |
 | `content/wiki/*.json` | The wiki: ships, systems, stations and weapons (see [The wiki](#the-wiki)). |
+| `content/roadmap.json` | The Roadmap page (`#/roadmap`, also the footer's status ring): the phase under way, its areas and their items, open or done. The game repo's release update writes it from the issues labelled `public`; don't edit it here. |
 | `content/settings.json` | Tagline, build badge, project status ring, Community Hub links, footer text. |
 | `assets/ui/` | Every button, frame and panel, cropped straight from the mockup, plus the character cutouts and the nebula. |
 | `tools/extract_assets.py` | Crops the buttons, frames and panels from `tools/mockup.png`, and turns the mockup's Forums hub badge and caption into YouTube (caption set in Barlow, `tools/fonts/`). |
-| `tools/make_nav_buttons.py` | Makes the Donate and How? buttons, which the mockup does not have: takes a cut button, paints its icon and label out, recolours it for How?, and draws a new icon and a Cinzel label (`tools/fonts/`). |
+| `tools/make_nav_buttons.py` | Makes the Donate, How? and Roadmap buttons, which the mockup does not have: takes a cut button, paints its icon and label out, recolours it for How?, and draws a new icon and a Cinzel label (`tools/fonts/`). |
 | `tools/build_layers.py` | Cuts the characters (Trent from `tools/trent.png`, Juni from `tools/juni.jpg`) and the title (from the mockup) out of their backgrounds with rembg, grades the characters to match the nebula, and builds the nebula backdrop. |
 | `admin/` | The CMS. |
 

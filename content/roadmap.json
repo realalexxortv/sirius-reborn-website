@@ -1,0 +1,143 @@
+{
+  "phase": "Early Access",
+  "percent": 50,
+  "release": "Alpha 0.3.5",
+  "date": "2026-11-06",
+  "areas": [
+    {
+      "name": "Combat",
+      "items": [
+        {
+          "title": "Special weapons on key 2 (Railgun, Laser) and weapon groups with a lead indicator each",
+          "done": false
+        },
+        {
+          "title": "NPCs fight better: group tactics and morale",
+          "done": false
+        },
+        {
+          "title": "Torpedoes: heavy ships only, huge damage on stationary targets, massive visuals",
+          "done": false
+        },
+        {
+          "title": "Two new Liberty Navy guns: a Railgun (West Point) and a Laser (Willard)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "name": "Liberty systems",
+      "items": [
+        {
+          "title": "Fights in nebulae and asteroid fields",
+          "done": false
+        },
+        {
+          "title": "System: California finished",
+          "done": false
+        },
+        {
+          "title": "System: Hudson",
+          "done": false
+        },
+        {
+          "title": "System: Alaska",
+          "done": false
+        },
+        {
+          "title": "System: Colorado",
+          "done": false
+        },
+        {
+          "title": "System: Texas",
+          "done": false
+        },
+        {
+          "title": "System: Magellan (border)",
+          "done": false
+        },
+        {
+          "title": "System: Cortez (border)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "name": "Ships",
+      "items": [
+        {
+          "title": "All Liberty and civilian ships flyable, redesigned and classed",
+          "done": false
+        }
+      ]
+    },
+    {
+      "name": "Missions",
+      "items": [
+        {
+          "title": "Story Early Access: First 3 missions",
+          "done": false
+        }
+      ]
+    },
+    {
+      "name": "Launch",
+      "items": [
+        {
+          "title": "Feedback / Issue system ingame",
+          "done": false
+        },
+        {
+          "title": "Anti-cheat: logs, statistics, AI case summaries, admin tools, ban waves",
+          "done": false
+        },
+        {
+          "title": "Game master tools: run events and the war by hand",
+          "done": false
+        }
+      ]
+    },
+    {
+      "name": "Online and social",
+      "items": [
+        {
+          "title": "Seeing each other: players in contacts, maps and bars; friends",
+          "done": false
+        },
+        {
+          "title": "Talking: chat channels, comm wheel, player hails, safety",
+          "done": false
+        },
+        {
+          "title": "Wings: player groups up to 6",
+          "done": false
+        }
+      ]
+    },
+    {
+      "name": "Progression and loot",
+      "items": [
+        {
+          "title": "Trading system",
+          "done": false
+        },
+        {
+          "title": "Leave a mark: discoveries, names in the world, leaderboards",
+          "done": false
+        },
+        {
+          "title": "Licences earned by trial missions",
+          "done": false
+        },
+        {
+          "title": "Knowledge for early access: bar rumours, patrol paths seen, the codex",
+          "done": false
+        },
+        {
+          "title": "Pilot record, medals and titles (early-access systems)",
+          "done": false
+        }
+      ]
+    }
+  ]
+}

@@ -178,6 +178,33 @@
     });
   }
 
+  // --------------------------------------------------------------- roadmap
+  // content/roadmap.json, written by the game repo's release update: the phase under way, its areas and in each the
+  // issues labelled public (open or done). Drawn as a route: one waypoint per area, its ring the area's share done.
+  function renderRoadmap() {
+    return getJSON('content/roadmap.json').then(function (r) {
+      setHead('Roadmap', r.phase + ' \u00b7 ' + r.percent + '% Complete', 'Roadmap');
+      var stops = (r.areas || []).map(function (a) {
+        var done = a.items.filter(function (i) { return i.done; }).length;
+        var pct = Math.round(100 * done / a.items.length);
+        return '<section class="rm-stop">' +
+          '<div class="rm-ring" role="img" aria-label="' + pct + '% done"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="22"/>' +
+          '<circle class="rm-ring-fill" cx="26" cy="26" r="22" pathLength="100" stroke-dasharray="' + pct + ' 100"/></svg>' +
+          '<span>' + pct + '%</span></div>' +
+          '<div class="rm-stop-head"><h2>' + esc(a.name) + '</h2><span class="rm-count">' + done + ' of ' + a.items.length + ' done</span></div>' +
+          '<ul class="rm-chips">' + a.items.map(function (i) {
+            return '<li class="rm-chip' + (i.done ? ' done' : '') + '">' + esc(i.title) + (i.done ? '<span class="sr"> (done)</span>' : '') + '</li>';
+          }).join('') + '</ul></section>';
+      }).join('');
+      view.innerHTML = '<div class="rm">' +
+        '<div class="rm-intro"><p>What is left before ' + esc(r.phase) + ', area by area: the bigger items only, bug fixes are in the ' +
+          '<a href="#/">patch notes</a>. It is updated with every release.</p>' +
+          '<p class="rm-legend"><span><i class="o"></i>Planned</span><span><i class="d"></i>Done</span></p></div>' +
+        (stops ? '<div class="rm-route">' + stops + '</div>' : '<p class="empty">The roadmap is being written. Stay tuned.</p>') +
+        '<p class="rm-meta">As of ' + esc(r.release) + ' \u00b7 ' + esc(SR.formatDate(r.date)) + '</p></div>';
+    });
+  }
+
   // ------------------------------------------------------------------ wiki
   // content/wiki/<kind>.json, filled by the game repo's wiki update PRs. Values marked og come from the original game's
   // data and get SR.ogIcon(); summary and body are our own text from the CMS.
@@ -286,6 +313,7 @@
 
     if (!parts.length) job = renderTimeline();
     else if (parts[0] === 'news' && parts[1]) job = renderPost(parts[1]);
+    else if (parts[0] === 'roadmap') { navKey = 'roadmap'; job = renderRoadmap(); }
     else if (parts[0] === 'wiki') { navKey = 'wiki'; job = parts[2] ? renderWikiEntry(parts[1], parts[2]) : renderWiki(parts[1]); }
     else if (SR.PAGES.indexOf(parts[0]) >= 0) { navKey = parts[0]; job = renderPage(parts[0]); }
     else job = Promise.resolve(renderNotFound());

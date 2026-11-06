@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Nav buttons the mockup does not have (Donate, How?), made from the cut ones.
+"""Nav buttons the mockup does not have (Donate, How?, Roadmap), made from the cut ones.
 
 Takes a button from tools/extract_assets.py, paints its icon and label out of
 the pill, optionally turns the pill to another hue, and draws a new icon and a
@@ -122,6 +122,23 @@ def cog(size, teeth=8):
     return m
 
 
+def route(size):
+    """A flight route: three waypoints on a winding path, the last a ring (where it is headed)."""
+    s = size * SS
+    m = Image.new("L", (s, s), 0)
+    d = ImageDraw.Draw(m)
+    pts = [(s * 0.14, s * 0.84), (s * 0.40, s * 0.52), (s * 0.66, s * 0.66), (s * 0.84, s * 0.18)]
+    d.line(pts, fill=255, width=int(s * 0.075), joint="curve")
+    for x, y in pts[:3]:
+        r = s * 0.1
+        d.ellipse((x - r, y - r, x + r, y + r), fill=255)
+    x, y = pts[3]
+    ro, ri = s * 0.16, s * 0.08
+    d.ellipse((x - ro, y - ro, x + ro, y + ro), fill=255)
+    d.ellipse((x - ri, y - ri, x + ri, y + ri), fill=0)
+    return m
+
+
 def label(text, px):
     """Cinzel Bold; its lower case is small caps, like the mockup's labels."""
     font = ImageFont.truetype(str(FONT), px * SS)
@@ -167,3 +184,4 @@ def make(base, out, text, icon, glow, hue=None, sat=1.0):
 if __name__ == "__main__":
     make("nav-support.png", "nav-donate.png", "Donate", heart(40), (190, 140, 255))
     make("nav-home.png", "nav-how.png", "How?", cog(44), (110, 240, 170), hue=145, sat=0.7)
+    make("nav-home.png", "nav-roadmap.png", "Roadmap", route(44), (255, 110, 130), hue=350, sat=0.85)

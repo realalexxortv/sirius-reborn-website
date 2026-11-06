@@ -150,6 +150,7 @@ img { display: block; }
 .nav-about    { --glow: #3fd6e6; }
 .nav-download { --glow: #ff9b3d; }
 .nav-how      { --glow: #4fe08a; }
+.nav-roadmap  { --glow: #ff6e82; }
 
 /* ------------------------------------------------------------- the panel */
 
@@ -431,6 +432,48 @@ img { display: block; }
 .gallery-shot:hover { border-color: #4fa9ffaa; box-shadow: 0 0 16px #4fa9ff44; }
 .compact .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
 
+/* ---------------------------------------------------------------- roadmap */
+
+.rm { padding: 8px 40px 40px 14px; }
+.rm-intro { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 22px; margin: 0 0 26px; }
+.rm-intro p { margin: 0; }
+.rm-intro p:first-child { max-width: 640px; font-size: 17.5px; line-height: 1.6; color: var(--ink-2); }
+.rm-legend { display: flex; gap: 16px; font-size: 13.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.rm-legend i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
+.rm-legend .o { border: 2px solid #5cb6ff; }
+.rm-legend .d { background: #59d38c; }
+.rm-meta { margin: 28px 0 0; font-size: 13.5px; letter-spacing: .1em; text-transform: uppercase; color: #8592a6; }
+
+/* the route: a line down the left, one waypoint ring per area */
+.rm-route { position: relative; display: grid; gap: 26px; padding-left: 64px; }
+.rm-route::before {
+  content: ""; position: absolute; left: 25px; top: 10px; bottom: 10px; width: 2px;
+  background: linear-gradient(#39b2ff, #39b2ff66 60%, #ff6e8266);
+}
+.rm-stop { position: relative; display: grid; gap: 10px; }
+.rm-ring { position: absolute; left: -64px; top: -6px; width: 52px; height: 52px; }
+.rm-ring svg { width: 52px; height: 52px; transform: rotate(-90deg); }
+.rm-ring circle { fill: #050a14; stroke: #1d3a5c; stroke-width: 4; }
+.rm-ring .rm-ring-fill { fill: none; stroke: #39b2ff; stroke-linecap: round; filter: drop-shadow(0 0 3px #39b2ff); }
+.rm-ring span {
+  position: absolute; inset: 0; display: grid; place-items: center;
+  font-size: 13px; font-weight: 600; color: #f2f6fb; font-variant-numeric: tabular-nums;
+}
+.rm-stop-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+.rm-stop-head h2 { margin: 0; font-family: var(--serif); font-size: 21px; font-weight: 600; letter-spacing: .04em; color: #e3e9f3; }
+.rm-count { font-size: 14px; letter-spacing: .08em; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.rm-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 7px; }
+.rm-chip { padding: 5px 11px; border-radius: 14px; font-size: 15px; line-height: 1.35; border: 1px solid #5cb6ff66; background: #0d1a2c; color: var(--ink); }
+.rm-chip.done {
+  border-color: #59d38c44; background: #0c1a16; color: #8fa59a;
+  text-decoration: line-through; text-decoration-color: #59d38c88;
+}
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.compact .rm { padding: 4px 4px 24px; }
+.compact .rm-route { padding-left: 54px; }
+.compact .rm-ring { left: -54px; transform: scale(.85); transform-origin: left top; }
+.compact .rm-route::before { left: 21px; }
+
 /* ------------------------------------------------------------------- wiki */
 
 .wiki, .wiki-entry { padding: 8px 40px 40px 14px; }
@@ -516,6 +559,10 @@ img { display: block; }
 .footer-stage { position: relative; width: 1712px; height: 158px; zoom: var(--fz); }
 .footer-bg { position: absolute; inset: 0; }
 .memory, .hub span { display: none; }
+
+.status { display: block; color: inherit; text-decoration: none; outline: none; }
+.status:hover .ring-fill, .status:focus-visible .ring-fill { stroke: #7fd0ff; filter: drop-shadow(0 0 6px #39b2ff); }
+.status:hover .status-title, .status:focus-visible .status-title { color: #fff; text-shadow: 0 0 10px #4fa9ff99; }
 
 .status-ring {
   position: absolute; left: 57px; top: 9px; width: 140px; height: 140px;

@@ -3,8 +3,8 @@
   "build": "Development Build 0.3.5",
   "engine": "Unreal Engine 5.8.3",
   "status": {
-    "percent": 10,
-    "phase": "Alpha Development Phase",
+    "percent": 50,
+    "phase": "Early Access Development Phase",
     "target": "Target Release: Early 2027"
   },
   "links": {

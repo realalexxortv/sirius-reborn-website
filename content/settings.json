@@ -3,15 +3,15 @@
   "build": "Development Build 0.3.5",
   "engine": "Unreal Engine 5.8.3",
   "status": {
-    "percent": 10,
-    "phase": "Alpha Development Phase",
+    "percent": 50,
+    "phase": "Early Access Development Phase",
     "target": "Target Release: Early 2027"
   },
   "links": {
     "discord": "https://discord.com/invite/7H4ndQNEJW",
     "youtube": "https://www.youtube.com/@alexxortv",
     "wiki": "#/wiki",
-    "socials": ""
+    "socials": "https://x.com/alexxortv"
   },
   "timelineFooter": "More updates coming soon. Stay tuned.  •  Live long. Fly free.",
   "copyright": "© {year} Sirius Reborn Project. Not affiliated with Microsoft or Digital Anvil."

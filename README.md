@@ -41,7 +41,7 @@ The CMS is a static page that commits to this repository through the GitHub API,
 You can then:
 
 - **News**: write, edit, unpublish (draft) and delete posts. Each post has a timeline image (shown in the round frame), an excerpt for the timeline and a full Markdown body with a live preview. You can upload images and embed YouTube videos.
-- **Pages**: edit Donate, Gallery, About, How it's done and Download. Put several images on one line in the Gallery to get a grid.
+- **Pages**: edit Donate, Gallery, About, How it's done and Download. Put several images on one line in the Gallery to get a grid. Below the Gallery's text the site adds every shot of the wiki's ships and stations by itself, so each wiki update adds its new shots there.
 - **Wiki**: add our own summary and text to a wiki entry, or hide it (see below).
 - **Settings**: tagline, build badge, project status percentage and text, Community Hub links (an empty link disables its button; `#/wiki` opens the site's wiki) and footer text.
 

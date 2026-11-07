@@ -475,7 +475,7 @@
           post.slug += '-' + n;
         }
         var i = oldSlug ? posts.findIndex(function (p) { return p.slug === oldSlug; }) : -1;
-        if (i >= 0) posts[i] = post; else posts.push(post);
+        if (i >= 0) posts[i] = post; else posts.unshift(post);
         d.posts = SR.sortPosts(posts);
       }, (original ? 'Update' : 'Publish') + ' news post: ' + post.title).then(function () {
         dirty = false;

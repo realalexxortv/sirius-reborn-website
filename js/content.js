@@ -115,9 +115,10 @@
     return /^([a-z]+:|\/|data:)/i.test(path) ? path : (base || '') + path;
   }
 
+  // Newest date first; posts of the same day keep their order in news.json (newest first: new posts go on top).
   function sortPosts(posts) {
     return posts.slice().sort(function (a, b) {
-      return (b.date || '').localeCompare(a.date || '') || (a.title || '').localeCompare(b.title || '');
+      return (b.date || '').localeCompare(a.date || '');
     });
   }
 

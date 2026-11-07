@@ -82,7 +82,7 @@
     titleEl.textContent = title;
     subEl.textContent = sub || '';
     subEl.parentNode.style.visibility = sub ? '' : 'hidden';
-    document.title = (docTitle ? docTitle + ' | ' : '') + 'Sirius Reborn | Remake of the 2003 Classic';
+    document.title = (docTitle ? docTitle + ' | ' : '') + 'Sirius Reborn | Reimagining of the 2003 Classic';
     sizeSubtitle();
   }
 
@@ -232,7 +232,7 @@
     var kinds = kindKey ? [wikiKind(kindKey)] : SR.WIKI_KINDS;
     if (!kinds[0]) return Promise.resolve(renderNotFound());
     if (kindKey) setHead(kinds[0].title, 'Sirius Wiki', kinds[0].title + ' | Wiki');
-    else setHead('Sirius Wiki', 'The Remake, Piece by Piece', 'Wiki');
+    else setHead('Sirius Wiki', 'Reimagined, Piece by Piece', 'Wiki');
     return Promise.all(kinds.map(function (k) { return loadWiki(k.key); })).then(function (lists) {
       var html = kinds.map(function (k, i) {
         if (!lists[i].length) return '';

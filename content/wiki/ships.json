@@ -94,7 +94,7 @@
       ],
       "source": "3d8c117cfef4",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "bloodhound",
@@ -195,7 +195,7 @@
       ],
       "source": "89e5c5493175",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "dagger",
@@ -296,7 +296,7 @@
       ],
       "source": "caaa76db338d",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "defender",
@@ -395,9 +395,9 @@
         "images/wiki/ships/defender-top.webp",
         "images/wiki/ships/defender-rear.webp"
       ],
-      "source": "274d568e1941",
+      "source": "5658a93d01bb",
       "added": "2026-10-20",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "dromedary",
@@ -498,7 +498,7 @@
       ],
       "source": "90c3fc7f2a7a",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "large-transport",
@@ -569,7 +569,7 @@
       ],
       "source": "23ec56c02d8b",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "mule",
@@ -670,7 +670,7 @@
       ],
       "source": "ba5e44b80f73",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "patriot",
@@ -766,7 +766,7 @@
       ],
       "source": "7bf2b73d27b2",
       "added": "2026-10-31",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "piranha",
@@ -862,7 +862,7 @@
       ],
       "source": "029e0eeccd5d",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "rhino",
@@ -963,7 +963,7 @@
       ],
       "source": "f8051fc8f171",
       "added": "2026-10-20",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "starflier",
@@ -1054,7 +1054,7 @@
       ],
       "source": "ed85af05c94f",
       "added": "2026-10-20",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "startracker",
@@ -1150,7 +1150,7 @@
       ],
       "source": "3acfeb87349c",
       "added": "2026-10-31",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "transport",
@@ -1221,7 +1221,7 @@
       ],
       "source": "23ec56c02d8b",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "valkyrie",
@@ -1322,7 +1322,7 @@
       ],
       "source": "366e03ae16c5",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "wolfhound",
@@ -1423,7 +1423,7 @@
       ],
       "source": "38171354dd8c",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     }
   ]
 }

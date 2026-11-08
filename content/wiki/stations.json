@@ -1,6 +1,27 @@
 {
   "entries": [
     {
+      "id": "",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "",
+      "subtitle": "California",
+      "stats": [
+        {
+          "label": "System",
+          "value": "California",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [],
+      "source": "6ffb7a5b6226",
+      "added": "2026-11-08",
+      "updated": "2026-11-08"
+    },
+    {
       "id": "baltimore-shipyard",
       "summary": "",
       "body": "",
@@ -22,12 +43,12 @@
       "tables": [],
       "description": "",
       "images": [
-        "images/wiki/stations/baltimore-shipyard-close.webp",
-        "images/wiki/stations/baltimore-shipyard-far_planet.webp"
+        "images/wiki/stations/baltimore-shipyard-wide.webp",
+        "images/wiki/stations/baltimore-shipyard-wide_opposite.webp"
       ],
-      "source": "1ac9037d10bf",
+      "source": "f24b68d7057f",
       "added": "2026-10-26",
-      "updated": "2026-10-31"
+      "updated": "2026-11-08"
     },
     {
       "id": "buffalo-base",
@@ -51,41 +72,89 @@
       "tables": [],
       "description": "CLASS: Leviathan\nGRAVITY: Complete\nDOCKING: Yes\nAMENITIES: Limited\nPOPULATION: Unknown",
       "images": [
-        "images/wiki/stations/buffalo-base-close.webp",
-        "images/wiki/stations/buffalo-base-far_planet.webp"
+        "images/wiki/stations/buffalo-base-wide.webp",
+        "images/wiki/stations/buffalo-base-wide_opposite.webp"
       ],
-      "source": "264239235832",
+      "source": "48b35d840cb8",
       "added": "2026-10-26",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
-      "id": "new-york-california",
+      "id": "communications-satellite",
       "summary": "",
       "body": "",
       "hidden": false,
-      "name": "New York –> California",
-      "subtitle": "New York",
+      "name": "Communications Satellite",
+      "subtitle": "California",
       "stats": [
         {
           "label": "System",
-          "value": "New York",
-          "og": true
-        },
-        {
-          "label": "Faction",
-          "value": "Liberty Police, Inc.",
+          "value": "California",
           "og": true
         }
       ],
       "tables": [],
       "description": "",
       "images": [
-        "images/wiki/stations/new-york-california-close.webp",
-        "images/wiki/stations/new-york-california-far_planet.webp"
+        "images/wiki/stations/communications-satellite-wide.webp",
+        "images/wiki/stations/communications-satellite-wide_opposite.webp"
       ],
-      "source": "6fe28797a0e3",
-      "added": "2026-10-26",
-      "updated": "2026-10-26"
+      "source": "6ffb7a5b6226",
+      "added": "2026-11-08",
+      "updated": "2026-11-08"
+    },
+    {
+      "id": "hazard-buoy",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Hazard Buoy",
+      "subtitle": "Sigma-17",
+      "stats": [
+        {
+          "label": "System",
+          "value": "Sigma-17",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/stations/hazard-buoy-wide.webp",
+        "images/wiki/stations/hazard-buoy-wide_opposite.webp"
+      ],
+      "source": "b9e8c19b09b1",
+      "added": "2026-11-08",
+      "updated": "2026-11-08"
+    },
+    {
+      "id": "navigation-buoy",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Navigation Buoy",
+      "subtitle": "Sigma-17",
+      "stats": [
+        {
+          "label": "System",
+          "value": "Sigma-17",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Samura Industries",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/stations/navigation-buoy-wide.webp",
+        "images/wiki/stations/navigation-buoy-wide_opposite.webp"
+      ],
+      "source": "b9e8c19b09b1",
+      "added": "2026-11-08",
+      "updated": "2026-11-08"
     },
     {
       "id": "newark-station",
@@ -109,12 +178,12 @@
       "tables": [],
       "description": "CLASS: Chasins\nGRAVITY: Complete\nDOCKING: Yes\nAMENITIES: Yes\nPOPULATION: 5K",
       "images": [
-        "images/wiki/stations/newark-station-close.webp",
-        "images/wiki/stations/newark-station-far_planet.webp"
+        "images/wiki/stations/newark-station-wide.webp",
+        "images/wiki/stations/newark-station-wide_opposite.webp"
       ],
-      "source": "3e922c3f9f2c",
+      "source": "0b11d85dd1f8",
       "added": "2026-10-20",
-      "updated": "2026-10-31"
+      "updated": "2026-11-08"
     },
     {
       "id": "orbital-station",
@@ -122,16 +191,16 @@
       "body": "",
       "hidden": false,
       "name": "Orbital Station",
-      "subtitle": "New York",
+      "subtitle": "Sigma-17",
       "stats": [
         {
           "label": "System",
-          "value": "New York",
+          "value": "Sigma-17",
           "og": true
         },
         {
           "label": "Faction",
-          "value": "Liberty Police, Inc.",
+          "value": "Samura Industries",
           "og": true
         }
       ],
@@ -141,9 +210,64 @@
         "images/wiki/stations/orbital-station-close.webp",
         "images/wiki/stations/orbital-station-far_planet.webp"
       ],
-      "source": "bc85909b6c65",
+      "source": "c0f408944855",
       "added": "2026-10-20",
-      "updated": "2026-10-31"
+      "updated": "2026-11-08"
+    },
+    {
+      "id": "sigma-17-sigma-19",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Sigma-17 –> Sigma-19",
+      "subtitle": "Sigma-17",
+      "stats": [
+        {
+          "label": "System",
+          "value": "Sigma-17",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Samura Industries",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [],
+      "source": "1e51a9df0629",
+      "added": "2026-11-08",
+      "updated": "2026-11-08"
+    },
+    {
+      "id": "storage-depot",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Storage Depot",
+      "subtitle": "New York",
+      "stats": [
+        {
+          "label": "System",
+          "value": "New York",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Deep Space Engineering",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/stations/storage-depot-wide.webp",
+        "images/wiki/stations/storage-depot-wide_opposite.webp"
+      ],
+      "source": "6ffb7a5b6226",
+      "added": "2026-11-08",
+      "updated": "2026-11-08"
     },
     {
       "id": "trenton-outpost",
@@ -167,12 +291,70 @@
       "tables": [],
       "description": "CLASS: Cochrane\nGRAVITY: Partial\nDOCKING: Yes\nAMENITIES: Yes\nPOPULATION: 1K",
       "images": [
-        "images/wiki/stations/trenton-outpost-close.webp",
-        "images/wiki/stations/trenton-outpost-far_planet.webp"
+        "images/wiki/stations/trenton-outpost-wide.webp",
+        "images/wiki/stations/trenton-outpost-wide_opposite.webp"
       ],
-      "source": "9a5adafdf510",
+      "source": "952564e21485",
       "added": "2026-10-20",
-      "updated": "2026-10-31"
+      "updated": "2026-11-08"
+    },
+    {
+      "id": "weapon-platform",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Weapon Platform",
+      "subtitle": "New York",
+      "stats": [
+        {
+          "label": "System",
+          "value": "New York",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Liberty Navy",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/stations/weapon-platform-wide.webp",
+        "images/wiki/stations/weapon-platform-wide_opposite.webp"
+      ],
+      "source": "395c32cb3577",
+      "added": "2026-11-08",
+      "updated": "2026-11-08"
+    },
+    {
+      "id": "weapons-platform",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Weapons Platform",
+      "subtitle": "California",
+      "stats": [
+        {
+          "label": "System",
+          "value": "California",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Liberty Rogues",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/stations/weapons-platform-wide.webp",
+        "images/wiki/stations/weapons-platform-wide_opposite.webp"
+      ],
+      "source": "395c32cb3577",
+      "added": "2026-11-08",
+      "updated": "2026-11-08"
     },
     {
       "id": "west-point-military-academy",
@@ -196,12 +378,12 @@
       "tables": [],
       "description": "CLASS: Military\nGRAVITY: CLASSIFIED\nDOCKING: CLASSIFIED\nAMENITIES: CLASSIFIED\nPOPULATION: CLASSIFIED",
       "images": [
-        "images/wiki/stations/west-point-military-academy-close.webp",
-        "images/wiki/stations/west-point-military-academy-far_planet.webp"
+        "images/wiki/stations/west-point-military-academy-wide.webp",
+        "images/wiki/stations/west-point-military-academy-wide_opposite.webp"
       ],
-      "source": "264239235832",
+      "source": "48b35d840cb8",
       "added": "2026-10-26",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "willard-research-station",
@@ -225,12 +407,12 @@
       "tables": [],
       "description": "CLASS: Unknown\nGRAVITY: Complete\nDOCKING: Yes\nAMENITIES: Unknown\nPOPULATION: Unknown",
       "images": [
-        "images/wiki/stations/willard-research-station-close.webp",
-        "images/wiki/stations/willard-research-station-far_planet.webp"
+        "images/wiki/stations/willard-research-station-wide.webp",
+        "images/wiki/stations/willard-research-station-wide_opposite.webp"
       ],
-      "source": "3c92054a1f6f",
+      "source": "0e3cf82cbe3e",
       "added": "2026-10-26",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     }
   ]
 }

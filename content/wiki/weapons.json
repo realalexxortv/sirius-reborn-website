@@ -86,9 +86,9 @@
       "images": [
         "images/wiki/weapons/azrael-model.webp"
       ],
-      "source": "27a255b5a0cb",
+      "source": "06dbac985624",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "barrager",
@@ -160,9 +160,9 @@
       "images": [
         "images/wiki/weapons/barrager-model.webp"
       ],
-      "source": "27a255b5a0cb",
+      "source": "06dbac985624",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "death-s-hand",
@@ -234,9 +234,9 @@
       "images": [
         "images/wiki/weapons/death-s-hand-model.webp"
       ],
-      "source": "27a255b5a0cb",
+      "source": "06dbac985624",
       "added": "2026-10-20",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "exorcist",
@@ -300,9 +300,9 @@
       "images": [
         "images/wiki/weapons/exorcist-model.webp"
       ],
-      "source": "27a255b5a0cb",
+      "source": "06dbac985624",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "justice",
@@ -406,9 +406,9 @@
       "images": [
         "images/wiki/weapons/justice-model.webp"
       ],
-      "source": "27a255b5a0cb",
+      "source": "06dbac985624",
       "added": "2026-10-20",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "lavablade",
@@ -512,9 +512,9 @@
       "images": [
         "images/wiki/weapons/lavablade-model.webp"
       ],
-      "source": "27a255b5a0cb",
+      "source": "06dbac985624",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "reaper",
@@ -594,9 +594,9 @@
       "images": [
         "images/wiki/weapons/reaper-model.webp"
       ],
-      "source": "27a255b5a0cb",
+      "source": "06dbac985624",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "scorpion",
@@ -676,9 +676,9 @@
       "images": [
         "images/wiki/weapons/scorpion-model.webp"
       ],
-      "source": "27a255b5a0cb",
+      "source": "06dbac985624",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "scrapstorm",
@@ -742,9 +742,9 @@
       "images": [
         "images/wiki/weapons/scrapstorm-model.webp"
       ],
-      "source": "27a255b5a0cb",
+      "source": "06dbac985624",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "starbeam",
@@ -848,9 +848,9 @@
       "images": [
         "images/wiki/weapons/starbeam-model.webp"
       ],
-      "source": "27a255b5a0cb",
+      "source": "06dbac985624",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "stunpulse",
@@ -938,9 +938,9 @@
       "images": [
         "images/wiki/weapons/stunpulse-model.webp"
       ],
-      "source": "27a255b5a0cb",
+      "source": "06dbac985624",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "tarantula",
@@ -1004,9 +1004,9 @@
       "images": [
         "images/wiki/weapons/tarantula-model.webp"
       ],
-      "source": "27a255b5a0cb",
+      "source": "06dbac985624",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "vassago",
@@ -1070,9 +1070,9 @@
       "images": [
         "images/wiki/weapons/vassago-model.webp"
       ],
-      "source": "27a255b5a0cb",
+      "source": "06dbac985624",
       "added": "2026-11-06",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     },
     {
       "id": "vengeance",
@@ -1136,9 +1136,9 @@
       "images": [
         "images/wiki/weapons/vengeance-model.webp"
       ],
-      "source": "27a255b5a0cb",
+      "source": "06dbac985624",
       "added": "2026-10-20",
-      "updated": "2026-11-06"
+      "updated": "2026-11-08"
     }
   ]
 }

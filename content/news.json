@@ -1,6 +1,17 @@
 {
   "posts": [
     {
+      "slug": "how-i-make-a-new-ship-in-2-hours-using-ai",
+      "title": "How I make a new Ship in 2 hours using AI",
+      "date": "2026-11-08",
+      "tag": "Developer Log",
+      "image": "images/uploads/2026-11-08-image-mw7n5wwy.jpg",
+      "showImage": true,
+      "excerpt": "With proper systems you can get new ships into your game in hours!",
+      "body": "I've recently been asked what my workflow for adding new ships is.\n\nI have been a dev in my day job for 20 years, so EVERYTHING is systems based. Especially with AI this is ABSOLUTELY necessary :)\n\nThis is taken straight from Discord.\n\n# The Workflow\nSay the Drone Freighter for Kusari (which isnt in yet).\n\nThis was the prompt in Tripo AI (which used chatGPT image generation):\n\"Create a cool japanese style freighter space ship. Not a huge hauler. Medium sized. Visible cargo. Make the wings look like dragon wings or something\"\n\nThen I had it created like 8-16 different images. Lots of them are ass, so you gotta go with numbers.\n\n![](images/uploads/2026-11-08-image-mw7n7ucb.jpg)\n\nThen I pick one and tell Tripo to render it as a 3D model.\n\nNow this is a shitshow because its guessing a lot from the image. You can add different angles, so sometimes I ask grok to give me different angles of the reference ship. Sometimes it works right away\nI chose this:\n\n![](images/uploads/2026-11-08-image-2-mw7n8c33.jpg)\n\nIt then creates multiple versions of this in wireframe 3D. Many of them suck or have tons of holes. So its a numbers game again until you find a good one\n\n![](images/uploads/2026-11-08-image-mw7n8snz.jpg)\n\nThis is the result.\nNow this has still a tons of bugs at this point. And this is where I have created by trial and error, a 9 step part for Claude.AI to go over the model, look for holes with a magenta background. Mirror starboard to portside or vice versa if its asymmetrical. Remove unnecessary stuff and place guns yourself.\n\nThen it goes for the textures, removing AI scriblles, fixing issues, and building multiple layers for liveries and decals as well as the frost in ice clouds \nSometimes these are wrong, so I need to place them myself, or tell the AI where to do it\nSo through try and error, eventually you get to a ship that looks good. I check it then ingame. Tell the AI to fix things, etc\n\n# SYSTEMS, EVERYWHERE\n\nYou see, ive been a dev for 20 years, so EVERYTHING is systems based.\n\nI have developed systems for the ships, the systems, the guns, the suns, the planets. All of it follows an outlined system the AI just works with\n\nWhich is again, where I say, AI doesnt solve your issues, it just makes your work a lot faster\nBut with this I can basically get a ship into the game within roughly 3-4 hours fully playable\nwhich is still insane\n\nI did the same for weapon platforms or even big planetsized rocks which I recently added. Although for those we use texture tiling, because the tripo 4k texture gets stretched a lot otherwise\n\nNow for capital ships, its a whole nother work. You will have to split it up into multiple parts. THats how I made the NPC Transport ship which is massive. Front, center, and back, each done differently in Tripo, otherwise the textures get blurry af.\n\nThen stitched together.\n\nTook me a whole day for this one, but wurth it\n\n![](images/uploads/2026-11-08-screenshot-20261108-105002-mw7niuuv.jpg)\n",
+      "draft": false
+    },
+    {
       "slug": "patch-notes-v0-3-6",
       "title": "Patch notes: Alpha 0.3.6",
       "date": "2026-11-06",

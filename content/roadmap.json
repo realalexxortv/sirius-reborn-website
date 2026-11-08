@@ -1,8 +1,8 @@
 {
   "phase": "Early Access",
-  "percent": 55,
-  "release": "Alpha 0.3.6",
-  "date": "2026-11-06",
+  "percent": 54,
+  "release": "Alpha 0.3.7",
+  "date": "2026-11-08",
   "areas": [
     {
       "name": "Combat",
@@ -153,6 +153,10 @@
           "done": false
         },
         {
+          "title": "Sigma-17",
+          "done": false
+        },
+        {
           "title": "Star Systems map",
           "done": true
         },
@@ -236,10 +240,6 @@
       "name": "Launch",
       "items": [
         {
-          "title": "Feedback / Issue system ingame",
-          "done": false
-        },
-        {
           "title": "Anti-cheat: logs, statistics, AI case summaries, admin tools, ban waves",
           "done": false
         },
@@ -250,6 +250,10 @@
         {
           "title": "Keybinds completely configurable",
           "done": false
+        },
+        {
+          "title": "Feedback / Issue system ingame",
+          "done": true
         }
       ]
     },

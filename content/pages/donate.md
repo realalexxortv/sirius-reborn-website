@@ -6,25 +6,53 @@ subtitle: Support the Development of SR!
 ## 100% FREE. ALWAYS.
 #### But we need help anyway :D
 
-Not just for legal reasons (Freelancer is a Microsoft Brand, I am not allowed to make money with it), but also because I want people to enjoy this without a huge paywall.
-
-Sirius Reborn will always stay free.
-
-However, I still have costs to cover, especially online servers for you guys to play, as well as Unreal Editor Assets to make the world look better, and of course, paying for the AI Agents.
+It's a mod, but if we want to add things or make it look and play better, we need money. As always ;)
 
 ### Here are the costs for the whole game so far:
 #### AI Agents:
 * Claude Code Max: 90 EUR / month since October 2026
 * Grok Imagine: 15 EUR / month
-* OpenGenAI: 40 EUR / month
-* Tripo 3D Converter: 40 EUR / month
+* Tripo 3D Max: 80 EUR / month
 
-#### Servers:
-* Not yet
 
-I also paid about 2 grand in Unreal Assets :D but these are mine and not your issue :)
+# Unreal Assets So Far
 
-TL;DR: Tons of costs, always free, I need any support from you :)
+- Fab Nebula Forge Package	$20
+- Fab Planet Sci-Fi Skies Package	$15
+- Fab Stations & Ships Package	$127
+- Fab Greebles and Ships Package	$106
+- Fab UltraRealistic Sun	$63
+- Fab Asteroids 1	$10
+- Fab Modular Space Cantina	$75
+- Fab Orbital Space Station Kit	$75
+- Fab Space Station Simulation	$10
+- Sci Fi Modular Outpost $27	
+- Brushify Desert Mountains pack $28	
+- SciFi Factory $21	
+- SciFi Thrusters $40	
+- Industrial mining Outfit $20	
+- Asian Girl Face $15	
+- Stewardess Outfit $20	
+- Modular SciFi SpaceStation $127	
+- Modular SciFi Station $50	
+- Reactive Shield $31	
+- Techwear Dress $21	
+- Metahuman Faces $30	
+- Lasr Projectiles $53	
+- Star Creator $42	
+- Different Outfits Metahuman $80	
+- Brushify SciFi Buildings $42	
+- Bar and Conversation Mocap $80	
+- Female Animation Package and Formal Wear $62	
+- Space Skybox, Nebulas, Backgrounds and Niagara Explosions $100
+
+# What we Still Need
+
+- Different Surface Packages for the Planets (About $300)
+- Different Styles for the Other factions via packs ($200)
+- Multiple Different Station Design Packages ($300)
+- NPCs, clothes, and Animations (hot dresses are expensive man...) ($500)
+
 
 So if you want to help, here are a bunch of ways. Any amount is enough.
 

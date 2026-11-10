@@ -48,8 +48,11 @@ It's a mod, but if we want to add things or make it look and play better, we nee
 
 # What we Still Need
 
+Yes, these really ARE expensive...
+
 - Different Surface Packages for the Planets (About $300)
 - Different Styles for the Other factions via packs ($200)
+- PROPER OCEANS! $100
 - Multiple Different Station Design Packages ($300)
 - NPCs, clothes, and Animations (hot dresses are expensive man...) ($500)
 

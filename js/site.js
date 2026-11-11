@@ -77,6 +77,52 @@
     });
   }
 
+  // --------------------------------------------------------------- funding
+  // The funding worker (funding/, settings funding.api): the goals and the last backers. No API or no answer: nothing shown.
+  function loadFunding() {
+    var api = get(state.settings, 'funding.api');
+    if (!api) return Promise.resolve(null);
+    return getJSON(api.replace(/\/+$/, '') + '/funding').catch(function (e) { console.error(e); return null; });
+  }
+
+  function money(v, cur) {
+    try {
+      return new Intl.NumberFormat('en', { style: 'currency', currency: cur, minimumFractionDigits: v % 1 ? 2 : 0 }).format(v);
+    } catch (e) { return v + ' ' + cur; }
+  }
+
+  function goalHtml(g) {
+    var pct = Math.min(100, 100 * g.raised / g.target);
+    return '<div class="fund-goal">' +
+      '<div class="fund-head"><h3>' + esc(g.label) + '</h3>' +
+        '<span class="fund-sum"><b>' + esc(money(g.raised, g.currency)) + '</b> of ' + esc(money(g.target, g.currency)) +
+        (g.monthly ? ' this month' : '') + '</span></div>' +
+      '<div class="fund-bar" role="progressbar" aria-label="' + esc(g.label) + '" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + Math.round(pct) + '">' +
+        '<i style="width:' + pct + '%"></i></div></div>';
+  }
+
+  var SOURCES = { kofi: 'Ko-fi', patreon: 'Patreon', manual: '' };
+  function fundingHtml(f) {
+    var d = function (iso) { var p = SR.dateParts(iso); return p.month + ' ' + p.day; };
+    return '<section class="funding">' + f.goals.map(goalHtml).join('') +
+      '<div class="fund-backers"><h3>Keeping the lights on</h3>' +
+      (f.backers.length ? '<ol>' + f.backers.map(function (b) {
+        var via = SOURCES[b.source];
+        return '<li><b>' + esc(b.name) + '</b><small>' + (via ? esc(via) + ' \u00b7 ' : '') + esc(d(b.at)) + '</small></li>';
+      }).join('') + '</ol>' : '<p class="fund-none">No backers yet. The first name here could be yours.</p>') +
+      '</div></section>';
+  }
+
+  // Above the timeline: the first goal, one line, to the Donate page.
+  function fundingStripHtml(f) {
+    var g = f && f.goals[0];
+    if (!g) return '';
+    var pct = Math.min(100, 100 * g.raised / g.target);
+    return '<a class="fund-strip" href="#/donate"><span>' + esc(g.label) + '</span>' +
+      '<span class="fund-bar"><i style="width:' + pct + '%"></i></span>' +
+      '<b>' + esc(money(g.raised, g.currency)) + ' / ' + esc(money(g.target, g.currency)) + '</b></a>';
+  }
+
   // ------------------------------------------------------------ renderers
   function setHead(title, sub, docTitle) {
     titleEl.textContent = title;
@@ -107,12 +153,13 @@
 
   function renderTimeline() {
     setHead('Development News Timeline', 'The Journey to Rebirth');
-    return loadPosts().then(function (posts) {
+    return Promise.all([loadPosts(), loadFunding()]).then(function (r) {
+      var posts = r[0];
       var end = (state.settings && state.settings.timelineFooter) || '';
-      view.innerHTML = posts.length
+      view.innerHTML = fundingStripHtml(r[1]) + (posts.length
         ? '<div class="timeline">' + posts.map(entryHtml).join('') + '</div>' +
           (end ? '<p class="timeline-end">' + esc(end) + '</p>' : '')
-        : '<p class="empty">No news yet. Stay tuned.</p>';
+        : '<p class="empty">No news yet. Stay tuned.</p>');
     });
   }
 
@@ -151,10 +198,11 @@
   function renderPage(name) {
     var load = pageCache[name] || (pageCache[name] = fetch('content/pages/' + name + '.md', { cache: 'no-cache' })
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); }));
-    return load.then(function (text) {
-      var fm = SR.parseFrontMatter(text);
+    return Promise.all([load, name === 'donate' ? loadFunding() : null]).then(function (r) {
+      var fm = SR.parseFrontMatter(r[0]);
       setHead(fm.meta.title || name, fm.meta.subtitle || '', fm.meta.title || name);
-      view.innerHTML = '<div class="page page-' + name + '"><div class="md">' + SR.renderMarkdown(fm.body) + '</div></div>';
+      view.innerHTML = '<div class="page page-' + name + '">' + (r[1] ? fundingHtml(r[1]) : '') +
+        '<div class="md">' + SR.renderMarkdown(fm.body) + '</div></div>';
       if (name === 'gallery') return renderGalleryShots(view.querySelector('.page'));
     });
   }

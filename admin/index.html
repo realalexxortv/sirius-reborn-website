@@ -18,6 +18,7 @@
       <a href="#/news" data-tab="news">News</a>
       <a href="#/pages" data-tab="pages">Pages</a>
       <a href="#/wiki" data-tab="wiki">Wiki</a>
+      <a href="#/funding" data-tab="funding">Funding</a>
       <a href="#/settings" data-tab="settings">Settings</a>
     </nav>
     <div class="who" id="who" hidden>
@@ -258,11 +259,63 @@
         </div>
       </fieldset>
       <fieldset>
+        <legend>Funding</legend>
+        <label>Funding worker URL <small class="muted">(funding/README.md; empty hides the bar and the backers)</small>
+          <input name="funding.api" type="url" placeholder="https://sirius-funding.….workers.dev"></label>
+      </fieldset>
+      <fieldset>
         <legend>Text</legend>
         <label>End of timeline <input name="timelineFooter"></label>
         <label>Copyright line <small class="muted">({year} becomes the current year)</small> <input name="copyright"></label>
       </fieldset>
     </form>
+  </template>
+
+  <template id="tpl-funding">
+    <section class="card">
+      <div class="card-head">
+        <h1>Funding</h1>
+        <div class="actions"><button class="btn small" type="button" id="fund-forget" hidden>Forget admin token</button></div>
+      </div>
+      <p class="muted" id="fund-msg"></p>
+      <form id="fund-login" hidden>
+        <label>Funding admin token <small class="muted">(the ADMIN_TOKEN secret of the worker; it stays in this browser)</small>
+          <input name="token" type="password" autocomplete="off" required></label>
+        <button class="btn primary" type="submit">Open</button>
+      </form>
+      <div id="fund-body" hidden>
+        <form id="fund-goals">
+          <fieldset>
+            <legend>Goals</legend>
+            <p class="muted small">A monthly goal counts the current month; the others count everything since their start date.
+              Payments in another currency than the goal's are not counted. Changes show on the site within a minute.</p>
+            <div id="goal-rows"></div>
+            <div class="actions fund-actions">
+              <button class="btn small" type="button" id="goal-add">Add goal</button>
+              <button class="btn primary" type="submit">Save goals</button>
+            </div>
+          </fieldset>
+        </form>
+        <form id="fund-manual">
+          <fieldset>
+            <legend>Add a payment by hand</legend>
+            <p class="muted small">For support the worker can't see: a stream tip, a Super Chat, a bank transfer.</p>
+            <div class="fund-row">
+              <label>Name shown <input name="name" placeholder="Anonymous" maxlength="32"></label>
+              <label>Amount <input name="amount" type="number" min="0.01" step="0.01" placeholder="5.00" required></label>
+              <label>Currency <input name="currency" value="EUR" maxlength="3" required></label>
+              <button class="btn primary" type="submit">Add</button>
+            </div>
+          </fieldset>
+        </form>
+        <fieldset>
+          <legend>Last payments</legend>
+          <p class="muted small">Hide: the name leaves the backer list, the money still counts. Void: a refund or a test, not counted at all.</p>
+          <table class="fund-table"><thead><tr><th>Date</th><th>Name</th><th>Via</th><th>Amount</th><th>Hide</th><th>Void</th></tr></thead>
+            <tbody id="fund-payments"></tbody></table>
+        </fieldset>
+      </div>
+    </section>
   </template>
 
   <input type="file" id="file-input" accept="image/*" hidden>

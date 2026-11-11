@@ -1,0 +1,14 @@
+# Deploy: see README.md (Funding). The secrets KOFI_TOKEN, PATREON_SECRET and ADMIN_TOKEN are set with
+# `npx wrangler secret put`, never written here.
+name = "sirius-funding"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+PATREON_CURRENCY = "EUR"   # the Patreon campaign's currency: Patreon reports cents without one
+
+[[d1_databases]]
+binding = "DB"
+database_name = "sirius-funding"
+database_id = "REPLACE_WITH_ID_FROM_wrangler_d1_create"

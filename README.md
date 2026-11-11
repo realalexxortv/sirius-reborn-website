@@ -14,14 +14,15 @@ It's a static site (plain HTML/CSS/JS, no build step) that runs on GitHub Pages 
 | `index.html`, `css/site.css`, `js/site.js` | The site. A hash router renders the news timeline, single posts and the four pages inside the main panel. |
 | `js/content.js` | Markdown rendering, date formatting and front matter helpers, shared by the site and the CMS. |
 | `content/news.json` | All news posts: title, date, tag, timeline image, excerpt and the full Markdown body. |
-| `content/pages/*.md` | Donate, Gallery, About, How it's done and Download pages (Markdown with a `title` / `subtitle` header). |
+| `content/pages/*.md` | Join the Crew (`donate.md`), Gallery, About, How it's done and Download pages (Markdown with a `title` / `subtitle` header). |
 | `content/wiki/*.json` | The wiki: ships, systems, stations and weapons (see [The wiki](#the-wiki)). |
 | `content/roadmap.json` | The Roadmap page (`#/roadmap`, also the footer's status ring): the phase under way, its areas and their items, open or done. The game repo's release update writes it from the issues labelled `public`; don't edit it here. |
 | `content/settings.json` | Tagline, build badge, project status ring, Community Hub links, footer text, the funding worker's URL. |
+| `overlay/funding.html` | The stream overlay: a funding goal's bar and the crew names, for an OBS browser source (options at the top of the file). |
 | `funding/` | The funding worker: Ko-fi and Patreon webhooks in, the goals and the last 10 backers out (see [funding/README.md](funding/README.md)). |
 | `assets/ui/` | Every button, frame and panel, cropped straight from the mockup, plus the character cutouts and the nebula. |
 | `tools/extract_assets.py` | Crops the buttons, frames and panels from `tools/mockup.png`, and turns the mockup's Forums hub badge and caption into YouTube (caption set in Barlow, `tools/fonts/`). |
-| `tools/make_nav_buttons.py` | Makes the Donate, How? and Roadmap buttons, which the mockup does not have: takes a cut button, paints its icon and label out, recolours it for How?, and draws a new icon and a Cinzel label (`tools/fonts/`). |
+| `tools/make_nav_buttons.py` | Makes the Join the Crew, How? and Roadmap buttons, which the mockup does not have: takes a cut button, paints its icon and label out, recolours it for How?, and draws a new icon and a Cinzel label (`tools/fonts/`). |
 | `tools/make_share_image.py` | Makes `assets/share.jpg`, the link preview image (Discord, X and others read it through the `og:` and `twitter:` tags in `index.html`): an in-game shot with the title over it. |
 | `tools/build_layers.py` | Cuts the characters (Trent from `tools/trent.png`, Juni from `tools/juni.jpg`) and the title (from the mockup) out of their backgrounds with rembg, grades the characters to match the nebula, and builds the nebula backdrop. |
 | `admin/` | The CMS. |
@@ -44,7 +45,7 @@ The CMS is a static page that commits to this repository through the GitHub API,
 You can then:
 
 - **News**: write, edit, unpublish (draft) and delete posts. Each post has a timeline image (shown in the round frame), an excerpt for the timeline and a full Markdown body with a live preview. You can upload images and embed YouTube videos.
-- **Pages**: edit Donate, Gallery, About, How it's done and Download. Put several images on one line in the Gallery to get a grid. Below the Gallery's text the site adds every shot of the wiki's ships and stations by itself, so each wiki update adds its new shots there.
+- **Pages**: edit Join the Crew, Gallery, About, How it's done and Download. Put several images on one line in the Gallery to get a grid. Below the Gallery's text the site adds every shot of the wiki's ships and stations by itself, so each wiki update adds its new shots there.
 - **Wiki**: add our own summary and text to a wiki entry, or hide it (see below).
 - **Funding**: the funding goals (text, target, monthly or since a date), payments added by hand, and hiding or voiding a payment. It needs the funding worker's admin token (funding/README.md).
 - **Settings**: tagline, build badge, project status percentage and text, Community Hub links (an empty link disables its button; `#/wiki` opens the site's wiki) and footer text.

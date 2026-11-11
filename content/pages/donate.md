@@ -1,5 +1,5 @@
 ---
-title: Donate
+title: Join the Crew
 subtitle: Support the Development of SR!
 ---
 

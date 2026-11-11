@@ -105,11 +105,13 @@
   function fundingHtml(f) {
     var d = function (iso) { var p = SR.dateParts(iso); return p.month + ' ' + p.day; };
     return '<section class="funding">' + f.goals.map(goalHtml).join('') +
-      '<div class="fund-backers"><h3>Keeping the lights on</h3>' +
+      '<div class="fund-backers"><h3>The Crew</h3>' +
+      '<p class="fund-invite">Join the crew and your name goes up here, next to everyone keeping Sirius online.' +
+        (f.backers.length ? '' : ' Nobody here yet: be the first.') + '</p>' +
       (f.backers.length ? '<ol>' + f.backers.map(function (b) {
         var via = SOURCES[b.source];
         return '<li><b>' + esc(b.name) + '</b><small>' + (via ? esc(via) + ' \u00b7 ' : '') + esc(d(b.at)) + '</small></li>';
-      }).join('') + '</ol>' : '<p class="fund-none">No backers yet. The first name here could be yours.</p>') +
+      }).join('') + '</ol>' : '') +
       '</div></section>';
   }
 

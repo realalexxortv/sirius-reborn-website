@@ -14,7 +14,7 @@ The endpoints are listed at the top of `src/index.js`.
   names.
 - **By hand:** whatever the CMS's Funding tab adds.
 - A goal counts the payments in **its currency** from its start date, or from the 1st of the current month for a monthly
-  goal. Keep Ko-fi, Patreon and the goals in one currency (EUR). Payments in another currency are stored but not
+  goal. Keep Ko-fi, Patreon and the goals in one currency (USD). Payments in another currency are stored but not
   counted.
 - The backer list shows each person once, at their latest payment, newest first. *Hide* takes a name off the list and
   the money still counts. *Void* (a refund or a test) neither counts nor shows. Ko-fi doesn't report refunds, so void
@@ -36,7 +36,7 @@ You need a free Cloudflare account. Run all of this in `funding/`.
    Test*: a payment named *Jo Example* appears in the CMS's Funding tab. Void it.
 7. **Patreon:** [patreon.com/portal/registration/register-webhooks](https://www.patreon.com/portal/registration/register-webhooks).
    Add `<worker URL>/patreon` with the triggers `members:create`, `members:update`, `members:pledge:create` and
-   `members:pledge:update`. Copy its secret into `npx wrangler secret put PATREON_SECRET`. If the campaign isn't in EUR,
+   `members:pledge:update`. Copy its secret into `npx wrangler secret put PATREON_SECRET`. If the campaign isn't in USD,
    change `PATREON_CURRENCY` in `wrangler.toml` and deploy again.
 8. CMS → Settings → *Funding worker URL*: the worker URL. CMS → Funding: paste the admin token and add the goals.
 

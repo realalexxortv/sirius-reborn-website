@@ -684,7 +684,7 @@
       row.innerHTML =
         '<label>Text <input name="label" maxlength="120" required value="' + esc(g.label || '') + '" placeholder="Servers this month"></label>' +
         '<label>Target <input name="target" type="number" min="1" step="1" required value="' + esc(g.target || '') + '"></label>' +
-        '<label>Currency <input name="currency" maxlength="3" required value="' + esc(g.currency || 'EUR') + '"></label>' +
+        '<label>Currency <input name="currency" maxlength="3" required value="' + esc(g.currency || 'USD') + '"></label>' +
         '<label class="check"><input name="monthly" type="checkbox"' + (g.monthly ? ' checked' : '') + '> Monthly</label>' +
         '<label>Counts since <input name="since" type="date" value="' + esc(since) + '"' + (g.monthly ? ' disabled' : '') + '></label>' +
         '<button class="btn small danger" type="button">Remove</button>';

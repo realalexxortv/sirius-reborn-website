@@ -253,3 +253,16 @@ button.link { background: none; border: 0; padding: 0; font: inherit; color: var
   .row2, .row3 { grid-template-columns: 1fr; }
   .row-actions .btn:first-child { display: none; }
 }
+
+/* Funding tab */
+.fund-row { display: grid; grid-template-columns: 1fr 110px 90px auto; gap: 0 12px; align-items: end; }
+.goal-row { grid-template-columns: 1fr 100px 80px auto 160px auto; padding-bottom: 4px; border-bottom: 1px solid var(--line); margin-bottom: 12px; }
+.fund-row .check, .fund-row .btn { margin-bottom: 18px; }
+.goal-row input:disabled { opacity: .35; }
+.fund-actions { margin-bottom: 14px; }
+.fund-table { width: 100%; border-collapse: collapse; font-size: 15px; margin-bottom: 14px; }
+.fund-table th, .fund-table td { padding: 6px 8px; text-align: left; border-bottom: 1px solid var(--line); }
+.fund-table th { font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+.fund-table tr.void td { color: var(--ink-3); text-decoration: line-through; }
+.fund-table tr.void td:nth-last-child(-n+2) { text-decoration: none; }
+@media (max-width: 760px) { .fund-row, .goal-row { grid-template-columns: 1fr 1fr; } }

@@ -649,6 +649,127 @@
     });
   }
 
+  // Funding ---------------------------------------------------------------
+  // Talks to the funding worker (funding/), not GitHub: its URL is the site setting funding.api, its admin token is
+  // kept in this browser.
+  var FUND_TOKEN = 'sr-funding-token';
+
+  function viewFunding() {
+    mount('tpl-funding');
+    var msg = document.getElementById('fund-msg');
+    var login = document.getElementById('fund-login');
+    var body = document.getElementById('fund-body');
+    var forget = document.getElementById('fund-forget');
+    var api = '';
+
+    function call(path, method, data) {
+      return fetch(api + path, {
+        method: method || 'GET',
+        headers: { 'Authorization': 'Bearer ' + localStorage.getItem(FUND_TOKEN), 'Content-Type': 'application/json' },
+        body: data ? JSON.stringify(data) : undefined,
+        cache: 'no-store'
+      }).then(function (r) {
+        return r.json().catch(function () { return {}; }).then(function (d) {
+          if (r.status === 401) { localStorage.removeItem(FUND_TOKEN); throw new Error('The funding worker refused the admin token.'); }
+          if (!r.ok) throw new Error(d.error || ('HTTP ' + r.status));
+          return d;
+        });
+      });
+    }
+
+    function goalRow(g) {
+      var since = g.since ? g.since.slice(0, 10) : today();
+      var row = document.createElement('div');
+      row.className = 'fund-row goal-row';
+      row.innerHTML =
+        '<label>Text <input name="label" maxlength="120" required value="' + esc(g.label || '') + '" placeholder="Servers this month"></label>' +
+        '<label>Target <input name="target" type="number" min="1" step="1" required value="' + esc(g.target || '') + '"></label>' +
+        '<label>Currency <input name="currency" maxlength="3" required value="' + esc(g.currency || 'USD') + '"></label>' +
+        '<label class="check"><input name="monthly" type="checkbox"' + (g.monthly ? ' checked' : '') + '> Monthly</label>' +
+        '<label>Counts since <input name="since" type="date" value="' + esc(since) + '"' + (g.monthly ? ' disabled' : '') + '></label>' +
+        '<button class="btn small danger" type="button">Remove</button>';
+      var q = function (n) { return row.querySelector('[name=' + n + ']'); };
+      q('monthly').addEventListener('change', function () { q('since').disabled = this.checked; });
+      row.querySelector('button').addEventListener('click', function () { row.remove(); });
+      return row;
+    }
+
+    function payments(list) {
+      document.getElementById('fund-payments').innerHTML = list.length ? list.map(function (d) {
+        return '<tr' + (d.void ? ' class="void"' : '') + '><td>' + esc(SR.formatDate(d.at)) + '</td><td>' + esc(d.name) + '</td>' +
+          '<td>' + esc(d.source) + '</td><td>' + esc((d.amount_cents / 100).toFixed(2) + ' ' + d.currency) + '</td>' +
+          '<td><input type="checkbox" data-id="' + esc(d.id) + '" data-flag="hidden"' + (d.hidden ? ' checked' : '') + '></td>' +
+          '<td><input type="checkbox" data-id="' + esc(d.id) + '" data-flag="void"' + (d.void ? ' checked' : '') + '></td></tr>';
+      }).join('') : '<tr><td colspan="6" class="muted">No payments yet.</td></tr>';
+      document.querySelectorAll('#fund-payments input').forEach(function (box) {
+        box.addEventListener('change', function () {
+          var patch = {}; patch[box.dataset.flag] = box.checked;
+          box.disabled = true;
+          call('/admin/donations/' + encodeURIComponent(box.dataset.id), 'POST', patch).then(function () {
+            box.disabled = false;
+            box.closest('tr').classList.toggle('void', box.closest('tr').querySelector('[data-flag=void]').checked);
+            toast('Saved. The site shows it within a minute.');
+          }).catch(function (e) { box.checked = !box.checked; box.disabled = false; failed(e); });
+        });
+      });
+    }
+
+    function open() {
+      login.hidden = true;
+      msg.textContent = 'Loading…';
+      call('/admin').then(function (d) {
+        msg.textContent = 'Worker: ' + api;
+        body.hidden = false; forget.hidden = false;
+        var rows = document.getElementById('goal-rows');
+        rows.innerHTML = '';
+        d.goals.forEach(function (g) { rows.appendChild(goalRow(g)); });
+        payments(d.donations);
+      }).catch(function (e) { msg.textContent = ''; login.hidden = false; failed(e); });
+    }
+
+    login.addEventListener('submit', function (e) {
+      e.preventDefault();
+      localStorage.setItem(FUND_TOKEN, login.token.value.trim());
+      open();
+    });
+    forget.addEventListener('click', function () { localStorage.removeItem(FUND_TOKEN); viewFunding(); });
+    document.getElementById('goal-add').addEventListener('click', function () {
+      document.getElementById('goal-rows').appendChild(goalRow({}));
+    });
+
+    document.getElementById('fund-goals').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = e.target.querySelector('button[type=submit]');
+      var goals = Array.from(document.querySelectorAll('.goal-row')).map(function (row) {
+        var q = function (n) { return row.querySelector('[name=' + n + ']'); };
+        return { label: q('label').value, target: Number(q('target').value), currency: q('currency').value,
+                 monthly: q('monthly').checked, since: q('since').value };
+      });
+      busy(btn, true);
+      call('/admin/goals', 'PUT', { goals: goals }).then(function () {
+        busy(btn, false);
+        toast('Goals saved. The site shows them within a minute.');
+      }).catch(function (err) { busy(btn, false); failed(err); });
+    });
+
+    document.getElementById('fund-manual').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var f = e.target, btn = f.querySelector('button[type=submit]');
+      busy(btn, true);
+      call('/admin/donations', 'POST', { name: f.elements.name.value, amount: Number(f.elements.amount.value), currency: f.elements.currency.value }).then(function () {
+        busy(btn, false);
+        f.elements.name.value = ''; f.elements.amount.value = '';
+        open();
+      }).catch(function (err) { busy(btn, false); failed(err); });
+    });
+
+    getJson(SETTINGS).then(function (s) {
+      api = String(get(s, 'funding.api') || '').replace(/\/+$/, '');
+      if (!api) { msg.innerHTML = 'Set the funding worker URL in <a href="#/settings">Settings</a> first.'; return; }
+      if (localStorage.getItem(FUND_TOKEN)) open(); else login.hidden = false;
+    }).catch(failed);
+  }
+
   // ----------------------------------------------------------------- router
   var lastHash = location.hash;
   function route() {
@@ -659,6 +780,7 @@
     });
     if (parts[0] === 'pages') return parts[1] ? viewPage(parts[1]) : viewPages();
     if (parts[0] === 'settings') return viewSettings();
+    if (parts[0] === 'funding') return viewFunding();
     if (parts[0] === 'wiki') return parts[2] ? viewWikiEntry(parts[1], parts[2]) : viewWiki();
     if (parts[0] === 'news' && parts[1] === 'new') return viewPost(null);
     if (parts[0] === 'news' && parts[1] === 'edit' && parts[2]) return viewPost(parts[2]);

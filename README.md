@@ -17,7 +17,8 @@ It's a static site (plain HTML/CSS/JS, no build step) that runs on GitHub Pages 
 | `content/pages/*.md` | Donate, Gallery, About, How it's done and Download pages (Markdown with a `title` / `subtitle` header). |
 | `content/wiki/*.json` | The wiki: ships, systems, stations and weapons (see [The wiki](#the-wiki)). |
 | `content/roadmap.json` | The Roadmap page (`#/roadmap`, also the footer's status ring): the phase under way, its areas and their items, open or done. The game repo's release update writes it from the issues labelled `public`; don't edit it here. |
-| `content/settings.json` | Tagline, build badge, project status ring, Community Hub links, footer text. |
+| `content/settings.json` | Tagline, build badge, project status ring, Community Hub links, footer text, the funding worker's URL. |
+| `funding/` | The funding worker: Ko-fi and Patreon webhooks in, the goals and the last 10 backers out (see [funding/README.md](funding/README.md)). |
 | `assets/ui/` | Every button, frame and panel, cropped straight from the mockup, plus the character cutouts and the nebula. |
 | `tools/extract_assets.py` | Crops the buttons, frames and panels from `tools/mockup.png`, and turns the mockup's Forums hub badge and caption into YouTube (caption set in Barlow, `tools/fonts/`). |
 | `tools/make_nav_buttons.py` | Makes the Donate, How? and Roadmap buttons, which the mockup does not have: takes a cut button, paints its icon and label out, recolours it for How?, and draws a new icon and a Cinzel label (`tools/fonts/`). |
@@ -45,6 +46,7 @@ You can then:
 - **News**: write, edit, unpublish (draft) and delete posts. Each post has a timeline image (shown in the round frame), an excerpt for the timeline and a full Markdown body with a live preview. You can upload images and embed YouTube videos.
 - **Pages**: edit Donate, Gallery, About, How it's done and Download. Put several images on one line in the Gallery to get a grid. Below the Gallery's text the site adds every shot of the wiki's ships and stations by itself, so each wiki update adds its new shots there.
 - **Wiki**: add our own summary and text to a wiki entry, or hide it (see below).
+- **Funding**: the funding goals (text, target, monthly or since a date), payments added by hand, and hiding or voiding a payment. It needs the funding worker's admin token (funding/README.md).
 - **Settings**: tagline, build badge, project status percentage and text, Community Hub links (an empty link disables its button; `#/wiki` opens the site's wiki) and footer text.
 
 Uploaded images go to `images/uploads/`.

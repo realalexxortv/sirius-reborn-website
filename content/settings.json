@@ -14,5 +14,8 @@
     "socials": "https://x.com/alexxortv"
   },
   "timelineFooter": "More updates coming soon. Stay tuned.  •  Live long. Fly free.",
-  "copyright": "© {year} Sirius Reborn Project. Not affiliated with Microsoft or Digital Anvil."
+  "copyright": "© {year} Sirius Reborn Project. Not affiliated with Microsoft or Digital Anvil.",
+  "funding": {
+    "api": "https://sirius-funding.siriusreborn.workers.dev"
+  }
 }

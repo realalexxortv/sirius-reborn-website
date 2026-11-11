@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Nav buttons the mockup does not have (Donate, How?, Roadmap), made from the cut ones.
+"""Nav buttons the mockup does not have (Join the Crew, How?, Roadmap), made from the cut ones.
 
 Takes a button from tools/extract_assets.py, paints its icon and label out of
 the pill, optionally turns the pill to another hue, and draws a new icon and a
@@ -154,7 +154,7 @@ def down(m):
     return m.resize((m.width // SS, m.height // SS), Image.LANCZOS)
 
 
-def make(base, out, text, icon, glow, hue=None, sat=1.0):
+def make(base, out, text, icon, glow, hue=None, sat=1.0, px=31, label_x=LABEL_X):
     btn = erase(Image.open(UI / base).convert("RGBA"))
     if hue is not None:
         btn = rehue(btn, hue, sat)
@@ -167,10 +167,10 @@ def make(base, out, text, icon, glow, hue=None, sat=1.0):
     art.alpha_composite(glow_layer(full, glow, 4, 1.4))
     art.alpha_composite(paint(full, (236, 244, 255), (176, 206, 240)))
     # label: drop shadow, soft glow, silver gradient
-    lm, cap = label(text, 31)
+    lm, cap = label(text, px)
     lm = down(lm)
     lab = Image.new("L", btn.size, 0)
-    lab.paste(lm, (LABEL_X - 4, round(LABEL_CY - 4 - cap / 2)))
+    lab.paste(lm, (label_x - 4, round(LABEL_CY - 4 - cap / 2)))
     shadow = Image.new("RGBA", btn.size, (0, 0, 0, 0))
     shadow.putalpha(ImageChops.offset(lab, 1, 2).filter(ImageFilter.GaussianBlur(1.2)).point(lambda v: v * 0.8))
     art.alpha_composite(shadow)
@@ -182,6 +182,7 @@ def make(base, out, text, icon, glow, hue=None, sat=1.0):
 
 
 if __name__ == "__main__":
-    make("nav-support.png", "nav-donate.png", "Donate", heart(40), (190, 140, 255))
+    # a longer label: smaller, and closer to a smaller heart
+    make("nav-support.png", "nav-donate.png", "Join the Crew", heart(32), (190, 140, 255), px=22, label_x=110)
     make("nav-home.png", "nav-how.png", "How?", cog(44), (110, 240, 170), hue=145, sat=0.7)
     make("nav-home.png", "nav-roadmap.png", "Roadmap", route(44), (255, 110, 130), hue=350, sat=0.85)

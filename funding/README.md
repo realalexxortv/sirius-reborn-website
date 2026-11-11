@@ -1,7 +1,7 @@
 # Funding
 
 A Cloudflare Worker with a D1 database. Ko-fi and Patreon tell it about each payment by webhook. It serves the goals and
-the last 10 backers at `GET /funding`, which the site's Donate page and the bar above the news timeline read. The CMS's
+the last 10 backers at `GET /funding`, which the site's Join the Crew page (`#/donate`) and the bar above the news timeline read. The CMS's
 Funding tab edits the goals, adds payments by hand (stream tips, Super Chats, transfers) and hides or voids a payment.
 The endpoints are listed at the top of `src/index.js`.
 

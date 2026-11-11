@@ -1,0 +1,150 @@
+<!doctype html>
+<!--
+  Stream overlay: a funding goal's bar, for an OBS browser source (transparent background).
+    https://siriusreborn.com/overlay/funding.html            the first goal
+    ?goal=2                                                  the second goal
+    ?ticker=0                                                without the crew names scrolling below
+  Reads the funding worker (content/settings.json funding.api) every 15 s. A new payment fills the bar
+  and shows "+$5 · name" for a few seconds.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Funding Bar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #eef3fa; --ink-2: #b8c4d6; --line: #3a5680; --glass: #050b16d9;
+    --fill-a: #1f7fd6; --fill-b: #39b2ff; --hot: #ffd27a;
+  }
+  html, body { margin: 0; background: transparent; overflow: hidden; }
+  body { font-family: "Barlow", system-ui, sans-serif; color: var(--ink); padding: 30px 10px 10px; }   /* room above for the "+$5" callout */
+  .card {
+    position: relative;
+    padding: 12px 18px 14px;
+    background: var(--glass);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    box-shadow: 0 0 24px #1b4a8a55, inset 0 0 30px #1b4a8a33;
+  }
+  .card[hidden] { display: none; }
+  .head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 8px; }
+  .label { font: 700 26px/1.2 "Cinzel", Georgia, serif; letter-spacing: .05em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-shadow: 0 2px 6px #000; }
+  .sum { font-size: 20px; color: var(--ink-2); white-space: nowrap; text-shadow: 0 2px 6px #000; }
+  .sum b { font-size: 28px; font-weight: 600; color: var(--ink); }
+  .bar { position: relative; height: 22px; background: #02060d; border: 1px solid #1d3a5c; border-radius: 12px; overflow: hidden; }
+  .bar i {
+    position: absolute; inset: 0 auto 0 0; width: 0;
+    background: linear-gradient(90deg, var(--fill-a), var(--fill-b));
+    border-radius: 12px;
+    box-shadow: 0 0 14px #39b2ffaa;
+    transition: width 2.4s cubic-bezier(.2, .8, .2, 1);
+  }
+  .bar i::after {   /* a light that runs along the fill */
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(90deg, transparent 0%, #ffffff55 50%, transparent 100%);
+    background-size: 40% 100%; background-repeat: no-repeat;
+    animation: sweep 3.5s linear infinite;
+  }
+  @keyframes sweep { from { background-position: -40% 0; } to { background-position: 140% 0; } }
+  .pct { position: absolute; right: 10px; top: 0; font: 600 15px/22px "Barlow", sans-serif; color: var(--ink); text-shadow: 0 1px 3px #000; }
+
+  /* a new payment */
+  .card.hit { animation: hit 1.6s ease-out; }
+  @keyframes hit { 0% { box-shadow: 0 0 60px #ffd27acc, inset 0 0 40px #ffd27a55; border-color: var(--hot); } 100% { box-shadow: 0 0 24px #1b4a8a55, inset 0 0 30px #1b4a8a33; } }
+  .pop {
+    position: absolute; right: 18px; top: -18px;
+    padding: 4px 14px;
+    font: 600 22px/1.3 "Barlow", sans-serif; color: #1a1205;
+    background: linear-gradient(180deg, #ffe3a3, #f2b544);
+    border-radius: 8px;
+    box-shadow: 0 0 20px #ffd27aaa;
+    opacity: 0; transform: translateY(8px) scale(.9);
+    transition: opacity .35s, transform .35s;
+    white-space: nowrap;
+  }
+  .pop.show { opacity: 1; transform: none; }
+
+  .ticker { margin-top: 8px; height: 26px; overflow: hidden; white-space: nowrap; font-size: 18px; color: var(--ink-2); text-shadow: 0 2px 6px #000;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+            mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+  .ticker[hidden] { display: none; }
+  .ticker span { display: inline-block; padding-left: 100%; animation: scroll var(--t, 30s) linear infinite; }
+  .ticker b { color: var(--ink); font-weight: 600; }
+  @keyframes scroll { to { transform: translateX(-100%); } }
+</style>
+</head>
+<body>
+  <div class="card" id="card" hidden>
+    <div class="head"><span class="label" id="label"></span><span class="sum" id="sum"></span></div>
+    <div class="bar"><i id="fill"></i><span class="pct" id="pct"></span></div>
+    <div class="pop" id="pop"></div>
+  </div>
+  <div class="ticker" id="ticker" hidden><span id="names"></span></div>
+<script>
+(function () {
+  'use strict';
+  var q = new URLSearchParams(location.search);
+  var goalIndex = Math.max(1, parseInt(q.get('goal') || '1', 10)) - 1;
+  var showTicker = q.get('ticker') !== '0';
+  var POLL_MS = 15000;
+  var $ = function (id) { return document.getElementById(id); };
+  var api = null, last = null, popTimer;
+
+  function money(v, cur) {
+    try { return new Intl.NumberFormat('en', { style: 'currency', currency: cur, minimumFractionDigits: v % 1 ? 2 : 0 }).format(v); }
+    catch (e) { return v + ' ' + cur; }
+  }
+
+  function render(f) {
+    var g = f.goals[goalIndex];
+    $('card').hidden = !g;
+    if (g) {
+      var pct = Math.min(100, 100 * g.raised / g.target);
+      $('label').textContent = g.label;
+      $('sum').innerHTML = '<b>' + money(g.raised, g.currency) + '</b> / ' + money(g.target, g.currency) + (g.monthly ? ' this month' : '');
+      $('pct').textContent = Math.round(100 * g.raised / g.target) + '%';
+      $('fill').style.width = pct + '%';
+      // a new payment: the total rose since the last poll (not on the first load)
+      if (last && last.goal && g.raised > last.goal.raised) {
+        var who = f.backers[0] ? f.backers[0].name : '';
+        $('pop').textContent = '+' + money(+(g.raised - last.goal.raised).toFixed(2), g.currency) + (who ? ' · ' + who : '');
+        $('pop').classList.add('show');
+        $('card').classList.remove('hit'); void $('card').offsetWidth; $('card').classList.add('hit');
+        clearTimeout(popTimer);
+        popTimer = setTimeout(function () { $('pop').classList.remove('show'); }, 8000);
+      }
+    }
+    var names = f.backers.map(function (b) { return b.name; });
+    $('ticker').hidden = !showTicker || !names.length;
+    var key = names.join('\u0001');
+    if (showTicker && (!last || last.names !== key)) {
+      var el = $('names');
+      el.textContent = '';
+      el.appendChild(document.createTextNode('The Crew:  '));
+      names.forEach(function (n, i) {
+        var b = document.createElement('b'); b.textContent = n; el.appendChild(b);
+        if (i < names.length - 1) el.appendChild(document.createTextNode('   ✦   '));
+      });
+      el.style.setProperty('--t', Math.max(20, names.join('').length * 0.6 + 15) + 's');
+    }
+    last = { goal: g, names: key };
+  }
+
+  function poll() {
+    fetch(api + '/funding', { cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw new Error('funding: HTTP ' + r.status); return r.json(); })
+      .then(render).catch(function (e) { console.error(e); })
+      .then(function () { setTimeout(poll, POLL_MS); });
+  }
+
+  fetch('../content/settings.json', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (s) {
+    api = String((s.funding && s.funding.api) || '').replace(/\/+$/, '');
+    if (api) poll();
+  });
+})();
+</script>
+</body>
+</html>

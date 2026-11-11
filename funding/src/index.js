@@ -69,9 +69,8 @@ function goalStart(g) {
 // ----------------------------------------------------------------- webhooks
 
 async function kofi(req, env) {
-  const form = await req.formData();
   let d;
-  try { d = JSON.parse(form.get('data')); } catch { throw new BadRequest('no data'); }
+  try { d = JSON.parse((await req.formData()).get('data')); } catch { throw new BadRequest('no data'); }
   if (!sameSecret(d.verification_token, env.KOFI_TOKEN)) return json({ error: 'unauthorized' }, 401);
   if (!KOFI_TYPES.has(d.type)) return json({ ok: true, ignored: d.type });
   const cents = Math.round(parseFloat(d.amount) * 100);

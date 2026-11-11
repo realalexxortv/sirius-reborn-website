@@ -27,6 +27,7 @@ check "goals saved" "NPC faces" "$(admin -X PUT $BASE/admin/goals -d '{"goals":[
   {"label":"Servers this month","target":200,"currency":"EUR","monthly":true},
   {"label":"NPC faces and clothes","target":100,"currency":"EUR","since":"2026-01-01"}]}')"
 
+check "ko-fi without data" "no data" "$(curl -s -X POST $BASE/kofi)"
 check "ko-fi wrong token" unauthorized "$(kofi '{"verification_token":"nope","message_id":"a","type":"Donation","amount":"5.00","currency":"EUR","from_name":"X","is_public":true}')"
 check "ko-fi donation" '"ok":true' "$(kofi '{"verification_token":"kofi-test","message_id":"m1","type":"Donation","amount":"5.00","currency":"EUR","from_name":"  Star\u0007Pilot  ","is_public":true}')"
 kofi '{"verification_token":"kofi-test","message_id":"m1","type":"Donation","amount":"5.00","currency":"EUR","from_name":"StarPilot","is_public":true}' >/dev/null  # resend

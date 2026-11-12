@@ -475,6 +475,9 @@ img { display: block; }
 .rm-later { display: grid; gap: 22px; }
 .rm-group { display: grid; gap: 10px; }
 .rm-group h3 { margin: 0; font-family: var(--serif); font-size: 19px; font-weight: 600; letter-spacing: .04em; color: #c9d3e2; }
+.rm-areas { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); gap: 18px 26px; }
+.rm-area { display: grid; gap: 8px; align-content: start; padding-left: 12px; border-left: 1px solid #1d3a5c; }
+.rm-area h4 { margin: 0; font-family: var(--serif); font-size: 16.5px; font-weight: 600; letter-spacing: .05em; color: #aebbd0; }
 .rm-chip.later { border-style: dashed; border-color: #5cb6ff44; background: #0a1524; color: var(--ink-2); }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .compact .rm { padding: 4px 4px 24px; }

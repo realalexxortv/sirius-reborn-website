@@ -250,9 +250,14 @@
           '<div class="rm-stop-head"><h2>' + esc(a.name) + '</h2><span class="rm-count">' + done + ' of ' + a.items.length + ' done</span></div>' +
           chips(a.items, '') + '</section>';
       }).join('');
+      var count = function (n) { return n + (n === 1 ? ' item' : ' items'); };
       var later = (r.future || []).map(function (g) {
-        return '<section class="rm-group"><div class="rm-stop-head"><h3>' + esc(g.name) + '</h3><span class="rm-count">' +
-          g.items.length + (g.items.length === 1 ? ' item' : ' items') + '</span></div>' + chips(g.items, ' later') + '</section>';
+        var n = g.areas.reduce(function (s, a) { return s + a.items.length; }, 0);
+        return '<section class="rm-group"><div class="rm-stop-head"><h3>' + esc(g.name) + '</h3><span class="rm-count">' + count(n) +
+          '</span></div><div class="rm-areas">' + g.areas.map(function (a) {
+            return '<div class="rm-area"><div class="rm-stop-head"><h4>' + esc(a.name) + '</h4><span class="rm-count">' +
+              count(a.items.length) + '</span></div>' + chips(a.items, ' later') + '</div>';
+          }).join('') + '</div></section>';
       }).join('');
       view.innerHTML = '<div class="rm">' +
         '<div class="rm-intro"><p>What is left before ' + esc(r.phase) + ', area by area: the bigger items only, bug fixes are in the ' +

@@ -86,9 +86,9 @@
       "images": [
         "images/wiki/weapons/azrael-model.webp"
       ],
-      "source": "06dbac985624",
+      "source": "5fc529f33e7c",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "barrager",
@@ -160,9 +160,112 @@
       "images": [
         "images/wiki/weapons/barrager-model.webp"
       ],
-      "source": "06dbac985624",
+      "source": "543cd5ba8670",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
+    },
+    {
+      "id": "carillon",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Carillon",
+      "subtitle": "Ballistic",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Ballistic (missile launcher)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "2 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "1,925 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "550 m/s",
+          "og": true
+        },
+        {
+          "label": "Blast radius",
+          "value": "10 m",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Carillon Mk I \"Piper\"",
+              "660",
+              "330",
+              "1,320",
+              "-",
+              "500 cr"
+            ],
+            [
+              "Carillon Mk II \"Choir\"",
+              "1,008",
+              "504",
+              "2,017",
+              "-",
+              "1,830 cr"
+            ],
+            [
+              "Carillon Mk III \"Chorus\"",
+              "1,636",
+              "818",
+              "3,272",
+              "-",
+              "7,460 cr"
+            ],
+            [
+              "Carillon Mk IV \"Screamer\"",
+              "2,823",
+              "1,411",
+              "5,646",
+              "-",
+              "24,790 cr"
+            ],
+            [
+              "Carillon Mk V \"Organ\"",
+              "6,602",
+              "3,301",
+              "13,203",
+              "-",
+              "120,480 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Bretonian miners named the Carillon after the church music its rockets whistle on the way out. Belt fed from banks of pipes, cheap and loud, it does not think for you: it gives you a lot of it, as fast as you can aim.\n\nA ballistic missile without a seeker. It leaves the launcher at 550 m/s and flies straight for 1925 m, one every 0.5 s while you hold the trigger. Lead a moving target; a station, a capital ship or a freighter it hits every time. Flares cannot draw it away.",
+      "images": [
+        "images/wiki/weapons/carillon-model.webp"
+      ],
+      "source": "0995aec4b613",
+      "added": "2026-11-12",
+      "updated": "2026-11-12"
     },
     {
       "id": "death-s-hand",
@@ -234,9 +337,202 @@
       "images": [
         "images/wiki/weapons/death-s-hand-model.webp"
       ],
-      "source": "06dbac985624",
+      "source": "1248062e05dd",
       "added": "2026-10-20",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
+    },
+    {
+      "id": "donner",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Donner",
+      "subtitle": "EMP",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "EMP (missile launcher)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "1 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "1,167 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "30.3 m/s",
+          "og": true
+        },
+        {
+          "label": "Blast radius",
+          "value": "16 m",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Donner Mk I \"Static\"",
+              "8.1",
+              "330",
+              "8.1",
+              "-",
+              "500 cr"
+            ],
+            [
+              "Donner Mk II \"Surge\"",
+              "15.8",
+              "640",
+              "15.8",
+              "-",
+              "3,710 cr"
+            ],
+            [
+              "Donner Mk III \"Blackout\"",
+              "34.8",
+              "1,411",
+              "34.8",
+              "-",
+              "24,790 cr"
+            ],
+            [
+              "Donner Mk IV \"Mjolnir\"",
+              "97.8",
+              "3,961",
+              "97.8",
+              "-",
+              "144,580 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "The Donner is Rheinland doctrine in a launcher: blind the enemy first, then let the guns do the rest. Its capacitor warheads hit with a thunderclap that leaves shields dead and engines stalled.\n\nAn EMP missile. It turns after the target you have selected at up to 166 degrees a second, out to 1000 m, and its pulse drains shields and power while barely scratching a hull. Open a fight with it, then finish the job with your guns.",
+      "images": [
+        "images/wiki/weapons/donner-model.webp"
+      ],
+      "source": "261b5afb9ade",
+      "added": "2026-11-12",
+      "updated": "2026-11-12"
+    },
+    {
+      "id": "emp-mine-dropper",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "EMP Mine Dropper",
+      "subtitle": "EMP",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "EMP (mine dropper)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "1 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "4,800 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "20 m/s",
+          "og": true
+        },
+        {
+          "label": "Blast radius",
+          "value": "60 m",
+          "og": true
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "EMP Mine Dropper Mk I",
+              "-",
+              "-",
+              "-",
+              "-",
+              "860 cr"
+            ],
+            [
+              "EMP Mine Dropper Mk II",
+              "-",
+              "-",
+              "-",
+              "-",
+              "3,710 cr"
+            ],
+            [
+              "EMP Mine Dropper Mk III",
+              "-",
+              "-",
+              "-",
+              "-",
+              "14,300 cr"
+            ],
+            [
+              "EMP Mine Dropper Mk IV",
+              "-",
+              "-",
+              "-",
+              "-",
+              "54,810 cr"
+            ],
+            [
+              "EMP Mine Dropper Mk V",
+              "-",
+              "-",
+              "-",
+              "-",
+              "144,580 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "An EMP mine. It does no damage: within 60 m its pulse drains the ships' power, and for 6 s they cannot afterburn or cruise and their cruise engines stop. It is live 0.5 s after the drop and waits up to 4 minutes. Laid where ships leave a trade lane or a jump hole, it stops them where they are.",
+      "images": [
+        "images/wiki/weapons/emp-mine-dropper-model.webp"
+      ],
+      "source": "e3ed7f9c3305",
+      "added": "2026-11-12",
+      "updated": "2026-11-12"
     },
     {
       "id": "exorcist",
@@ -300,9 +596,112 @@
       "images": [
         "images/wiki/weapons/exorcist-model.webp"
       ],
-      "source": "06dbac985624",
+      "source": "1248062e05dd",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
+    },
+    {
+      "id": "hanabi",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Hanabi",
+      "subtitle": "Swarm",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Swarm (missile launcher)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "0.4 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "1,200 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "400 m/s",
+          "og": true
+        },
+        {
+          "label": "Blast radius",
+          "value": "30 m",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Hanabi Mk I \"Sparkler\"",
+              "73.4",
+              "36.7",
+              "29.3",
+              "-",
+              "500 cr"
+            ],
+            [
+              "Hanabi Mk II \"Pinwheel\"",
+              "112",
+              "56",
+              "44.8",
+              "-",
+              "1,830 cr"
+            ],
+            [
+              "Hanabi Mk III \"Firework\"",
+              "182",
+              "90.9",
+              "72.7",
+              "-",
+              "7,460 cr"
+            ],
+            [
+              "Hanabi Mk IV \"Carnival\"",
+              "314",
+              "157",
+              "125",
+              "-",
+              "24,790 cr"
+            ],
+            [
+              "Hanabi Mk V \"Circus\"",
+              "734",
+              "367",
+              "293",
+              "-",
+              "120,480 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "Hanabi launchers began as festival fireworks in Kusari workshops, and the same craftsmen still build them. Their pride is in the fuse: a Hanabi round fills the sky with fire and never burns its own.\n\nA swarm launcher. Each round is a volley of 6 rockets that fly straight at 400 m/s and go off on contact or as soon as an enemy is within 12 m, each one hitting everything within 30 m but your friends. Weak against a single ship, made for packs, mine fields and turret clusters. Flares cannot draw it away.",
+      "images": [
+        "images/wiki/weapons/hanabi-model.webp"
+      ],
+      "source": "76c272d3ee12",
+      "added": "2026-11-12",
+      "updated": "2026-11-12"
     },
     {
       "id": "justice",
@@ -406,9 +805,9 @@
       "images": [
         "images/wiki/weapons/justice-model.webp"
       ],
-      "source": "06dbac985624",
+      "source": "e406c500f9d0",
       "added": "2026-10-20",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "lavablade",
@@ -512,9 +911,107 @@
       "images": [
         "images/wiki/weapons/lavablade-model.webp"
       ],
-      "source": "06dbac985624",
+      "source": "31445063b9c8",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
+    },
+    {
+      "id": "proximity-mine-dropper",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Proximity Mine Dropper",
+      "subtitle": "Proximity",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Proximity (mine dropper)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "1 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "4,800 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "20 m/s",
+          "og": true
+        },
+        {
+          "label": "Blast radius",
+          "value": "25 m",
+          "og": true
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Proximity Mine Dropper Mk I",
+              "815",
+              "-",
+              "-",
+              "-",
+              "500 cr"
+            ],
+            [
+              "Proximity Mine Dropper Mk II",
+              "1,245",
+              "-",
+              "-",
+              "-",
+              "1,830 cr"
+            ],
+            [
+              "Proximity Mine Dropper Mk III",
+              "2,020",
+              "-",
+              "-",
+              "-",
+              "7,460 cr"
+            ],
+            [
+              "Proximity Mine Dropper Mk IV",
+              "3,485",
+              "-",
+              "-",
+              "-",
+              "24,790 cr"
+            ],
+            [
+              "Proximity Mine Dropper Mk V",
+              "8,150",
+              "-",
+              "-",
+              "-",
+              "120,480 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "A proximity mine. It is live 0.5 s after the drop and waits up to 4 minutes; an enemy that comes near makes it drift toward it, and within 12 m it goes off, hitting everything within 25 m. Drop it in front of whoever chases you, or seed a choke point before a fight. It blinks red: a careful pilot sees it and shoots it.",
+      "images": [
+        "images/wiki/weapons/proximity-mine-dropper-model.webp"
+      ],
+      "source": "e3ed7f9c3305",
+      "added": "2026-11-12",
+      "updated": "2026-11-12"
     },
     {
       "id": "reaper",
@@ -594,9 +1091,9 @@
       "images": [
         "images/wiki/weapons/reaper-model.webp"
       ],
-      "source": "06dbac985624",
+      "source": "f6ceb7af1a9d",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "scorpion",
@@ -676,9 +1173,9 @@
       "images": [
         "images/wiki/weapons/scorpion-model.webp"
       ],
-      "source": "06dbac985624",
+      "source": "0f784faaf522",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "scrapstorm",
@@ -742,9 +1239,107 @@
       "images": [
         "images/wiki/weapons/scrapstorm-model.webp"
       ],
-      "source": "06dbac985624",
+      "source": "543cd5ba8670",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
+    },
+    {
+      "id": "singularity-mine-dropper",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Singularity Mine Dropper",
+      "subtitle": "Singularity",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Singularity (mine dropper)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "1 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "4,800 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "20 m/s",
+          "og": true
+        },
+        {
+          "label": "Blast radius",
+          "value": "40 m",
+          "og": true
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Singularity Mine Dropper Mk I",
+              "1,428",
+              "-",
+              "-",
+              "-",
+              "1,290 cr"
+            ],
+            [
+              "Singularity Mine Dropper Mk II",
+              "2,212",
+              "-",
+              "-",
+              "-",
+              "5,565 cr"
+            ],
+            [
+              "Singularity Mine Dropper Mk III",
+              "3,689",
+              "-",
+              "-",
+              "-",
+              "21,450 cr"
+            ],
+            [
+              "Singularity Mine Dropper Mk IV",
+              "7,420",
+              "-",
+              "-",
+              "-",
+              "82,215 cr"
+            ],
+            [
+              "Singularity Mine Dropper Mk V",
+              "13,692",
+              "-",
+              "-",
+              "-",
+              "216,870 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "A singularity mine. Set off, it holds a collapsing field for 2.5 s that drags every ship within 250 m toward it, harder near its heart (only an afterburner gets out from there), then it bursts and hits everything within 40 m. It is live 0.5 s after the drop and waits up to 4 minutes. Shooting it sets it off where it is.",
+      "images": [
+        "images/wiki/weapons/singularity-mine-dropper-model.webp"
+      ],
+      "source": "e3ed7f9c3305",
+      "added": "2026-11-12",
+      "updated": "2026-11-12"
     },
     {
       "id": "starbeam",
@@ -848,9 +1443,9 @@
       "images": [
         "images/wiki/weapons/starbeam-model.webp"
       ],
-      "source": "06dbac985624",
+      "source": "316b69bff371",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "stunpulse",
@@ -938,9 +1533,112 @@
       "images": [
         "images/wiki/weapons/stunpulse-model.webp"
       ],
-      "source": "06dbac985624",
+      "source": "ce53d65865e6",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
+    },
+    {
+      "id": "talon",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Talon",
+      "subtitle": "Homing",
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Homing (missile launcher)",
+          "og": true
+        },
+        {
+          "label": "Refire rate",
+          "value": "1 shots/s",
+          "og": true
+        },
+        {
+          "label": "Range",
+          "value": "1,954 m",
+          "og": true
+        },
+        {
+          "label": "Muzzle velocity",
+          "value": "33.3 m/s",
+          "og": true
+        },
+        {
+          "label": "Blast radius",
+          "value": "16 m",
+          "og": true
+        },
+        {
+          "label": "Mount size",
+          "value": "Small",
+          "og": false
+        }
+      ],
+      "tables": [
+        {
+          "title": "Marks",
+          "og": true,
+          "columns": [
+            "Mark",
+            "Hull damage",
+            "Shield damage",
+            "Hull DPS",
+            "Energy / shot",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Talon Mk I \"Stalker\"",
+              "611",
+              "306",
+              "611",
+              "-",
+              "650 cr"
+            ],
+            [
+              "Talon Mk II \"Windstalker\"",
+              "934",
+              "467",
+              "934",
+              "-",
+              "2,380 cr"
+            ],
+            [
+              "Talon Mk III \"Moonstalker\"",
+              "1,515",
+              "758",
+              "1,515",
+              "-",
+              "9,700 cr"
+            ],
+            [
+              "Talon Mk IV \"Sunstalker\"",
+              "2,614",
+              "1,307",
+              "2,614",
+              "-",
+              "32,230 cr"
+            ],
+            [
+              "Talon Mk V \"Starstalker\"",
+              "6,112",
+              "3,056",
+              "6,112",
+              "-",
+              "156,620 cr"
+            ]
+          ]
+        }
+      ],
+      "description": "The Talon line comes out of Liberty's arms yards like everything Liberty builds: clean, expensive and sure of itself. Its seeker looks wide and never blinks, so a pilot can fire, forget and turn to the next target.\n\nA homing missile. It turns after the target you have selected at up to 250 degrees a second, out to 1000 m, and flies 170 m/s faster than your ship. Flares can draw it away, a hard turn can shake it off, and a careful pilot shoots it down.",
+      "images": [
+        "images/wiki/weapons/talon-model.webp"
+      ],
+      "source": "db76105c716e",
+      "added": "2026-11-12",
+      "updated": "2026-11-12"
     },
     {
       "id": "tarantula",
@@ -1004,9 +1702,9 @@
       "images": [
         "images/wiki/weapons/tarantula-model.webp"
       ],
-      "source": "06dbac985624",
+      "source": "0f784faaf522",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "vassago",
@@ -1070,9 +1768,9 @@
       "images": [
         "images/wiki/weapons/vassago-model.webp"
       ],
-      "source": "06dbac985624",
+      "source": "5fc529f33e7c",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "vengeance",
@@ -1136,9 +1834,9 @@
       "images": [
         "images/wiki/weapons/vengeance-model.webp"
       ],
-      "source": "06dbac985624",
+      "source": "e406c500f9d0",
       "added": "2026-10-20",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     }
   ]
 }

@@ -375,5 +375,213 @@
         }
       ]
     }
+  ],
+  "future": [
+    {
+      "name": "After Early Access",
+      "items": [
+        {
+          "title": "Big NPC ships come and go: jump-in and jump-out effects, cruisers docking and leaving",
+          "done": false
+        },
+        {
+          "title": "Fog pulling over the ship in nebulas",
+          "done": false
+        },
+        {
+          "title": "Add Framegen",
+          "done": false
+        },
+        {
+          "title": "Mining: ore rocks, mining beam and heat minigame",
+          "done": false
+        },
+        {
+          "title": "Mining: shared deposits, richness by danger, pirates drawn to miners",
+          "done": false
+        },
+        {
+          "title": "Salvage: wreck sites, cutting wrecks, damaged parts",
+          "done": false
+        },
+        {
+          "title": "Workshop: recipes and crafting from damaged parts (buildable guns)",
+          "done": false
+        },
+        {
+          "title": "Mining ships and equipment",
+          "done": false
+        },
+        {
+          "title": "Freelancer Alpha 1-1",
+          "done": false
+        },
+        {
+          "title": "Liberty hangar, NPC ships fly in",
+          "done": false
+        },
+        {
+          "title": "Anti-cheat: trade limits and new account limits (against botting)",
+          "done": false
+        },
+        {
+          "title": "News from real events (AI-written, per realm)",
+          "done": false
+        },
+        {
+          "title": "AI director: pacing each system",
+          "done": false
+        },
+        {
+          "title": "Nemesis NPCs: pirates and hunters who remember you",
+          "done": false
+        },
+        {
+          "title": "Controller support",
+          "done": false
+        },
+        {
+          "title": "Pirates demand cargo",
+          "done": false
+        },
+        {
+          "title": "Counters: armour per hull, turret tracking, sensor signature",
+          "done": false
+        },
+        {
+          "title": "Active defence: telegraphs, dodge (light fighters), parry (heavy fighters)",
+          "done": false
+        },
+        {
+          "title": "Bombers: the mid-size class",
+          "done": false
+        },
+        {
+          "title": "Support ships: shield transfer, repair drones, target painting, jamming",
+          "done": false
+        },
+        {
+          "title": "Drawing fire: the heavy fighter's tank role",
+          "done": false
+        },
+        {
+          "title": "Jobs by class on the job board",
+          "done": false
+        },
+        {
+          "title": "Early ships stay worth flying: hull upgrades, ship mastery, niches",
+          "done": false
+        },
+        {
+          "title": "Faction weapon identities for NPC loadouts",
+          "done": false
+        },
+        {
+          "title": "Companies (player guilds)",
+          "done": false
+        },
+        {
+          "title": "Knowledge later: scans, hazards charted, sharing and selling charts",
+          "done": false
+        },
+        {
+          "title": "The war in Sirius: faction fronts moved by all players",
+          "done": false
+        },
+        {
+          "title": "Seasonal operations: a short story arc each season",
+          "done": false
+        },
+        {
+          "title": "Security pressure and escalation against blockades",
+          "done": false
+        },
+        {
+          "title": "Idea: walk around stations together, a character creator",
+          "done": false
+        },
+        {
+          "title": "The Order: a place to reach in the open world",
+          "done": false
+        },
+        {
+          "title": "Mod support",
+          "done": false
+        },
+        {
+          "title": "NPC destructible bases",
+          "done": false
+        },
+        {
+          "title": "Wanted heat: police and hunters come looking for pirates",
+          "done": false
+        },
+        {
+          "title": "Perks that unlock actions: trading, engineering, diplomacy",
+          "done": false
+        },
+        {
+          "title": "Campaign Co-Op",
+          "done": false
+        },
+        {
+          "title": "Cloud station gas giant",
+          "done": false
+        },
+        {
+          "title": "Subtitles",
+          "done": false
+        }
+      ]
+    },
+    {
+      "name": "Later",
+      "items": [
+        {
+          "title": "Day and Night setting on planets depending on players local time",
+          "done": false
+        },
+        {
+          "title": "Planetary battles",
+          "done": false
+        },
+        {
+          "title": "DLSS5 (Neural Rendering part) implemented in the mod",
+          "done": false
+        },
+        {
+          "title": "Extraction zones (Arc Raiders style)",
+          "done": false
+        },
+        {
+          "title": "Capital ship parts: shipyard build orders",
+          "done": false
+        },
+        {
+          "title": "Idea: your own mining and trading empire (hired NPCs)",
+          "done": false
+        },
+        {
+          "title": "Implement spotify or a music player in game",
+          "done": false
+        },
+        {
+          "title": "New system types/styles",
+          "done": false
+        },
+        {
+          "title": "Crewed turrets on big ships",
+          "done": false
+        },
+        {
+          "title": "World bosses with roles",
+          "done": false
+        },
+        {
+          "title": "Capitals: running costs, no docking, a mobile base",
+          "done": false
+        }
+      ]
+    }
   ]
 }

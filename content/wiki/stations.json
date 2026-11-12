@@ -1,6 +1,35 @@
 {
   "entries": [
     {
+      "id": "atka-research-station",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Atka Research Station",
+      "subtitle": "Sigma-17",
+      "stats": [
+        {
+          "label": "System",
+          "value": "Sigma-17",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Cryer Pharmaceuticals",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "CLASS: Tyrell\nGRAVITY: Complete\nDOCKING: Yes\nAMENITIES: Yes\nPOPULATION: 200",
+      "images": [
+        "images/wiki/stations/atka-research-station-wide.webp",
+        "images/wiki/stations/atka-research-station-wide_opposite.webp"
+      ],
+      "source": "d8c07924fb49",
+      "added": "2026-11-12",
+      "updated": "2026-11-12"
+    },
+    {
       "id": "baltimore-shipyard",
       "summary": "",
       "body": "",
@@ -25,9 +54,38 @@
         "images/wiki/stations/baltimore-shipyard-wide.webp",
         "images/wiki/stations/baltimore-shipyard-wide_opposite.webp"
       ],
-      "source": "f24b68d7057f",
+      "source": "2171ba8e0927",
       "added": "2026-10-26",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
+    },
+    {
+      "id": "battleship-missouri",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Battleship Missouri",
+      "subtitle": "New York",
+      "stats": [
+        {
+          "label": "System",
+          "value": "New York",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Liberty Navy",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/stations/battleship-missouri-wide.webp",
+        "images/wiki/stations/battleship-missouri-wide_opposite.webp"
+      ],
+      "source": "2171ba8e0927",
+      "added": "2026-11-12",
+      "updated": "2026-11-12"
     },
     {
       "id": "buffalo-base",
@@ -54,9 +112,9 @@
         "images/wiki/stations/buffalo-base-wide.webp",
         "images/wiki/stations/buffalo-base-wide_opposite.webp"
       ],
-      "source": "48b35d840cb8",
+      "source": "2171ba8e0927",
       "added": "2026-10-26",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "newark-station",
@@ -83,9 +141,9 @@
         "images/wiki/stations/newark-station-wide.webp",
         "images/wiki/stations/newark-station-wide_opposite.webp"
       ],
-      "source": "0b11d85dd1f8",
+      "source": "2171ba8e0927",
       "added": "2026-10-20",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "orbital-station",
@@ -112,9 +170,9 @@
         "images/wiki/stations/orbital-station-wide.webp",
         "images/wiki/stations/orbital-station-wide_opposite.webp"
       ],
-      "source": "c0f408944855",
+      "source": "2171ba8e0927",
       "added": "2026-10-20",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "trenton-outpost",
@@ -141,9 +199,9 @@
         "images/wiki/stations/trenton-outpost-wide.webp",
         "images/wiki/stations/trenton-outpost-wide_opposite.webp"
       ],
-      "source": "952564e21485",
+      "source": "2171ba8e0927",
       "added": "2026-10-20",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "west-point-military-academy",
@@ -170,9 +228,9 @@
         "images/wiki/stations/west-point-military-academy-wide.webp",
         "images/wiki/stations/west-point-military-academy-wide_opposite.webp"
       ],
-      "source": "48b35d840cb8",
+      "source": "2171ba8e0927",
       "added": "2026-10-26",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "willard-research-station",
@@ -199,9 +257,9 @@
         "images/wiki/stations/willard-research-station-wide.webp",
         "images/wiki/stations/willard-research-station-wide_opposite.webp"
       ],
-      "source": "0e3cf82cbe3e",
+      "source": "2171ba8e0927",
       "added": "2026-10-26",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     }
   ]
 }

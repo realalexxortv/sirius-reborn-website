@@ -92,9 +92,9 @@
         "images/wiki/ships/barracuda-top.webp",
         "images/wiki/ships/barracuda-rear.webp"
       ],
-      "source": "3d8c117cfef4",
+      "source": "c45d12275187",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "bloodhound",
@@ -193,9 +193,9 @@
         "images/wiki/ships/bloodhound-top.webp",
         "images/wiki/ships/bloodhound-rear.webp"
       ],
-      "source": "89e5c5493175",
+      "source": "8109ab6d55e1",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "dagger",
@@ -294,9 +294,9 @@
         "images/wiki/ships/dagger-top.webp",
         "images/wiki/ships/dagger-rear.webp"
       ],
-      "source": "caaa76db338d",
+      "source": "0ba9c38b9c0e",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "defender",
@@ -395,9 +395,9 @@
         "images/wiki/ships/defender-top.webp",
         "images/wiki/ships/defender-rear.webp"
       ],
-      "source": "5658a93d01bb",
+      "source": "0087d910da5b",
       "added": "2026-10-20",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "dromedary",
@@ -496,9 +496,9 @@
         "images/wiki/ships/dromedary-top.webp",
         "images/wiki/ships/dromedary-rear.webp"
       ],
-      "source": "90c3fc7f2a7a",
+      "source": "cea98e3779b1",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "large-transport",
@@ -567,9 +567,75 @@
         "images/wiki/ships/large-transport-top.webp",
         "images/wiki/ships/large-transport-rear.webp"
       ],
-      "source": "23ec56c02d8b",
+      "source": "b27763a07175",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
+    },
+    {
+      "id": "liberty-dreadnought",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Liberty Dreadnought",
+      "subtitle": "Capital Ship · Liberty Navy",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Capital Ship",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "69,300",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "30 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "50,000",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "50,000 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "10,730 units",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "100,000",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/ships/liberty-dreadnought-hero.webp",
+        "images/wiki/ships/liberty-dreadnought-side.webp",
+        "images/wiki/ships/liberty-dreadnought-top.webp",
+        "images/wiki/ships/liberty-dreadnought-rear.webp"
+      ],
+      "source": "704dd8c27fed",
+      "added": "2026-11-12",
+      "updated": "2026-11-12"
     },
     {
       "id": "mule",
@@ -668,9 +734,9 @@
         "images/wiki/ships/mule-top.webp",
         "images/wiki/ships/mule-rear.webp"
       ],
-      "source": "ba5e44b80f73",
+      "source": "d9138d343fcb",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "patriot",
@@ -764,9 +830,9 @@
         "images/wiki/ships/patriot-top.webp",
         "images/wiki/ships/patriot-rear.webp"
       ],
-      "source": "7bf2b73d27b2",
+      "source": "a8082437517f",
       "added": "2026-10-31",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "piranha",
@@ -860,9 +926,9 @@
         "images/wiki/ships/piranha-top.webp",
         "images/wiki/ships/piranha-rear.webp"
       ],
-      "source": "029e0eeccd5d",
+      "source": "ff6926ad91f9",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "rhino",
@@ -961,9 +1027,9 @@
         "images/wiki/ships/rhino-top.webp",
         "images/wiki/ships/rhino-rear.webp"
       ],
-      "source": "f8051fc8f171",
+      "source": "04dd2e399ecc",
       "added": "2026-10-20",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "starflier",
@@ -1052,9 +1118,9 @@
         "images/wiki/ships/starflier-top.webp",
         "images/wiki/ships/starflier-rear.webp"
       ],
-      "source": "ed85af05c94f",
+      "source": "bc7517fa7e02",
       "added": "2026-10-20",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "startracker",
@@ -1148,9 +1214,9 @@
         "images/wiki/ships/startracker-top.webp",
         "images/wiki/ships/startracker-rear.webp"
       ],
-      "source": "3acfeb87349c",
+      "source": "2245fc209a22",
       "added": "2026-10-31",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "transport",
@@ -1219,9 +1285,9 @@
         "images/wiki/ships/transport-top.webp",
         "images/wiki/ships/transport-rear.webp"
       ],
-      "source": "23ec56c02d8b",
+      "source": "b27763a07175",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "valkyrie",
@@ -1320,9 +1386,9 @@
         "images/wiki/ships/valkyrie-top.webp",
         "images/wiki/ships/valkyrie-rear.webp"
       ],
-      "source": "366e03ae16c5",
+      "source": "19369972b996",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "wolfhound",
@@ -1421,9 +1487,9 @@
         "images/wiki/ships/wolfhound-top.webp",
         "images/wiki/ships/wolfhound-rear.webp"
       ],
-      "source": "38171354dd8c",
+      "source": "aa0ccda4289d",
       "added": "2026-11-06",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     }
   ]
 }

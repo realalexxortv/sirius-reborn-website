@@ -1,18 +1,14 @@
 {
   "phase": "Early Access",
-  "percent": 54,
-  "release": "Alpha 0.3.7",
-  "date": "2026-11-08",
+  "percent": 56,
+  "release": "Alpha 0.3.8",
+  "date": "2026-11-12",
   "areas": [
     {
       "name": "Combat",
       "items": [
         {
           "title": "Special Weapons on 2 Key: Railguns and Lasers",
-          "done": false
-        },
-        {
-          "title": "NPCs fight better: group tactics and morale",
           "done": false
         },
         {
@@ -29,6 +25,10 @@
         },
         {
           "title": "AoE Guns",
+          "done": false
+        },
+        {
+          "title": "Acid Weapons (DOT weapons)",
           "done": false
         },
         {
@@ -61,6 +61,10 @@
         },
         {
           "title": "HUD improvement",
+          "done": true
+        },
+        {
+          "title": "NPCs fight better: group tactics and morale",
           "done": true
         },
         {
@@ -105,10 +109,6 @@
       "name": "Liberty systems",
       "items": [
         {
-          "title": "Fights in nebulae and asteroid fields",
-          "done": false
-        },
-        {
           "title": "System: California finished",
           "done": false
         },
@@ -145,10 +145,6 @@
           "done": false
         },
         {
-          "title": "Big Star Wars scale things in space",
-          "done": false
-        },
-        {
           "title": "Old FL models replaced EA",
           "done": false
         },
@@ -167,6 +163,14 @@
         {
           "title": "Raise Manhattan",
           "done": true
+        },
+        {
+          "title": "Fights in nebulae and asteroid fields",
+          "done": true
+        },
+        {
+          "title": "Big Star Wars scale things in space",
+          "done": true
         }
       ]
     },
@@ -174,11 +178,47 @@
       "name": "Ships",
       "items": [
         {
-          "title": "NPC ships in the liberty systems",
+          "title": "NPC ships in the Liberty systems and Sigma-17",
           "done": false
         },
         {
-          "title": "Decal system on the ships",
+          "title": "Hawk",
+          "done": false
+        },
+        {
+          "title": "Falcon",
+          "done": false
+        },
+        {
+          "title": "Eagle",
+          "done": false
+        },
+        {
+          "title": "Stiletto",
+          "done": false
+        },
+        {
+          "title": "Sabre",
+          "done": false
+        },
+        {
+          "title": "Centurion",
+          "done": false
+        },
+        {
+          "title": "Hammerhead",
+          "done": false
+        },
+        {
+          "title": "Drone",
+          "done": false
+        },
+        {
+          "title": "Clydesdale",
+          "done": false
+        },
+        {
+          "title": "Anubis",
           "done": false
         },
         {
@@ -199,6 +239,10 @@
         },
         {
           "title": "All Liberty and civilian ships flyable, redesigned and classed",
+          "done": true
+        },
+        {
+          "title": "Decal system on the ships",
           "done": true
         }
       ]

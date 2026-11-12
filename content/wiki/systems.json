@@ -50,9 +50,9 @@
         "images/wiki/systems/california-sunward.webp",
         "images/wiki/systems/california-planet.webp"
       ],
-      "source": "0e3cf82cbe3e",
+      "source": "9dbd15ceef62",
       "added": "2026-10-26",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "new-york",
@@ -104,9 +104,9 @@
         "images/wiki/systems/new-york-sunward.webp",
         "images/wiki/systems/new-york-planet.webp"
       ],
-      "source": "48b35d840cb8",
+      "source": "9dbd15ceef62",
       "added": "2026-10-20",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
     },
     {
       "id": "sigma-17",
@@ -153,9 +153,63 @@
         "images/wiki/systems/sigma-17-sunward.webp",
         "images/wiki/systems/sigma-17-planet.webp"
       ],
-      "source": "3408ac399171",
+      "source": "b3d301271f4e",
       "added": "2026-11-08",
-      "updated": "2026-11-08"
+      "updated": "2026-11-12"
+    },
+    {
+      "id": "texas",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Texas",
+      "subtitle": "Liberty space",
+      "stats": [
+        {
+          "label": "House",
+          "value": "Liberty",
+          "og": true
+        },
+        {
+          "label": "Planets",
+          "value": "Planet Chisos, Abilene, Planet Brazos, Planet Houston",
+          "og": true
+        },
+        {
+          "label": "Bases",
+          "value": "Planet Houston, LPI Huntsville, Battleship Mississippi, Beaumont Base, LPI Sugarland",
+          "og": true
+        },
+        {
+          "label": "Trade lanes",
+          "value": "3",
+          "og": true
+        },
+        {
+          "label": "Jump gates",
+          "value": "3",
+          "og": true
+        },
+        {
+          "label": "Jump holes",
+          "value": "3",
+          "og": true
+        },
+        {
+          "label": "Connects to",
+          "value": "New York, Bering, Hudson, California",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "LIBERTY\nSettled Planets\nHouston\nBases\nLPI Huntsville\nLPI Sugarland\nBattleship Mississippi\nCorporations\nLiberty Police, Inc.\nBounty Hunters Guild\nDeep Space Engineering\nCriminals\nXenos\nLiberty Rogues\nOutcasts\nJunkers\nProduces\nFertilizers\nConsumer Goods\nBasic Alloys\nToxic Waste",
+      "images": [
+        "images/wiki/systems/texas-sunward.webp",
+        "images/wiki/systems/texas-planet.webp"
+      ],
+      "source": "9dbd15ceef62",
+      "added": "2026-11-12",
+      "updated": "2026-11-12"
     }
   ]
 }

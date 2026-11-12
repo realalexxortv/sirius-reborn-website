@@ -468,6 +468,14 @@ img { display: block; }
   border-color: #59d38c44; background: #0c1a16; color: #8fa59a;
   text-decoration: line-through; text-decoration-color: #59d38c88;
 }
+/* the future: below the route, no rings, its chips dashed */
+.rm-future { margin-top: 40px; padding-top: 26px; border-top: 1px solid #1d3a5c; }
+.rm-future > h2 { margin: 0 0 6px; font-family: var(--serif); font-size: 24px; font-weight: 600; letter-spacing: .06em; color: #e3e9f3; }
+.rm-future > p { margin: 0 0 22px; max-width: 640px; font-size: 16.5px; line-height: 1.6; color: var(--ink-2); }
+.rm-later { display: grid; gap: 22px; }
+.rm-group { display: grid; gap: 10px; }
+.rm-group h3 { margin: 0; font-family: var(--serif); font-size: 19px; font-weight: 600; letter-spacing: .04em; color: #c9d3e2; }
+.rm-chip.later { border-style: dashed; border-color: #5cb6ff44; background: #0a1524; color: var(--ink-2); }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .compact .rm { padding: 4px 4px 24px; }
 .compact .rm-route { padding-left: 54px; }

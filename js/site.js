@@ -231,6 +231,12 @@
   // --------------------------------------------------------------- roadmap
   // content/roadmap.json, written by the game repo's release update: the phase under way, its areas and in each the
   // issues labelled public (open or done). Drawn as a route: one waypoint per area, its ring the area's share done.
+  // Below it the future: the public issues planned after the phase and later, one group each, without rings.
+  function chips(items, cls) {
+    return '<ul class="rm-chips">' + items.map(function (i) {
+      return '<li class="rm-chip' + cls + (i.done ? ' done' : '') + '">' + esc(i.title) + (i.done ? '<span class="sr"> (done)</span>' : '') + '</li>';
+    }).join('') + '</ul>';
+  }
   function renderRoadmap() {
     return getJSON('content/roadmap.json').then(function (r) {
       setHead('Roadmap', r.phase + ' \u00b7 ' + r.percent + '% Complete', 'Roadmap');
@@ -242,15 +248,19 @@
           '<circle class="rm-ring-fill" cx="26" cy="26" r="22" pathLength="100" stroke-dasharray="' + pct + ' 100"/></svg>' +
           '<span>' + pct + '%</span></div>' +
           '<div class="rm-stop-head"><h2>' + esc(a.name) + '</h2><span class="rm-count">' + done + ' of ' + a.items.length + ' done</span></div>' +
-          '<ul class="rm-chips">' + a.items.map(function (i) {
-            return '<li class="rm-chip' + (i.done ? ' done' : '') + '">' + esc(i.title) + (i.done ? '<span class="sr"> (done)</span>' : '') + '</li>';
-          }).join('') + '</ul></section>';
+          chips(a.items, '') + '</section>';
+      }).join('');
+      var later = (r.future || []).map(function (g) {
+        return '<section class="rm-group"><div class="rm-stop-head"><h3>' + esc(g.name) + '</h3><span class="rm-count">' +
+          g.items.length + (g.items.length === 1 ? ' item' : ' items') + '</span></div>' + chips(g.items, ' later') + '</section>';
       }).join('');
       view.innerHTML = '<div class="rm">' +
         '<div class="rm-intro"><p>What is left before ' + esc(r.phase) + ', area by area: the bigger items only, bug fixes are in the ' +
           '<a href="#/">patch notes</a>. It is updated with every release.</p>' +
           '<p class="rm-legend"><span><i class="o"></i>Planned</span><span><i class="d"></i>Done</span></p></div>' +
         (stops ? '<div class="rm-route">' + stops + '</div>' : '<p class="empty">The roadmap is being written. Stay tuned.</p>') +
+        (later ? '<div class="rm-future"><h2>Future Roadmap</h2><p>What comes after ' + esc(r.phase) + ' and further out. ' +
+          'These are plans and ideas, not promises: the order can change.</p><div class="rm-later">' + later + '</div></div>' : '') +
         '<p class="rm-meta">As of ' + esc(r.release) + ' \u00b7 ' + esc(SR.formatDate(r.date)) + '</p></div>';
     });
   }

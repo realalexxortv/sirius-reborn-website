@@ -1,7 +1,7 @@
 {
   "tagline": "The 2003 Classic, Fully Remade in Unreal Engine",
   "build": "Development Build 0.3.9",
-  "engine": "Unreal Engine 5.8.3",
+  "engine": "Unreal Engine 5.9",
   "status": {
     "percent": 57,
     "phase": "Early Access Phase",

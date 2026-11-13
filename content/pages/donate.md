@@ -10,9 +10,9 @@ It's a mod, but if we want to add things or make it look and play better, we nee
 
 ### Here are the costs for the whole game so far:
 #### AI Agents:
-* Claude Code Max: 90 EUR / month since October 2026
-* Grok Imagine: 15 EUR / month
-* Tripo 3D Max: 80 EUR / month
+* Claude Code Max: $100 / month since October 2026
+* Grok Imagine: $20 / month
+* Tripo 3D Max: $90 / month
 
 
 # Unreal Assets So Far

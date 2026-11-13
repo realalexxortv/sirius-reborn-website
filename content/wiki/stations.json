@@ -54,9 +54,9 @@
         "images/wiki/stations/baltimore-shipyard-wide.webp",
         "images/wiki/stations/baltimore-shipyard-wide_opposite.webp"
       ],
-      "source": "be92867a2072",
+      "source": "6a3bae23dcef",
       "added": "2026-10-26",
-      "updated": "2026-11-12"
+      "updated": "2026-11-13"
     },
     {
       "id": "battleship-missouri",
@@ -141,9 +141,9 @@
         "images/wiki/stations/newark-station-wide.webp",
         "images/wiki/stations/newark-station-wide_opposite.webp"
       ],
-      "source": "f4bf6c0002f4",
+      "source": "813898b92b69",
       "added": "2026-10-20",
-      "updated": "2026-11-12"
+      "updated": "2026-11-13"
     },
     {
       "id": "orbital-station",
@@ -199,9 +199,9 @@
         "images/wiki/stations/trenton-outpost-wide.webp",
         "images/wiki/stations/trenton-outpost-wide_opposite.webp"
       ],
-      "source": "49c0f0628015",
+      "source": "5b3826b87ea8",
       "added": "2026-10-20",
-      "updated": "2026-11-12"
+      "updated": "2026-11-13"
     },
     {
       "id": "west-point-military-academy",
@@ -228,9 +228,9 @@
         "images/wiki/stations/west-point-military-academy-wide.webp",
         "images/wiki/stations/west-point-military-academy-wide_opposite.webp"
       ],
-      "source": "b950a2c22110",
+      "source": "f8e8c68ea847",
       "added": "2026-10-26",
-      "updated": "2026-11-12"
+      "updated": "2026-11-13"
     },
     {
       "id": "willard-research-station",

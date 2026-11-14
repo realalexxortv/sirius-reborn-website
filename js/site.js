@@ -209,22 +209,14 @@
     });
   }
 
-  // The gallery's in-game shots: every image of the wiki's ships and stations, so each wiki update adds its new shots.
-  var GALLERY_KINDS = ['ships', 'stations'];
+  // The gallery: the game's loading screens with the title card (content/gallery.json, newest first), written by the
+  // game repo's wiki update, so each update adds the new ones.
   function renderGalleryShots(page) {
-    return Promise.all(GALLERY_KINDS.map(loadWiki)).then(function (lists) {
-      page.insertAdjacentHTML('beforeend', GALLERY_KINDS.map(function (key, i) {
-        var k = wikiKind(key);
-        var shots = lists[i].map(function (e) {
-          return (e.images || []).map(function (src) {
-            return '<figure class="gallery-shot"><a href="' + esc(src) + '" target="_blank" rel="noopener">' +
-              '<img src="' + esc(src) + '" alt="' + esc(e.name) + '" loading="lazy"></a>' +
-              '<figcaption><a href="#/wiki/' + key + '/' + encodeURIComponent(e.id) + '">' + esc(e.name) + '</a></figcaption></figure>';
-          }).join('');
-        }).join('');
-        return shots ? '<section class="wiki-section"><h2><a href="#/wiki/' + key + '">' + esc(k.title) + '</a></h2>' +
-          '<div class="gallery-grid">' + shots + '</div></section>' : '';
-      }).join(''));
+    return fetch('content/gallery.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : []; }).then(function (list) {
+      page.insertAdjacentHTML('beforeend', '<div class="gallery-grid">' + list.map(function (e) {
+        return '<figure class="gallery-shot"><a href="' + esc(e.image) + '" target="_blank" rel="noopener">' +
+          '<img src="' + esc(e.image) + '" alt="Sirius Reborn" loading="lazy"></a></figure>';
+      }).join('') + '</div>');
     });
   }
 

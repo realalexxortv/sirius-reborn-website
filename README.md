@@ -16,6 +16,7 @@ It's a static site (plain HTML/CSS/JS, no build step) that runs on GitHub Pages 
 | `content/news.json` | All news posts: title, date, tag, timeline image, excerpt and the full Markdown body. |
 | `content/pages/*.md` | Join the Crew (`donate.md`), Gallery, About, How it's done and Download pages (Markdown with a `title` / `subtitle` header). |
 | `content/wiki/*.json` | The wiki: ships, systems, stations and weapons (see [The wiki](#the-wiki)). |
+| `content/gallery.json`, `images/gallery/` | The Gallery page: the game's loading screens with the title card, newest first. The game repo's wiki update adds new ones; don't edit them here. |
 | `content/roadmap.json` | The Roadmap page (`#/roadmap`, also the footer's status ring): the phase under way, its areas and their items, open or done. The game repo's release update writes it from the issues labelled `public`; don't edit it here. |
 | `content/settings.json` | Tagline, build badge, project status ring, Community Hub links, footer text, the funding worker's URL. |
 | `overlay/funding.html` | The stream overlay: a funding goal's bar and the crew names, for an OBS browser source (options at the top of the file). |
@@ -45,7 +46,7 @@ The CMS is a static page that commits to this repository through the GitHub API,
 You can then:
 
 - **News**: write, edit, unpublish (draft) and delete posts. Each post has a timeline image (shown in the round frame), an excerpt for the timeline and a full Markdown body with a live preview. You can upload images and embed YouTube videos.
-- **Pages**: edit Join the Crew, Gallery, About, How it's done and Download. Put several images on one line in the Gallery to get a grid. Below the Gallery's text the site adds every shot of the wiki's ships and stations by itself, so each wiki update adds its new shots there.
+- **Pages**: edit Join the Crew, Gallery, About, How it's done and Download. The Gallery shows only the game's loading screens (`content/gallery.json`), which each wiki update brings up to date.
 - **Wiki**: add our own summary and text to a wiki entry, or hide it (see below).
 - **Funding**: the funding goals (text, target, monthly or since a date), payments added by hand, and hiding or voiding a payment. It needs the funding worker's admin token (funding/README.md).
 - **Settings**: tagline, build badge, project status percentage and text, Community Hub links (an empty link disables its button; `#/wiki` opens the site's wiki) and footer text.

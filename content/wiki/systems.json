@@ -1,6 +1,47 @@
 {
   "entries": [
     {
+      "id": "alaska",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Alaska",
+      "subtitle": "Liberty space",
+      "stats": [
+        {
+          "label": "House",
+          "value": "Liberty",
+          "og": true
+        },
+        {
+          "label": "Bases",
+          "value": "Prison Station Mitchell, Skagway Base",
+          "og": true
+        },
+        {
+          "label": "Jump gates",
+          "value": "1",
+          "og": true
+        },
+        {
+          "label": "Jump holes",
+          "value": "1",
+          "og": true
+        },
+        {
+          "label": "Connects to",
+          "value": "New York, Sigma-13",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "LIBERTY\nSettled Planets\nCLASSIFIED\nBases\nCLASSIFIED\nCorporations\nCLASSIFIED\nCriminals\nCLASSIFIED\nProduces\nCLASSIFIED",
+      "images": [],
+      "source": "b8021c957dd2",
+      "added": "2026-11-20",
+      "updated": "2026-11-20"
+    },
+    {
       "id": "california",
       "summary": "",
       "body": "",
@@ -50,9 +91,9 @@
         "images/wiki/systems/california-sunward.webp",
         "images/wiki/systems/california-planet.webp"
       ],
-      "source": "1ea6214081c4",
+      "source": "5dca60e79157",
       "added": "2026-10-26",
-      "updated": "2026-11-12"
+      "updated": "2026-11-20"
     },
     {
       "id": "new-york",
@@ -104,9 +145,55 @@
         "images/wiki/systems/new-york-sunward.webp",
         "images/wiki/systems/new-york-planet.webp"
       ],
-      "source": "3fef2460ca7f",
+      "source": "ef6eca960249",
       "added": "2026-10-20",
-      "updated": "2026-11-13"
+      "updated": "2026-11-20"
+    },
+    {
+      "id": "sigma-13",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Sigma-13",
+      "subtitle": "Independent space",
+      "stats": [
+        {
+          "label": "House",
+          "value": "Independent",
+          "og": true
+        },
+        {
+          "label": "Bases",
+          "value": "Gas Miner Naha, Helgoland Station, Yanagi Depot, Asteroid Miner",
+          "og": true
+        },
+        {
+          "label": "Trade lanes",
+          "value": "3",
+          "og": true
+        },
+        {
+          "label": "Jump gates",
+          "value": "2",
+          "og": true
+        },
+        {
+          "label": "Jump holes",
+          "value": "7",
+          "og": true
+        },
+        {
+          "label": "Connects to",
+          "value": "Frankfurt, Honshu, Sigma-17, Sigma-19, Chugoku, New Berlin, Alaska",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "BORDER WORLDS\nSettled Planets\nNone\nBases\nGas Miner Naha\nHelgoland Station\nCorporations\nGas Mining Guild\nALG Waste Disposal\nCriminals\nCorsairs\nOutcasts\nJunkers\nProduces\nH-Fuel\nScrap Metal",
+      "images": [],
+      "source": "5827ccbd6f68",
+      "added": "2026-11-20",
+      "updated": "2026-11-20"
     },
     {
       "id": "sigma-17",
@@ -153,9 +240,9 @@
         "images/wiki/systems/sigma-17-sunward.webp",
         "images/wiki/systems/sigma-17-planet.webp"
       ],
-      "source": "153381f2263d",
+      "source": "2b0a45471b49",
       "added": "2026-11-08",
-      "updated": "2026-11-13"
+      "updated": "2026-11-20"
     },
     {
       "id": "texas",

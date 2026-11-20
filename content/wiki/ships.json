@@ -1,6 +1,77 @@
 {
   "entries": [
     {
+      "id": "atlas",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Atlas",
+      "subtitle": "Transport · Civilian",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Transport",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "3,000",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "80 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "50,000",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "50,000 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "2,000 units",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Turret mounts",
+          "value": "5 large",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/ships/atlas-hero.webp",
+        "images/wiki/ships/atlas-side.webp",
+        "images/wiki/ships/atlas-top.webp",
+        "images/wiki/ships/atlas-rear.webp"
+      ],
+      "source": "ef20e702d372",
+      "added": "2026-11-20",
+      "updated": "2026-11-20"
+    },
+    {
       "id": "banshee",
       "summary": "",
       "body": "",
@@ -92,9 +163,9 @@
         "images/wiki/ships/banshee-top.webp",
         "images/wiki/ships/banshee-rear.webp"
       ],
-      "source": "3505ce1ed118",
+      "source": "4370c09c2df9",
       "added": "2026-11-13",
-      "updated": "2026-11-13"
+      "updated": "2026-11-20"
     },
     {
       "id": "barracuda",
@@ -102,7 +173,7 @@
       "body": "",
       "hidden": false,
       "name": "Barracuda",
-      "subtitle": "Heavy Fighter · Kusari State Police",
+      "subtitle": "Heavy Fighter · Bounty Hunters Guild",
       "stats": [
         {
           "label": "Class",
@@ -188,9 +259,105 @@
         "images/wiki/ships/barracuda-top.webp",
         "images/wiki/ships/barracuda-rear.webp"
       ],
-      "source": "c45d12275187",
+      "source": "c69493de0639",
       "added": "2026-11-06",
-      "updated": "2026-11-12"
+      "updated": "2026-11-20"
+    },
+    {
+      "id": "bison",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Bison",
+      "subtitle": "Freighter · Civilian",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Freighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "5,000",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "2,687",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "80 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "4,700",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "465 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "500 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "30",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "30",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "900",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "300,000 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Baltimore Shipyard (New York)",
+          "og": true
+        },
+        {
+          "label": "Turret mounts",
+          "value": "2 medium, 3 small",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/ships/bison-hero.webp",
+        "images/wiki/ships/bison-side.webp",
+        "images/wiki/ships/bison-top.webp",
+        "images/wiki/ships/bison-rear.webp"
+      ],
+      "source": "ef20e702d372",
+      "added": "2026-11-20",
+      "updated": "2026-11-20"
     },
     {
       "id": "bloodhound",
@@ -198,7 +365,7 @@
       "body": "",
       "hidden": false,
       "name": "Bloodhound",
-      "subtitle": "Light Fighter · Junkers",
+      "subtitle": "Light Fighter · Liberty Rogues",
       "stats": [
         {
           "label": "Class",
@@ -289,9 +456,9 @@
         "images/wiki/ships/bloodhound-top.webp",
         "images/wiki/ships/bloodhound-rear.webp"
       ],
-      "source": "8109ab6d55e1",
+      "source": "63fb2debda0c",
       "added": "2026-11-06",
-      "updated": "2026-11-12"
+      "updated": "2026-11-20"
     },
     {
       "id": "dagger",
@@ -299,7 +466,7 @@
       "body": "",
       "hidden": false,
       "name": "Dagger",
-      "subtitle": "Light Fighter · Liberty Rogues",
+      "subtitle": "Light Fighter · Lane Hackers",
       "stats": [
         {
           "label": "Class",
@@ -390,9 +557,9 @@
         "images/wiki/ships/dagger-top.webp",
         "images/wiki/ships/dagger-rear.webp"
       ],
-      "source": "0ba9c38b9c0e",
+      "source": "de8fbed614e6",
       "added": "2026-11-06",
-      "updated": "2026-11-12"
+      "updated": "2026-11-20"
     },
     {
       "id": "defender",
@@ -491,9 +658,9 @@
         "images/wiki/ships/defender-top.webp",
         "images/wiki/ships/defender-rear.webp"
       ],
-      "source": "0087d910da5b",
+      "source": "32bc2ea2b78f",
       "added": "2026-10-20",
-      "updated": "2026-11-12"
+      "updated": "2026-11-20"
     },
     {
       "id": "dromedary",
@@ -501,7 +668,7 @@
       "body": "",
       "hidden": false,
       "name": "Dromedary",
-      "subtitle": "Freighter · Lane Hackers",
+      "subtitle": "Freighter · Zoners",
       "stats": [
         {
           "label": "Class",
@@ -592,9 +759,9 @@
         "images/wiki/ships/dromedary-top.webp",
         "images/wiki/ships/dromedary-rear.webp"
       ],
-      "source": "cea98e3779b1",
+      "source": "e767e62877af",
       "added": "2026-11-06",
-      "updated": "2026-11-12"
+      "updated": "2026-11-20"
     },
     {
       "id": "drone",
@@ -602,7 +769,7 @@
       "body": "",
       "hidden": false,
       "name": "Drone",
-      "subtitle": "Freighter · Kusari State Police",
+      "subtitle": "Freighter · Kusari",
       "stats": [
         {
           "label": "Class",
@@ -693,9 +860,9 @@
         "images/wiki/ships/drone-top.webp",
         "images/wiki/ships/drone-rear.webp"
       ],
-      "source": "6522c8ae9c8e",
+      "source": "bde17cedadcd",
       "added": "2026-11-13",
-      "updated": "2026-11-13"
+      "updated": "2026-11-20"
     },
     {
       "id": "hawk",
@@ -703,7 +870,7 @@
       "body": "",
       "hidden": false,
       "name": "Hawk",
-      "subtitle": "Light Fighter · Kusari State Police",
+      "subtitle": "Light Fighter · Civilian",
       "stats": [
         {
           "label": "Class",
@@ -789,26 +956,31 @@
         "images/wiki/ships/hawk-top.webp",
         "images/wiki/ships/hawk-rear.webp"
       ],
-      "source": "842e3ff40f33",
+      "source": "4d47b6c74135",
       "added": "2026-11-13",
-      "updated": "2026-11-13"
+      "updated": "2026-11-20"
     },
     {
-      "id": "large-transport",
+      "id": "hermit",
       "summary": "",
       "body": "",
       "hidden": false,
-      "name": "Large Transport",
-      "subtitle": "Transport · Independent Miners Guild",
+      "name": "Hermit",
+      "subtitle": "Freighter · Junkers",
       "stats": [
         {
           "label": "Class",
-          "value": "Transport",
+          "value": "Freighter",
           "og": true
         },
         {
           "label": "Hull strength",
-          "value": "3,000",
+          "value": "4,000",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "1,433",
           "og": true
         },
         {
@@ -823,12 +995,12 @@
         },
         {
           "label": "Power capacity",
-          "value": "50,000",
+          "value": "2,900",
           "og": true
         },
         {
           "label": "Power regeneration",
-          "value": "50,000 /s",
+          "value": "290 /s",
           "og": true
         },
         {
@@ -838,31 +1010,56 @@
         },
         {
           "label": "Cargo hold",
-          "value": "2,000 units",
+          "value": "120 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "25",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "25",
           "og": true
         },
         {
           "label": "Mass",
-          "value": "1,000",
+          "value": "300",
           "og": true
         },
         {
+          "label": "Hull price",
+          "value": "36,000 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Rochester Base (New York), Trafalgar Base (New London)",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "2 small",
+          "og": false
+        },
+        {
           "label": "Turret mounts",
-          "value": "5 large",
+          "value": "2 medium",
           "og": false
         }
       ],
       "tables": [],
       "description": "",
       "images": [
-        "images/wiki/ships/large-transport-hero.webp",
-        "images/wiki/ships/large-transport-side.webp",
-        "images/wiki/ships/large-transport-top.webp",
-        "images/wiki/ships/large-transport-rear.webp"
+        "images/wiki/ships/hermit-hero.webp",
+        "images/wiki/ships/hermit-side.webp",
+        "images/wiki/ships/hermit-top.webp",
+        "images/wiki/ships/hermit-rear.webp"
       ],
-      "source": "b27763a07175",
-      "added": "2026-11-06",
-      "updated": "2026-11-12"
+      "source": "18d2b6f1ae68",
+      "added": "2026-11-20",
+      "updated": "2026-11-20"
     },
     {
       "id": "liberty-dreadnought",
@@ -926,9 +1123,105 @@
         "images/wiki/ships/liberty-dreadnought-top.webp",
         "images/wiki/ships/liberty-dreadnought-rear.webp"
       ],
-      "source": "704dd8c27fed",
+      "source": "816a655d943d",
       "added": "2026-11-12",
-      "updated": "2026-11-12"
+      "updated": "2026-11-20"
+    },
+    {
+      "id": "mammoth",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Mammoth",
+      "subtitle": "Freighter · Orbital Spa and Cruise Lines",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Freighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "7,500",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "2,687",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "80 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "4,700",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "465 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "200 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "35",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "35",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "600",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "200,000 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Glasgow Outpost (Leeds), The Ring (New Berlin), Yokohama Shipyard (New Tokyo)",
+          "og": true
+        },
+        {
+          "label": "Turret mounts",
+          "value": "5 medium, 4 small",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/ships/mammoth-hero.webp",
+        "images/wiki/ships/mammoth-side.webp",
+        "images/wiki/ships/mammoth-top.webp",
+        "images/wiki/ships/mammoth-rear.webp"
+      ],
+      "source": "0e98330f1293",
+      "added": "2026-11-20",
+      "updated": "2026-11-20"
     },
     {
       "id": "mule",
@@ -936,7 +1229,7 @@
       "body": "",
       "hidden": false,
       "name": "Mule",
-      "subtitle": "Freighter · Junkers",
+      "subtitle": "Freighter · Liberty Rogues",
       "stats": [
         {
           "label": "Class",
@@ -1027,9 +1320,9 @@
         "images/wiki/ships/mule-top.webp",
         "images/wiki/ships/mule-rear.webp"
       ],
-      "source": "d9138d343fcb",
+      "source": "76744ba12671",
       "added": "2026-11-06",
-      "updated": "2026-11-12"
+      "updated": "2026-11-20"
     },
     {
       "id": "nomad-fighter",
@@ -1093,9 +1386,9 @@
         "images/wiki/ships/nomad-fighter-top.webp",
         "images/wiki/ships/nomad-fighter-rear.webp"
       ],
-      "source": "f06b7c6626a9",
+      "source": "c4bdb9c2e1b2",
       "added": "2026-11-13",
-      "updated": "2026-11-13"
+      "updated": "2026-11-20"
     },
     {
       "id": "patriot",
@@ -1189,9 +1482,9 @@
         "images/wiki/ships/patriot-top.webp",
         "images/wiki/ships/patriot-rear.webp"
       ],
-      "source": "a8082437517f",
+      "source": "118afc654978",
       "added": "2026-10-31",
-      "updated": "2026-11-12"
+      "updated": "2026-11-20"
     },
     {
       "id": "piranha",
@@ -1199,7 +1492,7 @@
       "body": "",
       "hidden": false,
       "name": "Piranha",
-      "subtitle": "Light Fighter · Bretonia Police",
+      "subtitle": "Light Fighter · Bounty Hunters Guild",
       "stats": [
         {
           "label": "Class",
@@ -1285,9 +1578,131 @@
         "images/wiki/ships/piranha-top.webp",
         "images/wiki/ships/piranha-rear.webp"
       ],
-      "source": "ff6926ad91f9",
+      "source": "08414444ab17",
       "added": "2026-11-06",
-      "updated": "2026-11-12"
+      "updated": "2026-11-20"
+    },
+    {
+      "id": "prison-ship",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Prison Ship",
+      "subtitle": "Freighter · Liberty Police, Inc.",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Freighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "7,500",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "200 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "35",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "35",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "600",
+          "og": true
+        },
+        {
+          "label": "Turret mounts",
+          "value": "5 medium, 4 small",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/ships/prison-ship-hero.webp",
+        "images/wiki/ships/prison-ship-side.webp",
+        "images/wiki/ships/prison-ship-top.webp",
+        "images/wiki/ships/prison-ship-rear.webp"
+      ],
+      "source": "b9e0591da72e",
+      "added": "2026-11-20",
+      "updated": "2026-11-20"
+    },
+    {
+      "id": "repair-ship",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Repair Ship",
+      "subtitle": "Freighter · Civilian",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Freighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "1,600",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "61.3 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "50,000",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "50,000 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "100 units",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "400",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/ships/repair-ship-hero.webp",
+        "images/wiki/ships/repair-ship-side.webp",
+        "images/wiki/ships/repair-ship-top.webp",
+        "images/wiki/ships/repair-ship-rear.webp"
+      ],
+      "source": "b35dfb1217ff",
+      "added": "2026-11-20",
+      "updated": "2026-11-20"
     },
     {
       "id": "rhino",
@@ -1295,7 +1710,7 @@
       "body": "",
       "hidden": false,
       "name": "Rhino",
-      "subtitle": "Freighter · Liberty Police, Inc.",
+      "subtitle": "Freighter · Deep Space Engineering",
       "stats": [
         {
           "label": "Class",
@@ -1386,9 +1801,9 @@
         "images/wiki/ships/rhino-top.webp",
         "images/wiki/ships/rhino-rear.webp"
       ],
-      "source": "04dd2e399ecc",
+      "source": "514eeb776504",
       "added": "2026-10-20",
-      "updated": "2026-11-12"
+      "updated": "2026-11-20"
     },
     {
       "id": "starflier",
@@ -1396,7 +1811,7 @@
       "body": "",
       "hidden": false,
       "name": "Starflier",
-      "subtitle": "Light Fighter · Samura Industries",
+      "subtitle": "Light Fighter · Civilian",
       "stats": [
         {
           "label": "Class",
@@ -1477,9 +1892,9 @@
         "images/wiki/ships/starflier-top.webp",
         "images/wiki/ships/starflier-rear.webp"
       ],
-      "source": "bc7517fa7e02",
+      "source": "bd53a3a3ca98",
       "added": "2026-10-20",
-      "updated": "2026-11-12"
+      "updated": "2026-11-20"
     },
     {
       "id": "startracker",
@@ -1487,7 +1902,7 @@
       "body": "",
       "hidden": false,
       "name": "Startracker",
-      "subtitle": "Light Fighter · Liberty Police, Inc.",
+      "subtitle": "Light Fighter · Civilian",
       "stats": [
         {
           "label": "Class",
@@ -1573,80 +1988,9 @@
         "images/wiki/ships/startracker-top.webp",
         "images/wiki/ships/startracker-rear.webp"
       ],
-      "source": "2245fc209a22",
+      "source": "505dbcf4c4c5",
       "added": "2026-10-31",
-      "updated": "2026-11-12"
-    },
-    {
-      "id": "transport",
-      "summary": "",
-      "body": "",
-      "hidden": false,
-      "name": "Transport",
-      "subtitle": "Transport · Samura Industries",
-      "stats": [
-        {
-          "label": "Class",
-          "value": "Transport",
-          "og": true
-        },
-        {
-          "label": "Hull strength",
-          "value": "3,000",
-          "og": true
-        },
-        {
-          "label": "Top speed",
-          "value": "80 m/s",
-          "og": true
-        },
-        {
-          "label": "Cruise speed",
-          "value": "300 m/s",
-          "og": true
-        },
-        {
-          "label": "Power capacity",
-          "value": "50,000",
-          "og": true
-        },
-        {
-          "label": "Power regeneration",
-          "value": "50,000 /s",
-          "og": true
-        },
-        {
-          "label": "Thrust capacity",
-          "value": "1,000",
-          "og": true
-        },
-        {
-          "label": "Cargo hold",
-          "value": "1,000 units",
-          "og": true
-        },
-        {
-          "label": "Mass",
-          "value": "500",
-          "og": true
-        },
-        {
-          "label": "Turret mounts",
-          "value": "5 large",
-          "og": false
-        }
-      ],
-      "tables": [],
-      "description": "",
-      "images": [
-        "images/wiki/ships/transport-hero.webp",
-        "images/wiki/ships/transport-side.webp",
-        "images/wiki/ships/transport-top.webp",
-        "images/wiki/ships/transport-rear.webp"
-      ],
-      "source": "b27763a07175",
-      "added": "2026-11-06",
-      "updated": "2026-11-12"
+      "updated": "2026-11-20"
     },
     {
       "id": "valkyrie",
@@ -1745,9 +2089,9 @@
         "images/wiki/ships/valkyrie-top.webp",
         "images/wiki/ships/valkyrie-rear.webp"
       ],
-      "source": "19369972b996",
+      "source": "912aacbfdba3",
       "added": "2026-11-06",
-      "updated": "2026-11-12"
+      "updated": "2026-11-20"
     },
     {
       "id": "wolfhound",
@@ -1755,7 +2099,7 @@
       "body": "",
       "hidden": false,
       "name": "Wolfhound",
-      "subtitle": "Heavy Fighter · Mollys",
+      "subtitle": "Heavy Fighter · Liberty Rogues",
       "stats": [
         {
           "label": "Class",
@@ -1846,9 +2190,9 @@
         "images/wiki/ships/wolfhound-top.webp",
         "images/wiki/ships/wolfhound-rear.webp"
       ],
-      "source": "aa0ccda4289d",
+      "source": "e6c569f6c885",
       "added": "2026-11-06",
-      "updated": "2026-11-12"
+      "updated": "2026-11-20"
     }
   ]
 }

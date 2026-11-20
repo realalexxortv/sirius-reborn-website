@@ -1,18 +1,14 @@
 {
   "phase": "Early Access",
-  "percent": 57,
-  "release": "Alpha 0.3.9",
-  "date": "2026-11-13",
+  "percent": 61,
+  "release": "Alpha 0.4.0",
+  "date": "2026-11-20",
   "areas": [
     {
       "name": "Combat",
       "items": [
         {
           "title": "Special Weapons on 2 Key: Railguns and Lasers",
-          "done": false
-        },
-        {
-          "title": "Torpedoes: heavy ships only, huge damage on stationary targets, massive visuals",
           "done": false
         },
         {
@@ -48,10 +44,6 @@
           "done": false
         },
         {
-          "title": "Escort missions",
-          "done": false
-        },
-        {
           "title": "NPC combat and hostile factions",
           "done": true
         },
@@ -84,6 +76,10 @@
           "done": true
         },
         {
+          "title": "Torpedoes: heavy ships only, huge damage on stationary targets, massive visuals",
+          "done": true
+        },
+        {
           "title": "Mine rework: escape tool, EMP mines, traps",
           "done": true
         },
@@ -97,6 +93,10 @@
         },
         {
           "title": "Loot rarity: Common to Legendary",
+          "done": true
+        },
+        {
+          "title": "Escort missions",
           "done": true
         },
         {
@@ -206,10 +206,6 @@
           "done": false
         },
         {
-          "title": "Drone",
-          "done": false
-        },
-        {
           "title": "Clydesdale",
           "done": false
         },
@@ -243,6 +239,10 @@
         },
         {
           "title": "Hawk",
+          "done": true
+        },
+        {
+          "title": "Drone",
           "done": true
         }
       ]
@@ -292,11 +292,11 @@
           "done": false
         },
         {
-          "title": "Keybinds completely configurable",
-          "done": false
+          "title": "Feedback / Issue system ingame",
+          "done": true
         },
         {
-          "title": "Feedback / Issue system ingame",
+          "title": "Keybinds completely configurable",
           "done": true
         }
       ]
@@ -317,7 +317,7 @@
           "done": false
         },
         {
-          "title": "Network optimization",
+          "title": "Walking around stations and planet bases",
           "done": false
         },
         {
@@ -326,6 +326,10 @@
         },
         {
           "title": "Multiplayer: cargo scans and formation flying",
+          "done": true
+        },
+        {
+          "title": "Network optimization",
           "done": true
         }
       ]
@@ -350,10 +354,6 @@
           "done": false
         },
         {
-          "title": "Pilot record, medals and titles (early-access systems)",
-          "done": false
-        },
-        {
           "title": "Fast travel",
           "done": true
         },
@@ -363,6 +363,10 @@
         },
         {
           "title": "Leave a mark: discoveries, names in the world, leaderboards",
+          "done": true
+        },
+        {
+          "title": "Pilot record, medals and titles (early-access systems)",
           "done": true
         },
         {
@@ -505,10 +509,6 @@
             },
             {
               "title": "Companies (player guilds)",
-              "done": false
-            },
-            {
-              "title": "Idea: walk around stations together, a character creator",
               "done": false
             }
           ]

@@ -1,7 +1,47 @@
 [
   {
+    "image": "images/gallery/ca-los-angeles-dusk.webp",
+    "source": "0ce61badc2547091ca94495ee8685a3ee5bb104b 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+  },
+  {
+    "image": "images/gallery/li01-planet-manhattan-sunward.webp",
+    "source": "121e58b6df19fe325c8a6895ac72505a6fc57c16 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+  },
+  {
+    "image": "images/gallery/li02-planet-los-angeles-sunward.webp",
+    "source": "0f821a7ae82f2f4c15c4d8dc491a30887f8ec00d 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+  },
+  {
+    "image": "images/gallery/new1.webp",
+    "source": "acac854dc60d2b07082a54d6d9cf4d420a595aae 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+  },
+  {
+    "image": "images/gallery/new2.webp",
+    "source": "d4fb466dc76aa157993e21be7561d1511437bfbc 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+  },
+  {
+    "image": "images/gallery/ny-manhattan-night.webp",
+    "source": "f9feb577dbf2389e38ed732870b8f006d9a274ee 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+  },
+  {
+    "image": "images/gallery/ny-missouri.webp",
+    "source": "5c9ba701f3c9062aaa35251faacbcc71a469efba 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+  },
+  {
+    "image": "images/gallery/tx-black-hole-above.webp",
+    "source": "9f307bcb4f42aebbf64bf592a9ce0aec5243500d 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+  },
+  {
+    "image": "images/gallery/tx-houston-hole.webp",
+    "source": "24676354a4c586bc426a0228a46f84b1bf79c12d 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+  },
+  {
+    "image": "images/gallery/tx-mississippi-houston.webp",
+    "source": "4e0855008522f895df6601070bb9e76a596bd259 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+  },
+  {
     "image": "images/gallery/ca-mojave.webp",
-    "source": "1b33ed88e679650609acc79ea8589af36dbbb1c1 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+    "source": "d21cbf2d858ffed34b43afa2179bde1b6dbdefd5 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
   },
   {
     "image": "images/gallery/ca-willard-minor.webp",
@@ -9,31 +49,31 @@
   },
   {
     "image": "images/gallery/ny-lanes-up-to-newark.webp",
-    "source": "e6e1b6fe0e0ce2aa9b4e46f78e04665423b2ad6f 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+    "source": "538332caed1d00a71422d495c2dfe049b723c57c 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
   },
   {
     "image": "images/gallery/ny-manhattan-dusk.webp",
-    "source": "4b4c05a26f0bfd2b32e8870b45753d069f263682 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+    "source": "f605be3fdcc71831efea81c4644c1909186ac11b 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
   },
   {
     "image": "images/gallery/ny-newark-manhattan.webp",
-    "source": "25fb6644a847fe04d87068813821ad7cc0e493f9 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+    "source": "5cfa933e76f3980eb6af988cab091568c9ead755 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
   },
   {
     "image": "images/gallery/ny-pittsburgh-maine.webp",
-    "source": "a1f07adefa47951575b624ec9a06fe24969dae61 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+    "source": "187914bc7bfab67d106c356beb636ebc847c754d 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
   },
   {
     "image": "images/gallery/ny-rocks-pittsburgh.webp",
-    "source": "a3875791aff5636c69df3666afcb470b13fbd1a5 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+    "source": "b5a95236add58401c952060fd67fd52cb8ee643b 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
   },
   {
     "image": "images/gallery/s17-atka.webp",
-    "source": "7ef32ab6220cb373bbc1cf87431301d628a19b29 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+    "source": "1ad160493e0dbc788564072f009bd4a027b0eda8 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
   },
   {
     "image": "images/gallery/s17-atka-far.webp",
-    "source": "a69ad9d953345253717189fbf908fa4fd4dc1705 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
+    "source": "3d7c94616a88e34c777ae2ac3f8c458a969f5252 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
   },
   {
     "image": "images/gallery/screenshot-20261031-200713.webp",
@@ -46,9 +86,5 @@
   {
     "image": "images/gallery/screenshot-20261107-220047.webp",
     "source": "9b5d39888711b1373e327b2dc2861b33da2b207e 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
-  },
-  {
-    "image": "images/gallery/screenshot-20261108-112026.webp",
-    "source": "97a93ee1e601026628a50586cdb77a9029760053 58b02222b0cf7a11c82f41e4f7426c35c5f579bc"
   }
 ]

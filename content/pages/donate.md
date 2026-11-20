@@ -45,6 +45,8 @@ It's a mod, but if we want to add things or make it look and play better, we nee
 - Bar and Conversation Mocap $80	
 - Female Animation Package and Formal Wear $62	
 - Space Skybox, Nebulas, Backgrounds and Niagara Explosions $100
+- More Male Character Designs and Keanu Reeves $95
+- A LOT of different outfits, female hot body design, snow, mountains, and more $250
 
 # What we Still Need
 
@@ -52,9 +54,9 @@ Yes, these really ARE expensive...
 
 - Different Surface Packages for the Planets (About $300)
 - Different Styles for the Other factions via packs ($200)
-- PROPER OCEANS! $100
 - Multiple Different Station Design Packages ($300)
 - NPCs, clothes, and Animations (hot dresses are expensive man...) ($500)
+And then the same again for the other factions..
 
 
 So if you want to help, here are a bunch of ways. Any amount is enough.

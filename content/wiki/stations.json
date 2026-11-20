@@ -138,7 +138,6 @@
       "tables": [],
       "description": "CLASS: Nostromo\nAMENITIES: Limited\nCREW: 400",
       "images": [
-        "images/wiki/stations/gas-miner-naha-wide.webp",
         "images/wiki/stations/gas-miner-naha-wide_opposite.webp"
       ],
       "source": "d9940f4f62e0",
@@ -225,7 +224,6 @@
       "tables": [],
       "description": "CLASS: Leviathan\nGRAVITY: Partial\nDOCKING: Yes\nAMENITIES: Limited\nPOPULATION: Unknown",
       "images": [
-        "images/wiki/stations/skagway-base-wide.webp",
         "images/wiki/stations/skagway-base-wide_opposite.webp"
       ],
       "source": "cbb1cc0ef17d",

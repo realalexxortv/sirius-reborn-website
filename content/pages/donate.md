@@ -48,6 +48,8 @@ It's a mod, but if we want to add things or make it look and play better, we nee
 - More Male Character Designs and Keanu Reeves $95
 - A LOT of different outfits, female hot body design, snow, mountains, and more $250
 
+**So far: $1,735**
+
 # What we Still Need
 
 Yes, these really ARE expensive...

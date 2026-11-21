@@ -6,7 +6,7 @@ compatibility_date = "2026-10-01"
 compatibility_flags = ["nodejs_compat"]
 
 [vars]
-PATREON_CURRENCY = "USD"   # the Patreon campaign's currency: Patreon reports cents without one
+CURRENCY = "USD"   # the campaign's: Patreon reports cents without one, the top backers are summed in it
 
 [[d1_databases]]
 binding = "DB"

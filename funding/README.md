@@ -1,7 +1,7 @@
 # Funding
 
 A Cloudflare Worker with a D1 database. Ko-fi and Patreon tell it about each payment by webhook. It serves the goals and
-the last 10 backers at `GET /funding`, which the site's Join the Crew page (`#/donate`) and the bar above the news timeline read. The CMS's
+the last 10 backers and the top 10 (who paid the most) at `GET /funding`, which the site's Join the Crew page (`#/donate`) and the bar above the news timeline read. The CMS's
 Funding tab edits the goals, adds payments by hand (stream tips, Super Chats, transfers) and hides or voids a payment.
 The endpoints are listed at the top of `src/index.js`.
 
@@ -16,7 +16,10 @@ The endpoints are listed at the top of `src/index.js`.
 - A goal counts the payments in **its currency** from its start date, or from the 1st of the current month for a monthly
   goal. Keep Ko-fi, Patreon and the goals in one currency (USD). Payments in another currency are stored but not
   counted.
-- The backer list shows each person once, at their latest payment, newest first. *Hide* takes a name off the list and
+- A person is a name: the same name (case aside) on Ko-fi, Patreon and by hand is one person. Each *Anonymous* payment is
+  someone of their own.
+- The backer list shows each person once, at their latest payment, newest first. The top list shows the 10 who paid the
+  most in `CURRENCY` (`wrangler.toml`), with their total, under the name of their latest payment (the game shows it). *Hide* takes a name off the list and
   the money still counts. *Void* (a refund or a test) neither counts nor shows. Ko-fi doesn't report refunds, so void
   those by hand.
 - No backers yet: the site says so. No goals: no bar. `funding.api` empty in the site settings: none of it shows.
@@ -37,7 +40,7 @@ You need a free Cloudflare account. Run all of this in `funding/`.
 7. **Patreon:** [patreon.com/portal/registration/register-webhooks](https://www.patreon.com/portal/registration/register-webhooks).
    Add `<worker URL>/patreon` with the triggers `members:create`, `members:update`, `members:pledge:create` and
    `members:pledge:update`. Copy its secret into `npx wrangler secret put PATREON_SECRET`. If the campaign isn't in USD,
-   change `PATREON_CURRENCY` in `wrangler.toml` and deploy again.
+   change `CURRENCY` in `wrangler.toml` and deploy again.
 8. CMS → Settings → *Funding worker URL*: the worker URL. CMS → Funding: paste the admin token and add the goals.
 
 A change to `src/index.js` goes live with `npx wrangler deploy`. Merging to `main` only updates the site.

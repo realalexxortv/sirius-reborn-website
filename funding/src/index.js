@@ -1,6 +1,7 @@
-/* Sirius Reborn funding: takes Ko-fi and Patreon webhooks, serves the goals and the last backers.
+/* Sirius Reborn funding: takes Ko-fi and Patreon webhooks, serves the goals, the last backers and the top backers.
  *
- *   GET  /funding                 public: { goals: [{ label, target, raised, currency, monthly }], backers: [{ name, source, at }] }
+ *   GET  /funding                 public: { goals: [{ label, target, raised, currency, monthly }], backers: [{ name, source, at }],
+ *                                           top: [{ name, total, currency }] }
  *   POST /kofi                    Ko-fi webhook (form field "data", checked against KOFI_TOKEN)
  *   POST /patreon                 Patreon webhook (X-Patreon-Signature, HMAC-MD5 with PATREON_SECRET)
  *   GET  /admin                   goals and the last 100 payments            } Authorization: Bearer ADMIN_TOKEN
@@ -11,6 +12,7 @@
 import { createHmac, timingSafeEqual } from 'node:crypto';
 
 const BACKERS = 10;
+const TOP = 10;
 const NAME_MAX = 32;
 // Ko-fi types that are support; shop orders and commissions are sales.
 const KOFI_TYPES = new Set(['Donation', 'Subscription']);
@@ -49,15 +51,26 @@ async function funding(env) {
     'SELECT COALESCE(SUM(amount_cents), 0) AS c FROM donations WHERE void = 0 AND currency = ? AND at >= ?'
   ).bind(g.currency, goalStart(g)).first('c')));
   // Each person once, at their latest payment.
-  const { results } = await env.DB.prepare(
-    `SELECT name, source, MAX(at) AS at FROM donations WHERE void = 0 AND hidden = 0
-     GROUP BY backer ORDER BY at DESC LIMIT ?`
+  const { results: backers } = await env.DB.prepare(
+    `WITH p AS (${PEOPLE}) SELECT name, source, MAX(at) AS at FROM p GROUP BY person ORDER BY at DESC LIMIT ?`
   ).bind(BACKERS).all();
+  // Who paid the most in the campaign's currency, under the name of their latest payment; a tie: who paid first.
+  const { results: top } = await env.DB.prepare(
+    `WITH p AS (${PEOPLE})
+     SELECT (SELECT q.name FROM p q WHERE q.person = p.person ORDER BY q.at DESC LIMIT 1) AS name, SUM(amount_cents) AS cents
+     FROM p WHERE currency = ? GROUP BY person ORDER BY cents DESC, MIN(at) LIMIT ?`
+  ).bind(env.CURRENCY, TOP).all();
   return {
     goals: goals.map((g, i) => ({ label: g.label, target: g.target, raised: raised[i] / 100, currency: g.currency, monthly: g.monthly })),
-    backers: results,
+    backers,
+    top: top.map((t) => ({ name: t.name, total: t.cents / 100, currency: env.CURRENCY })),
   };
 }
+
+// The listed payments, each with its person: one name across Ko-fi, Patreon and by hand (case aside); each Anonymous
+// payment someone of their own.
+const PEOPLE = `SELECT *, CASE WHEN name = 'Anonymous' THEN backer ELSE lower(name) END AS person
+  FROM donations WHERE void = 0 AND hidden = 0`;
 
 // A monthly goal counts the current calendar month (UTC), the others everything since their date.
 function goalStart(g) {
@@ -114,7 +127,7 @@ async function patreon(req, env) {
       backer: 'patreon:' + m.id,
       name: name || 'Anonymous',
       cents: rise,
-      currency: env.PATREON_CURRENCY,
+      currency: env.CURRENCY,
       at: isoOrNow(a.last_charge_date),
     }));
   }

@@ -4,7 +4,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 PORT=8799 BASE=http://127.0.0.1:8799 STATE=$(mktemp -d)
 trap 'kill $DEV 2>/dev/null; rm -rf "$STATE"' EXIT
-VARS="--var KOFI_TOKEN:kofi-test --var PATREON_SECRET:patreon-test --var ADMIN_TOKEN:admin-test"
+VARS="--var KOFI_TOKEN:kofi-test --var PATREON_SECRET:patreon-test --var ADMIN_TOKEN:admin-test --var CURRENCY:EUR"
 
 npx wrangler d1 execute sirius-funding --local --persist-to "$STATE" --file schema.sql >/dev/null
 npx wrangler dev --port $PORT --persist-to "$STATE" $VARS >"$STATE/dev.log" 2>&1 & DEV=$!
@@ -51,12 +51,21 @@ check "control char stripped" '"name":"StarPilot"' "$F"
 check "private is Anonymous" '"name":"Anonymous"' "$F"
 check "patreon first name only, once" '"name":"Jane"' "$F"
 [[ "$F" != *Doe* && "$F" != *Secret* && "$F" != *Buyer* ]] && echo "ok   no surnames, private names or buyers" || { echo "FAIL leaked a name"; fail=1; }
-[[ $(grep -o '"name":"Jane"' <<<"$F" | wc -l) == 1 ]] && echo "ok   a backer listed once" || { echo "FAIL Jane twice"; fail=1; }
+[[ $(grep -o '"name":"Jane"' <<<"${F%%\"top\"*}" | wc -l) == 1 ]] && echo "ok   a backer listed once" || { echo "FAIL Jane twice"; fail=1; }
 
 check "hide a name" '"ok":true' "$(admin $BASE/admin/donations/kofi:m1 -d '{"hidden":true}')"
 check "void a payment" '"ok":true' "$(admin $BASE/admin/donations/kofi:m2 -d '{"void":true}')"
 F=$(curl -s $BASE/funding)
 check "void not counted" '"raised":17' "$F"
 [[ "$F" != *StarPilot* ]] && echo "ok   hidden name gone" || { echo "FAIL hidden name shown"; fail=1; }
+
+# One person across sources by name; the top backers by total in the campaign's currency
+kofi '{"verification_token":"kofi-test","message_id":"m4","type":"Donation","amount":"4.00","currency":"EUR","from_name":"jane","is_public":true}' >/dev/null
+admin $BASE/admin/donations -d '{"name":"Whale","amount":50,"currency":"USD"}' >/dev/null       # another currency: not in the top
+kofi '{"verification_token":"kofi-test","message_id":"m5","type":"Donation","amount":"1.00","currency":"EUR","from_name":"x","is_public":false}' >/dev/null
+F=$(curl -s $BASE/funding)
+echo "$F"
+[[ $(grep -o '"name":"[Jj]ane"' <<<"${F%%\"top\"*}" | wc -l) == 1 ]] && echo "ok   Jane on Ko-fi and Patreon one person in each list" || { echo "FAIL Jane not merged"; fail=1; }
+check "top: Jane's 10 + 4, under her latest name" '"top":[{"name":"jane","total":14,"currency":"EUR"},{"name":"StreamFan","total":2,"currency":"EUR"},{"name":"Anonymous","total":1,"currency":"EUR"}]' "$F"
 
 exit $fail

@@ -54,9 +54,9 @@
         "images/wiki/stations/baltimore-shipyard-wide.webp",
         "images/wiki/stations/baltimore-shipyard-wide_opposite.webp"
       ],
-      "source": "ebe56a33fffc",
+      "source": "d667489df883",
       "added": "2026-10-26",
-      "updated": "2026-11-20"
+      "updated": "2026-11-25"
     },
     {
       "id": "battleship-missouri",
@@ -117,6 +117,93 @@
       "updated": "2026-11-20"
     },
     {
+      "id": "freeport-2",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Freeport 2",
+      "subtitle": "Bering",
+      "stats": [
+        {
+          "label": "System",
+          "value": "Bering",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Zoners",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "CLASS: Dern\nGRAVITY: Complete\nDOCKING: Yes\nAMENITIES: Yes\nPOPULATION: 850",
+      "images": [
+        "images/wiki/stations/freeport-2-wide.webp",
+        "images/wiki/stations/freeport-2-wide_opposite.webp"
+      ],
+      "source": "88786eddcc41",
+      "added": "2026-11-25",
+      "updated": "2026-11-25"
+    },
+    {
+      "id": "freeport-4",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Freeport 4",
+      "subtitle": "Magellan",
+      "stats": [
+        {
+          "label": "System",
+          "value": "Magellan",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Independent Miners Guild",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "CLASS: Unknown\nGRAVITY: Partial\nDOCKING: Yes\nAMENITIES: Yes\nPOPULATION: 1K",
+      "images": [
+        "images/wiki/stations/freeport-4-wide.webp",
+        "images/wiki/stations/freeport-4-wide_opposite.webp"
+      ],
+      "source": "8626814c28d0",
+      "added": "2026-11-25",
+      "updated": "2026-11-25"
+    },
+    {
+      "id": "gas-miner",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Gas Miner",
+      "subtitle": "Sigma-13",
+      "stats": [
+        {
+          "label": "System",
+          "value": "Sigma-13",
+          "og": true
+        },
+        {
+          "label": "Faction",
+          "value": "Gas Miners Guild",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/stations/gas-miner-wide.webp",
+        "images/wiki/stations/gas-miner-wide_opposite.webp"
+      ],
+      "source": "dc3f6bbe0351",
+      "added": "2026-11-25",
+      "updated": "2026-11-25"
+    },
+    {
       "id": "gas-miner-naha",
       "summary": "",
       "body": "",
@@ -138,11 +225,12 @@
       "tables": [],
       "description": "CLASS: Nostromo\nAMENITIES: Limited\nCREW: 400",
       "images": [
+        "images/wiki/stations/gas-miner-naha-wide.webp",
         "images/wiki/stations/gas-miner-naha-wide_opposite.webp"
       ],
-      "source": "d9940f4f62e0",
+      "source": "5b4a04d49766",
       "added": "2026-11-20",
-      "updated": "2026-11-20"
+      "updated": "2026-11-25"
     },
     {
       "id": "newark-station",
@@ -198,9 +286,9 @@
         "images/wiki/stations/orbital-station-wide.webp",
         "images/wiki/stations/orbital-station-wide_opposite.webp"
       ],
-      "source": "34b6b2c96960",
+      "source": "dcbe2b2250b2",
       "added": "2026-10-20",
-      "updated": "2026-11-12"
+      "updated": "2026-11-25"
     },
     {
       "id": "skagway-base",
@@ -255,9 +343,9 @@
         "images/wiki/stations/trenton-outpost-wide.webp",
         "images/wiki/stations/trenton-outpost-wide_opposite.webp"
       ],
-      "source": "10a267c827d8",
+      "source": "302fd4b651da",
       "added": "2026-10-20",
-      "updated": "2026-11-20"
+      "updated": "2026-11-25"
     },
     {
       "id": "west-point-military-academy",

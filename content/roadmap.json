@@ -1,8 +1,8 @@
 {
   "phase": "Early Access",
-  "percent": 61,
-  "release": "Alpha 0.4.0",
-  "date": "2026-11-20",
+  "percent": 68,
+  "release": "Alpha 0.4.1",
+  "date": "2026-11-25",
   "areas": [
     {
       "name": "Combat",
@@ -29,10 +29,6 @@
         },
         {
           "title": "Jobs: Base attacks",
-          "done": false
-        },
-        {
-          "title": "Trader missions",
           "done": false
         },
         {
@@ -93,6 +89,10 @@
         },
         {
           "title": "Loot rarity: Common to Legendary",
+          "done": true
+        },
+        {
+          "title": "Trader missions",
           "done": true
         },
         {
@@ -182,18 +182,6 @@
           "done": false
         },
         {
-          "title": "Falcon",
-          "done": false
-        },
-        {
-          "title": "Eagle",
-          "done": false
-        },
-        {
-          "title": "Stiletto",
-          "done": false
-        },
-        {
           "title": "Sabre",
           "done": false
         },
@@ -242,6 +230,18 @@
           "done": true
         },
         {
+          "title": "Falcon",
+          "done": true
+        },
+        {
+          "title": "Eagle",
+          "done": true
+        },
+        {
+          "title": "Stiletto",
+          "done": true
+        },
+        {
           "title": "Drone",
           "done": true
         }
@@ -250,10 +250,6 @@
     {
       "name": "Missions",
       "items": [
-        {
-          "title": "Comm window faces: callers, stations, the ship's AI",
-          "done": false
-        },
         {
           "title": "Story Early Access: First 3 missions",
           "done": false
@@ -269,6 +265,10 @@
         {
           "title": "Story Mission 3",
           "done": false
+        },
+        {
+          "title": "Comm window faces: callers, stations, the ship's AI",
+          "done": true
         },
         {
           "title": "Mission system and job board",
@@ -305,19 +305,7 @@
       "name": "Online and social",
       "items": [
         {
-          "title": "Seeing each other: players in contacts, maps and bars; friends",
-          "done": false
-        },
-        {
-          "title": "Talking: chat channels, comm wheel, player hails, safety",
-          "done": false
-        },
-        {
           "title": "Wings: player groups up to 6",
-          "done": false
-        },
-        {
-          "title": "Walking around stations and planet bases",
           "done": false
         },
         {
@@ -325,7 +313,19 @@
           "done": true
         },
         {
+          "title": "Seeing each other: friends",
+          "done": true
+        },
+        {
+          "title": "Talking: chat channels, comm wheel, player hails, safety",
+          "done": true
+        },
+        {
           "title": "Multiplayer: cargo scans and formation flying",
+          "done": true
+        },
+        {
+          "title": "Walking around stations and planet bases",
           "done": true
         },
         {
@@ -496,6 +496,10 @@
             },
             {
               "title": "Campaign Co-Op",
+              "done": false
+            },
+            {
+              "title": "Pirate missions after early access",
               "done": false
             }
           ]

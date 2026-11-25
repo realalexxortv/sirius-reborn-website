@@ -360,6 +360,72 @@
       "updated": "2026-11-20"
     },
     {
+      "id": "blitzkrieg",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Blitzkrieg",
+      "subtitle": "Gunboat · Rheinland Military",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Gunboat",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "10,500",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "120 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "50,000",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "50,000 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "1,000,000 units",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "1,000",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/ships/blitzkrieg-hero.webp",
+        "images/wiki/ships/blitzkrieg-side.webp",
+        "images/wiki/ships/blitzkrieg-top.webp",
+        "images/wiki/ships/blitzkrieg-rear.webp"
+      ],
+      "source": "9c6be227c41e",
+      "added": "2026-11-25",
+      "updated": "2026-11-25"
+    },
+    {
       "id": "bloodhound",
       "summary": "",
       "body": "",
@@ -663,6 +729,72 @@
       "updated": "2026-11-20"
     },
     {
+      "id": "donnerkeil",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Donnerkeil",
+      "subtitle": "Cruiser · Rheinland Military",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Cruiser",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "43,300",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "30 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "50,000",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "50,000 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "1,000,000 units",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "5,000",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/ships/donnerkeil-hero.webp",
+        "images/wiki/ships/donnerkeil-side.webp",
+        "images/wiki/ships/donnerkeil-top.webp",
+        "images/wiki/ships/donnerkeil-rear.webp"
+      ],
+      "source": "973d3c330646",
+      "added": "2026-11-25",
+      "updated": "2026-11-25"
+    },
+    {
       "id": "dromedary",
       "summary": "",
       "body": "",
@@ -863,6 +995,208 @@
       "source": "bde17cedadcd",
       "added": "2026-11-13",
       "updated": "2026-11-20"
+    },
+    {
+      "id": "eagle",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Eagle",
+      "subtitle": "Heavy Fighter · Gas Miners Guild",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Heavy Fighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "12,375",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "4,303",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "76 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "10,400",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "1,040 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "70 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "63",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "63",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "150",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "505,000 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Freeport 9 (Omicron Theta)",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "4 large, 2 medium",
+          "og": false
+        },
+        {
+          "label": "Turret mounts",
+          "value": "1 medium",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "CTE-6000 \"Eagle\" Civilian Very Heavy Fighter\nThe Eagle stands vigil over the economic interests and, therefore, the ideological interests of Liberty. With its maxed-out power rating and reinforced armor plating, it is the most sophisticated and advanced vessel in the Civilian class. All in all, it delivers the maximum defensive potential and punishing offensive firepower that credits can buy.",
+      "images": [
+        "images/wiki/ships/eagle-hero.webp",
+        "images/wiki/ships/eagle-side.webp",
+        "images/wiki/ships/eagle-top.webp",
+        "images/wiki/ships/eagle-rear.webp"
+      ],
+      "source": "a46588a105c8",
+      "added": "2026-11-25",
+      "updated": "2026-11-25"
+    },
+    {
+      "id": "falcon",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Falcon",
+      "subtitle": "Heavy Fighter · Civilian",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Heavy Fighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "7,750",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "3,144",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "76 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "6,400",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "645 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "60 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "43",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "43",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "125",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "227,000 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Planet Baden-Baden (Stuttgart), Planet Hamburg (Hamburg), Planet Kurile (Sigma-17), Planet New Berlin (New Berlin), Planet Stuttgart (Stuttgart)",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "3 large, 2 medium",
+          "og": false
+        },
+        {
+          "label": "Turret mounts",
+          "value": "1 medium",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "CTE-3000 \"Falcon\" Civilian Heavy Fighter\nAs the name attests, this ship is formidable and is well-deserving of the reputation that it enjoys. With a balanced combination of refined offensive and defensive technologies, the Falcon delivers an astonishing amount of potential firepower to potential adversaries quickly and efficiently.",
+      "images": [
+        "images/wiki/ships/falcon-hero.webp",
+        "images/wiki/ships/falcon-side.webp",
+        "images/wiki/ships/falcon-top.webp",
+        "images/wiki/ships/falcon-rear.webp"
+      ],
+      "source": "ca78bbab3a0b",
+      "added": "2026-11-25",
+      "updated": "2026-11-25"
     },
     {
       "id": "hawk",
@@ -1123,9 +1457,9 @@
         "images/wiki/ships/liberty-dreadnought-top.webp",
         "images/wiki/ships/liberty-dreadnought-rear.webp"
       ],
-      "source": "816a655d943d",
+      "source": "d8c9b735fdb6",
       "added": "2026-11-12",
-      "updated": "2026-11-20"
+      "updated": "2026-11-25"
     },
     {
       "id": "mammoth",
@@ -1487,6 +1821,102 @@
       "updated": "2026-11-20"
     },
     {
+      "id": "percheron",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Percheron",
+      "subtitle": "Freighter · Civilian",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Freighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "10,000",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "2,687",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "80 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "4,700",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "465 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "1,000 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "80",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "80",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "1,200",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "950,000 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "The Ring (New Berlin)",
+          "og": true
+        },
+        {
+          "label": "Turret mounts",
+          "value": "2 medium, 4 small",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/ships/percheron-hero.webp",
+        "images/wiki/ships/percheron-side.webp",
+        "images/wiki/ships/percheron-top.webp",
+        "images/wiki/ships/percheron-rear.webp"
+      ],
+      "source": "53ae4c0112ca",
+      "added": "2026-11-25",
+      "updated": "2026-11-25"
+    },
+    {
       "id": "piranha",
       "summary": "",
       "body": "",
@@ -1806,6 +2236,77 @@
       "updated": "2026-11-20"
     },
     {
+      "id": "shire",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Shire",
+      "subtitle": "Transport · Civilian",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Transport",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "10,500",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "80 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "50,000",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "50,000 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "3,000 units",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Turret mounts",
+          "value": "6 large",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "",
+      "images": [
+        "images/wiki/ships/shire-hero.webp",
+        "images/wiki/ships/shire-side.webp",
+        "images/wiki/ships/shire-top.webp",
+        "images/wiki/ships/shire-rear.webp"
+      ],
+      "source": "53ae4c0112ca",
+      "added": "2026-11-25",
+      "updated": "2026-11-25"
+    },
+    {
       "id": "starflier",
       "summary": "",
       "body": "",
@@ -1991,6 +2492,102 @@
       "source": "505dbcf4c4c5",
       "added": "2026-10-31",
       "updated": "2026-11-20"
+    },
+    {
+      "id": "stiletto",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Stiletto",
+      "subtitle": "Heavy Fighter · Border Worlds",
+      "stats": [
+        {
+          "label": "Class",
+          "value": "Heavy Fighter",
+          "og": true
+        },
+        {
+          "label": "Hull strength",
+          "value": "6,125",
+          "og": true
+        },
+        {
+          "label": "Shield capacity",
+          "value": "2,297",
+          "og": true
+        },
+        {
+          "label": "Top speed",
+          "value": "76 m/s",
+          "og": true
+        },
+        {
+          "label": "Cruise speed",
+          "value": "300 m/s",
+          "og": true
+        },
+        {
+          "label": "Power capacity",
+          "value": "4,700",
+          "og": true
+        },
+        {
+          "label": "Power regeneration",
+          "value": "465 /s",
+          "og": true
+        },
+        {
+          "label": "Thrust capacity",
+          "value": "1,000",
+          "og": true
+        },
+        {
+          "label": "Cargo hold",
+          "value": "45 units",
+          "og": true
+        },
+        {
+          "label": "Nanobots",
+          "value": "33",
+          "og": true
+        },
+        {
+          "label": "Shield batteries",
+          "value": "33",
+          "og": true
+        },
+        {
+          "label": "Mass",
+          "value": "150",
+          "og": true
+        },
+        {
+          "label": "Hull price",
+          "value": "127,000 credits",
+          "og": true
+        },
+        {
+          "label": "Sold at",
+          "value": "Bruchsal Base (Frankfurt)",
+          "og": true
+        },
+        {
+          "label": "Gun mounts",
+          "value": "4 large, 2 medium",
+          "og": false
+        }
+      ],
+      "tables": [],
+      "description": "Series Y \"Stiletto\" Border Worlds Heavy Fighter\nMen and women of action need a ship that can deliver all of the speed, resilience, and firepower available. The Stiletto answers the call by combining exceptional weapon support, reinforced cargo space and the maximum armor rating in its class. The result is a ship that is the only true option for success and survival in the Border Worlds.",
+      "images": [
+        "images/wiki/ships/stiletto-hero.webp",
+        "images/wiki/ships/stiletto-side.webp",
+        "images/wiki/ships/stiletto-top.webp",
+        "images/wiki/ships/stiletto-rear.webp"
+      ],
+      "source": "17768e23852e",
+      "added": "2026-11-25",
+      "updated": "2026-11-25"
     },
     {
       "id": "valkyrie",

@@ -36,10 +36,62 @@
       ],
       "tables": [],
       "description": "LIBERTY\nSettled Planets\nCLASSIFIED\nBases\nCLASSIFIED\nCorporations\nCLASSIFIED\nCriminals\nCLASSIFIED\nProduces\nCLASSIFIED",
-      "images": [],
-      "source": "b8021c957dd2",
+      "images": [
+        "images/wiki/systems/alaska-sunward.webp",
+        "images/wiki/systems/alaska-planet.webp"
+      ],
+      "source": "671013b74b7c",
       "added": "2026-11-20",
-      "updated": "2026-11-20"
+      "updated": "2026-11-25"
+    },
+    {
+      "id": "bering",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Bering",
+      "subtitle": "Independent space",
+      "stats": [
+        {
+          "label": "House",
+          "value": "Independent",
+          "og": true
+        },
+        {
+          "label": "Bases",
+          "value": "Pacifica Base, Freeport 2",
+          "og": true
+        },
+        {
+          "label": "Trade lanes",
+          "value": "2",
+          "og": true
+        },
+        {
+          "label": "Jump gates",
+          "value": "2",
+          "og": true
+        },
+        {
+          "label": "Jump holes",
+          "value": "2",
+          "og": true
+        },
+        {
+          "label": "Connects to",
+          "value": "Hamburg, Texas, Hudson",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "INDEPENDENT\nSettled Planets\nNone\nBases\nFreeport 2\nCorporations\nNone\nCriminals\nUnioners\nXenos\nRogues\nProduces\nFood",
+      "images": [
+        "images/wiki/systems/bering-sunward.webp",
+        "images/wiki/systems/bering-planet.webp"
+      ],
+      "source": "87d4d2dac400",
+      "added": "2026-11-25",
+      "updated": "2026-11-25"
     },
     {
       "id": "california",
@@ -91,9 +143,58 @@
         "images/wiki/systems/california-sunward.webp",
         "images/wiki/systems/california-planet.webp"
       ],
-      "source": "5dca60e79157",
+      "source": "c5b521baa5a5",
       "added": "2026-10-26",
-      "updated": "2026-11-20"
+      "updated": "2026-11-25"
+    },
+    {
+      "id": "magellan",
+      "summary": "",
+      "body": "",
+      "hidden": false,
+      "name": "Magellan",
+      "subtitle": "Independent space",
+      "stats": [
+        {
+          "label": "House",
+          "value": "Independent",
+          "og": true
+        },
+        {
+          "label": "Bases",
+          "value": "Freeport 4, Mactan Base",
+          "og": true
+        },
+        {
+          "label": "Trade lanes",
+          "value": "2",
+          "og": true
+        },
+        {
+          "label": "Jump gates",
+          "value": "3",
+          "og": true
+        },
+        {
+          "label": "Jump holes",
+          "value": "3",
+          "og": true
+        },
+        {
+          "label": "Connects to",
+          "value": "Manchester, California, Cortez, New York, Leeds",
+          "og": true
+        }
+      ],
+      "tables": [],
+      "description": "INDEPENDENT\nSettled Planets\nNone\nBases\nFreeport 4\nCorporations\nIndependent Mining Guild\nCriminals\nLane Hackers\nLiberty Rogues\nOutcasts\nProduces\nWater\nOxygen",
+      "images": [
+        "images/wiki/systems/magellan-sunward.webp",
+        "images/wiki/systems/magellan-planet.webp"
+      ],
+      "source": "6d50cb56ee2e",
+      "added": "2026-11-25",
+      "updated": "2026-11-25"
     },
     {
       "id": "new-york",
@@ -145,9 +246,9 @@
         "images/wiki/systems/new-york-sunward.webp",
         "images/wiki/systems/new-york-planet.webp"
       ],
-      "source": "ef6eca960249",
+      "source": "c661487c7792",
       "added": "2026-10-20",
-      "updated": "2026-11-20"
+      "updated": "2026-11-25"
     },
     {
       "id": "sigma-13",
@@ -190,10 +291,13 @@
       ],
       "tables": [],
       "description": "BORDER WORLDS\nSettled Planets\nNone\nBases\nGas Miner Naha\nHelgoland Station\nCorporations\nGas Mining Guild\nALG Waste Disposal\nCriminals\nCorsairs\nOutcasts\nJunkers\nProduces\nH-Fuel\nScrap Metal",
-      "images": [],
-      "source": "5827ccbd6f68",
+      "images": [
+        "images/wiki/systems/sigma-13-sunward.webp",
+        "images/wiki/systems/sigma-13-planet.webp"
+      ],
+      "source": "26e2f014f879",
       "added": "2026-11-20",
-      "updated": "2026-11-20"
+      "updated": "2026-11-25"
     },
     {
       "id": "sigma-17",
@@ -240,9 +344,9 @@
         "images/wiki/systems/sigma-17-sunward.webp",
         "images/wiki/systems/sigma-17-planet.webp"
       ],
-      "source": "2b0a45471b49",
+      "source": "e567c405a05a",
       "added": "2026-11-08",
-      "updated": "2026-11-20"
+      "updated": "2026-11-25"
     },
     {
       "id": "texas",

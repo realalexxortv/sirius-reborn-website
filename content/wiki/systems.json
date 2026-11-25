@@ -36,7 +36,10 @@
       ],
       "tables": [],
       "description": "LIBERTY\nSettled Planets\nCLASSIFIED\nBases\nCLASSIFIED\nCorporations\nCLASSIFIED\nCriminals\nCLASSIFIED\nProduces\nCLASSIFIED",
-      "images": [],
+      "images": [
+        "images/wiki/systems/alaska-sunward.webp",
+        "images/wiki/systems/alaska-planet.webp"
+      ],
       "source": "671013b74b7c",
       "added": "2026-11-20",
       "updated": "2026-11-25"
@@ -82,7 +85,10 @@
       ],
       "tables": [],
       "description": "INDEPENDENT\nSettled Planets\nNone\nBases\nFreeport 2\nCorporations\nNone\nCriminals\nUnioners\nXenos\nRogues\nProduces\nFood",
-      "images": [],
+      "images": [
+        "images/wiki/systems/bering-sunward.webp",
+        "images/wiki/systems/bering-planet.webp"
+      ],
       "source": "87d4d2dac400",
       "added": "2026-11-25",
       "updated": "2026-11-25"
@@ -182,7 +188,10 @@
       ],
       "tables": [],
       "description": "INDEPENDENT\nSettled Planets\nNone\nBases\nFreeport 4\nCorporations\nIndependent Mining Guild\nCriminals\nLane Hackers\nLiberty Rogues\nOutcasts\nProduces\nWater\nOxygen",
-      "images": [],
+      "images": [
+        "images/wiki/systems/magellan-sunward.webp",
+        "images/wiki/systems/magellan-planet.webp"
+      ],
       "source": "6d50cb56ee2e",
       "added": "2026-11-25",
       "updated": "2026-11-25"
@@ -282,7 +291,10 @@
       ],
       "tables": [],
       "description": "BORDER WORLDS\nSettled Planets\nNone\nBases\nGas Miner Naha\nHelgoland Station\nCorporations\nGas Mining Guild\nALG Waste Disposal\nCriminals\nCorsairs\nOutcasts\nJunkers\nProduces\nH-Fuel\nScrap Metal",
-      "images": [],
+      "images": [
+        "images/wiki/systems/sigma-13-sunward.webp",
+        "images/wiki/systems/sigma-13-planet.webp"
+      ],
       "source": "26e2f014f879",
       "added": "2026-11-20",
       "updated": "2026-11-25"

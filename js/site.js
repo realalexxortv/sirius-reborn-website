@@ -112,7 +112,15 @@
         var via = SOURCES[b.source];
         return '<li><b>' + esc(b.name) + '</b><small>' + (via ? esc(via) + ' \u00b7 ' : '') + esc(d(b.at)) + '</small></li>';
       }).join('') + '</ol>' : '') +
+      fundTotalHtml(f.total) +
       '</div></section>';
+  }
+
+  // Under the crew: everything given so far and by how many (none yet, or an older worker without it: nothing)
+  function fundTotalHtml(t) {
+    if (!t || !(t.amount > 0)) return '';
+    return '<p class="fund-total">Together, <b>' + t.people + (t.people === 1 ? ' backer has' : ' backers have') + '</b> given <b>' +
+      esc(money(t.amount, t.currency)) + '</b> so far. Thank you!</p>';
   }
 
   // Above the timeline: the first goal, one line, to the Donate page.

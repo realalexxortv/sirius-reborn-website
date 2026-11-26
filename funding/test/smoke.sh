@@ -67,5 +67,7 @@ F=$(curl -s $BASE/funding)
 echo "$F"
 [[ $(grep -o '"name":"[Jj]ane"' <<<"${F%%\"top\"*}" | wc -l) == 1 ]] && echo "ok   Jane on Ko-fi and Patreon one person in each list" || { echo "FAIL Jane not merged"; fail=1; }
 check "top: Jane's 10 + 4, under her latest name" '"top":[{"name":"jane","total":14,"currency":"EUR"},{"name":"StreamFan","total":2,"currency":"EUR"},{"name":"Anonymous","total":1,"currency":"EUR"}]' "$F"
+# 5 hidden (counts) + 10 + 4 + 2 + 1 = 22 EUR from StarPilot, Jane, StreamFan and one Anonymous; the void and the USD not
+check "total given and by whom" '"total":{"amount":22,"currency":"EUR","people":4}' "$F"
 
 exit $fail

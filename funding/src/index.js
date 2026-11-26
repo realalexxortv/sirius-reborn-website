@@ -1,7 +1,7 @@
 /* Sirius Reborn funding: takes Ko-fi and Patreon webhooks, serves the goals, the last backers and the top backers.
  *
  *   GET  /funding                 public: { goals: [{ label, target, raised, currency, monthly }], backers: [{ name, source, at }],
- *                                           top: [{ name, total, currency }] }
+ *                                           top: [{ name, total, currency }], total: { amount, currency, people } }
  *   POST /kofi                    Ko-fi webhook (form field "data", checked against KOFI_TOKEN)
  *   POST /patreon                 Patreon webhook (X-Patreon-Signature, HMAC-MD5 with PATREON_SECRET)
  *   GET  /admin                   goals and the last 100 payments            } Authorization: Bearer ADMIN_TOKEN
@@ -60,17 +60,22 @@ async function funding(env) {
      SELECT (SELECT q.name FROM p q WHERE q.person = p.person ORDER BY q.at DESC LIMIT 1) AS name, SUM(amount_cents) AS cents
      FROM p WHERE currency = ? GROUP BY person ORDER BY cents DESC, MIN(at) LIMIT ?`
   ).bind(env.CURRENCY, TOP).all();
+  // Everything given so far in the campaign's currency and by how many people, hidden names too (their money counts)
+  const all = await env.DB.prepare(
+    `SELECT COALESCE(SUM(amount_cents), 0) AS cents, COUNT(DISTINCT ${PERSON}) AS people FROM donations WHERE void = 0 AND currency = ?`
+  ).bind(env.CURRENCY).first();
   return {
     goals: goals.map((g, i) => ({ label: g.label, target: g.target, raised: raised[i] / 100, currency: g.currency, monthly: g.monthly })),
     backers,
     top: top.map((t) => ({ name: t.name, total: t.cents / 100, currency: env.CURRENCY })),
+    total: { amount: all.cents / 100, currency: env.CURRENCY, people: all.people },
   };
 }
 
 // The listed payments, each with its person: one name across Ko-fi, Patreon and by hand (case aside); each Anonymous
 // payment someone of their own.
-const PEOPLE = `SELECT *, CASE WHEN name = 'Anonymous' THEN backer ELSE lower(name) END AS person
-  FROM donations WHERE void = 0 AND hidden = 0`;
+const PERSON = `CASE WHEN name = 'Anonymous' THEN backer ELSE lower(name) END`;
+const PEOPLE = `SELECT *, ${PERSON} AS person FROM donations WHERE void = 0 AND hidden = 0`;
 
 // A monthly goal counts the current calendar month (UTC), the others everything since their date.
 function goalStart(g) {

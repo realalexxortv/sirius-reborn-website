@@ -789,6 +789,8 @@ img { display: block; }
 .fund-backers li b { font-weight: 600; color: #dfe6f1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .fund-backers li small { font-size: 13px; letter-spacing: .06em; color: var(--ink-3); }
 .fund-invite { margin: 6px 0 0; color: var(--ink-2); }
+.fund-total { margin: 16px 0 0; padding-top: 12px; border-top: 1px solid #22314a; font-size: 15.5px; color: var(--ink-3); }
+.fund-total b { font-size: 17px; font-weight: 600; color: #e6ecf5; }
 
 /* One line above the timeline. */
 .fund-strip {
